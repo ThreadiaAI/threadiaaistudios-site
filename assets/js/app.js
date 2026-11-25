@@ -148,9 +148,9 @@
       <h2 class="d-title">${esc(a.title)}</h2><p class="d-sub">Agent Threads · ${a.track_count} tracks · ${esc(a.status)}</p>
       <div class="d-cover" style="background-image:url('${esc(a.cover)}')"></div>
       <p class="d-sub">${esc(a.about)}</p>
-      <div class="d-buy"><div><small class="mutedish">Delivered by email within 24 hours</small><div class="pr">${money(a.price)}</div></div><button class="btn btn-primary" id="dBuy">Buy album</button></div>
+      <div class="d-buy"><div><small class="mutedish">Delivered privately within 24 hours</small><div class="pr">${money(a.price)}</div></div><button class="btn btn-primary" id="dBuy">Buy album</button></div>
       <button class="btn btn-ghost" id="dPlay" style="margin-bottom:12px">${ICON_PLAY} Play all previews</button>
-      <ol class="tracklist">${a.tracks.map((t, i) => `<li data-i="${i}" data-pid="${esc(a.id + "-" + t.n)}"><span class="n">${String(t.n).padStart(2, "0")}</span><span class="t">${esc(t.title)}</span><span class="d">${t.preview ? "1:00" : ""}</span></li>`).join("")}</ol>`);
+      <ol class="tracklist">${a.tracks.map((t, i) => `<li data-i="${i}" data-pid="${esc(a.id + "-" + t.n)}"><span class="n">${String(t.n).padStart(2, "0")}</span><span class="t">${esc(t.title)}</span><span class="d">${(CAT.songs.find(x => x.id === t.id) || {}).page ? `<a class="link" href="${esc(CAT.songs.find(x => x.id === t.id).page)}" onclick="event.stopPropagation()">Lyrics</a>` : (t.preview ? "1:00" : "")}</span></li>`).join("")}</ol>`);
     const q = albumQueue(a);
     $("#dBuy").onclick = () => addToCart({ ...a, kind: "album", art: a.cover });
     $("#dPlay").onclick = () => playQueue(q, 0);
@@ -199,7 +199,7 @@
     $("#songGrid").innerHTML = vis.length ? vis.map(s => `<article class="song" data-pid="${esc(s.id)}">
       <div class="th" style="background-image:url('${esc(art(s))}')" data-play="${esc(s.id)}" role="button" tabindex="0" aria-label="Play preview of ${esc(s.title)}">
         <span class="pbtn">${ICON_PLAY}</span><span class="yr">${new Date(s.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" })}</span></div>
-      <div class="body"><h3>${esc(s.title)}</h3><p class="g">${esc(s.genre)}${s.feat ? " · feat. T.IQ" : ""}</p>
+      <div class="body"><h3>${s.page ? `<a class="song-link" href="${esc(s.page)}">${esc(s.title)}</a>` : esc(s.title)}</h3><p class="g">${esc(s.genre)}${s.feat ? " · feat. T.IQ" : ""}</p>
       <div class="acts"><a class="mini" href="https://www.youtube.com/watch?v=${esc(s.yt)}" target="_blank" rel="noopener">Watch</a><button class="mini buy" data-buy="${esc(s.id)}">${money(STORE.prices.single)}</button></div></div></article>`).join("")
       : `<p class="empty">No songs match that search yet.</p>`;
     $("#moreBtn").style.display = list.length > S.shown ? "" : "none";
@@ -263,7 +263,7 @@
         <div><b>${esc(t.name)} <button class="info" data-info="${esc(t.key)}" aria-label="License terms for ${esc(t.name)}">i</button></b><p>${esc(t.terms)}</p></div>
         ${t.price == null ? `<a class="btn btn-ghost" href="mailto:admin@threadiaai.com?subject=${encodeURIComponent("Exclusive rights: " + b.title)}">Ask</a>`
           : `<button class="btn btn-primary" data-tier="${esc(t.key)}">${money(t.price)}</button>`}</div>`).join("")}</div>
-      <p class="note">Secure checkout by Stripe. Your files and your signed license arrive by email within 24 hours. The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">listen on YouTube</a>.</p>`);
+      <p class="note">Secure checkout by Stripe. Your files and license terms arrive within 24 hours, shared privately to your Google account. The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">listen on YouTube</a>.</p>`);
     $("#bPlay").onclick = () => playQueue([beatQ(b)], 0);
     $$("#drawerBody [data-info]").forEach(el => el.onclick = () => openLicense(el.dataset.info, b));
     $$("#drawerBody [data-tier]").forEach(el => el.onclick = () => {

@@ -2,24 +2,89 @@
  "title": "Beat License Terms",
  "intro": "These terms govern every beat license purchased on threadiaaistudios.com. \"Licensor\" means Threadia AI, Inc., doing business as Threadia Ai Studios, on behalf of its producer Grey Beard. \"Licensee\" means the person or entity purchasing the license. The \"Beat\" means the instrumental composition and sound recording identified at purchase. The \"New Song\" means the single musical work Licensee creates by recording original vocals or other material over the Beat.",
  "general": [
-  ["Grant of license", "Upon full payment, Licensor grants Licensee a non exclusive, non transferable, non sublicensable license to use the Beat solely to create one (1) New Song and to reproduce, distribute, publicly perform and synchronize that New Song within the limits of the purchased tier. All rights not expressly granted are reserved by Licensor."],
-  ["Ownership", "Licensor retains all right, title and interest, including copyright, in and to the Beat. A non exclusive license does not transfer ownership of the Beat. Licensee owns the copyright in Licensee's own lyrics, vocals and other original contributions to the New Song."],
-  ["Non exclusivity", "Under any lease tier, Licensor may continue to license, sell or otherwise exploit the Beat to and with third parties, including other artists, at any time."],
-  ["Credit", "Licensee must credit the producer in the title, description or metadata of every release of the New Song as follows: \"Prod. Grey Beard\"."],
-  ["Publishing", "The underlying composition of the New Song is owned fifty percent (50%) by Licensee as writer and fifty percent (50%) by Licensor as writer and publisher of the Beat. Licensee shall register the New Song with its performing rights organization accordingly."],
-  ["Content identification", "Licensee may not register the Beat or the New Song with YouTube Content ID or any similar content identification system, and may not issue claims or takedown notices against Licensor or other licensees of the Beat."],
-  ["Restrictions", "Licensee may not (a) resell, lease, sublicense, share or distribute the Beat on its own or as an instrumental; (b) use the Beat in more than one New Song; (c) claim authorship or ownership of the Beat; or (d) use the Beat in any work that is unlawful, defamatory or infringes the rights of others."],
-  ["Limits and upgrades", "If the New Song exceeds the stream, sale or other limits of the purchased tier, Licensee must upgrade to a higher tier or obtain a new license before further exploitation. Licenses do not expire within the stated limits."],
-  ["Exclusive purchase by a third party", "If a third party later purchases exclusive rights to the Beat, Licensee's existing license remains valid within its original terms, but Licensor will issue no new licenses for the Beat."],
-  ["Term and termination", "This license is perpetual within its limits. It terminates automatically, without refund, if Licensee breaches these terms, and Licensee must then cease all distribution of the New Song."],
-  ["Warranties and liability", "The Beat is provided as is. Licensor warrants that it has the right to grant this license. Licensor's total liability under this license shall not exceed the amount Licensee paid for it. All sales are final once the files have been delivered."],
-  ["Free use", "Tagged versions of the Beat published by Licensor may be used free of charge only for non profit, non commercial purposes, with the credit \"Prod. Grey Beard\". Any commercial release requires a paid license."]
+  [
+   "Grant of license",
+   "Upon full payment, Licensor grants Licensee a non exclusive, non transferable, non sublicensable license to use the Beat solely to create one (1) New Song and to reproduce, distribute, publicly perform and synchronize that New Song within the limits of the purchased tier. All rights not expressly granted are reserved by Licensor."
+  ],
+  [
+   "Ownership",
+   "Licensor retains all right, title and interest, including copyright, in and to the Beat. A non exclusive license does not transfer ownership of the Beat. Licensee owns the copyright in Licensee's own lyrics, vocals and other original contributions to the New Song."
+  ],
+  [
+   "Non exclusivity",
+   "Under any lease tier, Licensor may continue to license, sell or otherwise exploit the Beat to and with third parties, including other artists, at any time."
+  ],
+  [
+   "Credit",
+   "Licensee must credit the producer in the title, description or metadata of every release of the New Song as follows: \"Prod. Grey Beard\"."
+  ],
+  [
+   "Publishing",
+   "The underlying composition of the New Song is owned fifty percent (50%) by Licensee as writer and fifty percent (50%) by Licensor as writer and publisher of the Beat. Licensee shall register the New Song with its performing rights organization accordingly."
+  ],
+  [
+   "Content identification",
+   "Licensee may not register the Beat or the New Song with YouTube Content ID or any similar content identification system, and may not issue claims or takedown notices against Licensor or other licensees of the Beat."
+  ],
+  [
+   "Restrictions",
+   "Licensee may not (a) resell, lease, sublicense, share or distribute the Beat on its own or as an instrumental; (b) use the Beat in more than one New Song; (c) claim authorship or ownership of the Beat; or (d) use the Beat in any work that is unlawful, defamatory or infringes the rights of others."
+  ],
+  [
+   "Limits and upgrades",
+   "If the New Song exceeds the stream, sale or other limits of the purchased tier, Licensee must upgrade to a higher tier or obtain a new license before further exploitation. Licenses do not expire within the stated limits."
+  ],
+  [
+   "Exclusive purchase by a third party",
+   "If a third party later purchases exclusive rights to the Beat, Licensee's existing license remains valid within its original terms, but Licensor will issue no new licenses for the Beat."
+  ],
+  [
+   "Term and termination",
+   "This license is perpetual within its limits. It terminates automatically, without refund, if Licensee breaches these terms, and Licensee must then cease all distribution of the New Song."
+  ],
+  [
+   "Warranties and liability",
+   "The Beat is provided as is. Licensor warrants that it has the right to grant this license. Licensor's total liability under this license shall not exceed the amount Licensee paid for it. All sales are final once the files have been delivered."
+  ],
+  [
+   "Free use",
+   "Tagged versions of the Beat published by Licensor may be used free of charge only for non profit, non commercial purposes, with the credit \"Prod. Grey Beard\". Any commercial release requires a paid license."
+  ]
  ],
  "tiers": {
-  "mp3": ["Untagged MP3 file (320 kbps).", "Distribution of up to 2,000 copies (sales or downloads).", "Up to 100,000 audio streams across all platforms combined.", "One (1) non monetized music video.", "Live performance at non profit events.", "Non exclusive."],
-  "wav": ["Untagged WAV file (24 bit) and MP3 file.", "Distribution of up to 5,000 copies (sales or downloads).", "Up to 500,000 audio streams across all platforms combined.", "One (1) monetized music video.", "Live performance for profit.", "Radio broadcasting on up to 2 stations.", "Non exclusive."],
-  "stems": ["Untagged WAV, MP3 and separated track stems.", "Distribution of up to 10,000 copies (sales or downloads).", "Unlimited audio streams.", "Unlimited monetized music videos.", "Live performance for profit.", "Unlimited radio broadcasting.", "Non exclusive."],
-  "exclusive": ["All files, including stems.", "Unlimited distribution, streams, videos, performances and broadcasting.", "Licensor removes the Beat from sale and from its channels and issues no further licenses.", "Existing non exclusive licenses granted before the exclusive purchase remain valid.", "Price and full written agreement provided on request."]
+  "mp3": [
+   "Untagged MP3 file (320 kbps).",
+   "Distribution of up to 2,000 copies (sales or downloads).",
+   "Up to 100,000 audio streams across all platforms combined.",
+   "One (1) non monetized music video.",
+   "Live performance at non profit events.",
+   "Non exclusive."
+  ],
+  "wav": [
+   "Untagged WAV file (24 bit) and MP3 file.",
+   "Distribution of up to 5,000 copies (sales or downloads).",
+   "Up to 500,000 audio streams across all platforms combined.",
+   "One (1) monetized music video.",
+   "Live performance for profit.",
+   "Radio broadcasting on up to 2 stations.",
+   "Non exclusive."
+  ],
+  "stems": [
+   "Untagged WAV, MP3 and separated track stems.",
+   "Distribution of up to 10,000 copies (sales or downloads).",
+   "Unlimited audio streams.",
+   "Unlimited monetized music videos.",
+   "Live performance for profit.",
+   "Unlimited radio broadcasting.",
+   "Non exclusive."
+  ],
+  "exclusive": [
+   "All files, including stems.",
+   "Unlimited distribution, streams, videos, performances and broadcasting.",
+   "Licensor removes the Beat from sale and from its channels and issues no further licenses.",
+   "Existing non exclusive licenses granted before the exclusive purchase remain valid.",
+   "Price and full written agreement provided on request."
+  ]
  },
- "footer": "This is a summary of the license agreement. A signed copy of the full agreement, identifying the Beat, the tier and the Licensee, is delivered with every purchase and controls in the event of any conflict. Questions: admin@threadiaai.com."
+ "footer": "This is a summary of the license agreement. A copy of these terms, naming the Beat and the tier, is included with your files, and your Stripe receipt records the Licensee, the date and the amount paid. Together they form your license and control in the event of any conflict. Questions: admin@threadiaai.com."
 }
