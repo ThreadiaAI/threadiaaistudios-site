@@ -2,12 +2,35 @@
  "_note": "Checkout links per product. Leave checkout null until the payment provider is chosen; the cart then collects the order and the checkout button explains that sales open soon. Keys: album ids, song ids, beat ids, or the defaults below.",
  "checkout": null,
  "currency": "USD",
- "prices": { "single": 1.29, "beat_lease": 29.99 },
+ "prices": {
+  "single": 1.29,
+  "beat_lease": 29.99
+ },
  "beat_tiers": [
-  { "key": "mp3", "name": "MP3 Lease", "price": 29.99, "terms": "Untagged MP3. Up to 100,000 streams and 2,000 sales. Non exclusive. Credit: prod. Grey Beard." },
-  { "key": "wav", "name": "WAV Lease", "price": 49.99, "terms": "Untagged WAV and MP3. Up to 500,000 streams and 5,000 sales. Music video rights. Non exclusive." },
-  { "key": "stems", "name": "Trackout (Stems)", "price": 99.99, "terms": "WAV, MP3 and separate track stems for your engineer. Unlimited streams. Music video and live performance rights. Non exclusive." },
-  { "key": "exclusive", "name": "Exclusive Rights", "price": null, "terms": "Full ownership of the beat for your release. The beat comes off the market and off our channels. Price on request." }
+  {
+   "key": "mp3",
+   "name": "MP3 Lease",
+   "price": 29.99,
+   "terms": "Untagged MP3. Up to 100,000 streams and 2,000 sales. Non exclusive. Credit: Prod. Grey Beard."
+  },
+  {
+   "key": "wav",
+   "name": "WAV Lease",
+   "price": 49.99,
+   "terms": "Untagged WAV and MP3. Up to 500,000 streams and 5,000 sales. One monetized music video. Non exclusive."
+  },
+  {
+   "key": "stems",
+   "name": "Trackout (Stems)",
+   "price": 99.99,
+   "terms": "WAV, MP3 and separate track stems. Up to 10,000 sales, unlimited streams. Monetized videos, performance and radio. Non exclusive."
+  },
+  {
+   "key": "exclusive",
+   "name": "Exclusive Rights",
+   "price": null,
+   "terms": "Full ownership of the beat for your release. The beat comes off the market and off our channels. Price on request."
+  }
  ],
  "links": {}
 }

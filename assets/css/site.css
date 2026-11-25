@@ -269,6 +269,17 @@ a{color:inherit;text-decoration:none}
 .d-sub{color:var(--muted);margin-top:8px}
 .d-buy{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:24px 0;padding:16px;border-radius:var(--r-sm);border:1px solid var(--line2)}
 .d-buy .pr{font-family:var(--serif);font-size:34px}
+.info{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;border:1px solid var(--teal);color:var(--teal);font-family:var(--serif);font-style:italic;font-size:14px;line-height:1;vertical-align:middle;margin-left:6px;cursor:pointer;transition:all .2s}
+.info:hover{background:var(--teal);color:var(--ink)}
+.lic-link{display:inline-flex;align-items:center;gap:4px;margin-top:22px;color:var(--teal);font-size:15px;font-weight:500}
+.lic-link .info{margin:0 6px 0 0}
+.lic-link:hover .info{background:var(--teal);color:var(--ink)}
+.lic-h{font-family:var(--serif);font-weight:400;font-size:26px;margin:28px 0 12px}
+.lic-tier{padding:14px 16px;border-radius:var(--r-sm);border:1px solid var(--line);margin-bottom:10px}
+.lic-tier.on{border-color:var(--teal);background:rgba(24,200,196,.06)}
+.lic-tier ul{margin:8px 0 0 18px;color:var(--muted);font-size:14px}
+.lic-terms{margin-left:20px;color:var(--muted);font-size:14px;display:grid;gap:10px}
+.lic-terms b{color:var(--text);font-weight:600}
 .tiers{display:grid;gap:10px;margin:18px 0}
 .tier{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px;border-radius:var(--r-sm);border:1px solid var(--line2);background:rgba(255,255,255,.02);transition:border-color .2s}
 .tier:hover{border-color:rgba(255,255,255,.35)}
@@ -317,3 +328,4 @@ a{color:inherit;text-decoration:none}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+.drawer .kicker{padding-right:56px}

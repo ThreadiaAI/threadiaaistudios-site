@@ -228,6 +228,23 @@
     markPlaying();
   }
   $("#beatMore").onclick = () => { beatsAll = !beatsAll; renderBeats(); };
+  let LIC = null;
+  async function openLicense(focus, fromBeat) {
+    if (!LIC) { try { LIC = await (await fetch("data/license.json")).json(); } catch { toast("License terms could not load"); return; } }
+    const tiers = STORE.beat_tiers || [];
+    const order = focus ? [tiers.find(t => t.key === focus), ...tiers.filter(t => t.key !== focus)].filter(Boolean) : tiers;
+    openDrawer(`${fromBeat ? `<button class="mini" id="licBack">← Back to ${esc(fromBeat.title)}</button>` : ""}
+      <p class="kicker" style="margin-top:18px">Licensing</p><h2 class="d-title">${esc(LIC.title)}</h2>
+      <p class="d-sub" style="margin-top:14px">${esc(LIC.intro)}</p>
+      <h3 class="lic-h">License tiers</h3>
+      ${order.map(t => `<div class="lic-tier ${t.key === focus ? "on" : ""}"><b>${esc(t.name)}${t.price != null ? ` · ${money(t.price)}` : " · On request"}</b>
+        <ul>${(LIC.tiers[t.key] || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}
+      <h3 class="lic-h">Terms that apply to every license</h3>
+      <ol class="lic-terms">${LIC.general.map(([h, x]) => `<li><b>${esc(h)}.</b> ${esc(x)}</li>`).join("")}</ol>
+      <p class="note">${esc(LIC.footer)}</p>`);
+    const bk = $("#licBack"); if (bk) bk.onclick = () => openBeat(fromBeat);
+  }
+  $("#licenseInfo").onclick = () => openLicense(null);
   function openBeat(b) {
     const tiers = STORE.beat_tiers || [{ key: "mp3", name: "Lease", price: STORE.prices.beat_lease, terms: "" }];
     openDrawer(`<p class="kicker">${esc(b.style)} type beat · ${b.bpm} BPM ${esc(b.key)}</p>
@@ -235,11 +252,12 @@
       <div class="d-cover" style="aspect-ratio:16/9;background-image:url('${esc(art(b))}')"></div>
       <button class="btn btn-ghost" id="bPlay" style="margin-bottom:8px">${ICON_PLAY} Play preview</button>
       <div class="tiers">${tiers.map(t => `<div class="tier">
-        <div><b>${esc(t.name)}</b><p>${esc(t.terms)}</p></div>
+        <div><b>${esc(t.name)} <button class="info" data-info="${esc(t.key)}" aria-label="License terms for ${esc(t.name)}">i</button></b><p>${esc(t.terms)}</p></div>
         ${t.price == null ? `<a class="btn btn-ghost" href="mailto:admin@threadiaai.com?subject=${encodeURIComponent("Exclusive rights: " + b.title)}">Ask</a>`
           : `<button class="btn btn-primary" data-tier="${esc(t.key)}">${money(t.price)}</button>`}</div>`).join("")}</div>
       <p class="note">The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">listen on YouTube</a>.</p>`);
     $("#bPlay").onclick = () => playQueue([beatQ(b)], 0);
+    $$("#drawerBody [data-info]").forEach(el => el.onclick = () => openLicense(el.dataset.info, b));
     $$("#drawerBody [data-tier]").forEach(el => el.onclick = () => {
       const t = tiers.find(x => x.key === el.dataset.tier);
       addToCart({ id: b.id + "-" + t.key, title: `${b.title} (${t.name})`, kind: "beat", art: art(b), price: t.price });
