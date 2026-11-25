@@ -1,0 +1,2 @@
+/* Public Supabase settings for comments and the A.T. Letter. The anon key is designed to be public; row level security protects the data. */
+window.TAS_COMMENTS = { url: "https://fzhwurshslggysqqbsmp.supabase.co", anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6aHd1cnNoc2xnZ3lzcXFic21wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTU2MzY1MDcsImV4cCI6MjExMTIxMjUwN30.vY7Hekq7GmDP8FaWZ2BxMYgVnRfWJET8qkE-EGKr6Tk" };

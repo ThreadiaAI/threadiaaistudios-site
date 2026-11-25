@@ -270,7 +270,15 @@
     $("#newsUpdated").textContent = "Updated " + d(NEWS.updated) + ".";
     $("#newsGrid").innerHTML = NEWS.items.map(n => `<article class="news-card"><div class="news-top"><b>${esc(n.tag)}</b><span>${d(n.date)}</span></div>
       <h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p><p class="news-take">${esc(n.take)}</p>
-      <a class="news-src" href="${esc(n.url)}" target="_blank" rel="noopener nofollow">Read at ${esc(n.source)} →</a></article>`).join("");
+      <div class="news-acts"><a class="news-src" href="${esc(n.url)}" target="_blank" rel="noopener nofollow">Read at ${esc(n.source)} →</a>
+      <button class="discuss" data-discuss="${esc(n.title)}"><i></i>Discuss</button></div></article>`).join("");
+    $$("#newsGrid [data-discuss]").forEach(b => b.onclick = () => {
+      const n = NEWS.items.find(x => x.title === b.dataset.discuss);
+      openDrawer(`<p class="kicker">${esc(n.tag)} · Discuss</p><h2 class="d-title" style="font-size:34px">${esc(n.title)}</h2>
+        <p class="d-sub" style="margin-top:12px">${esc(n.summary)}</p><p class="news-take" style="margin-top:14px">${esc(n.take)}</p>
+        <a class="link small" href="${esc(n.url)}" target="_blank" rel="noopener nofollow">Read at ${esc(n.source)}</a><div id="newsWeave"></div>`);
+      if (window.TASComments) TASComments.mount($("#newsWeave"), TASComments.slugFor(n.title), { base: "", title: "What do you think?" });
+    });
     animateIn("#newsGrid .news-card");
   }
 

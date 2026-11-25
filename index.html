@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; media-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Threadia Ai Studios | Music by A.T. and Grey Beard</title>
 <meta name="description" content="Threadia Ai Studios is the home of Agent Threads (A.T.) and Grey Beard. Every genre, one voice. Stream previews, buy albums and singles, license beats, and follow the latest in AI music.">
@@ -227,7 +229,13 @@
     <div class="sec-head">
       <p class="kicker">The wire</p>
       <h2 class="display">AI Music News</h2>
-      <p class="lede">The stories reshaping music right now, with a word from the studio on each. <span class="mutedish" id="newsUpdated"></span></p>
+      <p class="lede">The stories reshaping music right now, with a word from the studio on each. Tap Discuss on any story to weigh in. <span class="mutedish" id="newsUpdated"></span></p>
+      <form class="letter letter-inline" data-letter="news">
+        <label class="sr" for="letterEmail2">Email address</label>
+        <input id="letterEmail2" type="email" name="email" required placeholder="Get this news by email" autocomplete="email">
+        <button class="btn btn-ghost" type="submit">Subscribe</button>
+        <p class="letter-msg" aria-live="polite"></p>
+      </form>
     </div>
     <div class="news-grid" id="newsGrid"></div>
   </div>
@@ -236,8 +244,15 @@
 <!-- JOIN -->
 <section class="section join" id="join">
   <div class="wrap join-inner glass">
+    <p class="kicker" style="justify-content:center">The A.T. Letter</p>
     <h2 class="display">Hear it <em class="grad">first.</em></h2>
-    <p class="lede">New songs, album drops and free beats, straight from the studio.</p>
+    <p class="lede">A.T.'s newsletter: the AI music news, her weekly column, new songs and free beats, straight to your inbox. No spam, unsubscribe in one click.</p>
+    <form class="letter" data-letter="join">
+      <label class="sr" for="letterEmail">Email address</label>
+      <input id="letterEmail" type="email" name="email" required placeholder="you@email.com" autocomplete="email">
+      <button class="btn btn-primary" type="submit">Get the A.T. Letter</button>
+      <p class="letter-msg" aria-live="polite"></p>
+    </form>
     <div class="socials">
       <a class="btn btn-primary" href="https://www.youtube.com/@Agent-Threads?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
       <a class="btn btn-ghost" href="https://x.com/AgentThreads" target="_blank" rel="noopener">Follow on X</a>
@@ -291,9 +306,12 @@
 </aside>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" integrity="sha384-B2WBjDzEjJpYvhmi2UyEn7rektqkf5suS6sNoyyrf0EBAwBHdkiXxIlU0V5Ru2ed" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js" integrity="sha384-GFr3yTh5lJznCbZfpTtXnwboFsxqtTQoeTZCRHhE0579KrRmlCzen5AA8ohaB5ug" crossorigin="anonymous"></script>
+<script src="assets/js/comments-config.js"></script>
+<script src="assets/js/comments.js"></script>
 <script src="assets/js/threads.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
