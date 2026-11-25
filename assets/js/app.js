@@ -200,7 +200,7 @@
       <div class="th" style="background-image:url('${esc(art(s))}')" data-play="${esc(s.id)}" role="button" tabindex="0" aria-label="Play preview of ${esc(s.title)}">
         <span class="pbtn">${ICON_PLAY}</span><span class="yr">${new Date(s.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" })}</span></div>
       <div class="body"><h3>${s.page ? `<a class="song-link" href="${esc(s.page)}">${esc(s.title)}</a>` : esc(s.title)}</h3><p class="g">${esc(s.genre)}${s.feat ? " · feat. T.IQ" : ""}</p>
-      <div class="acts"><a class="mini" href="https://www.youtube.com/watch?v=${esc(s.yt)}" target="_blank" rel="noopener">Watch</a><button class="mini buy" data-buy="${esc(s.id)}">${money(STORE.prices.single)}</button></div></div></article>`).join("")
+      <div class="acts"><a class="mini" href="https://www.youtube.com/watch?v=${esc(s.yt)}" target="_blank" rel="noopener">Watch</a><button class="mini buy" data-buy="${esc(s.id)}" title="${s.format === "WAV" ? "Lossless WAV" : "High quality MP3"}">${money(STORE.prices.single)} · ${s.format || "MP3"}</button></div></div></article>`).join("")
       : `<p class="empty">No songs match that search yet.</p>`;
     $("#moreBtn").style.display = list.length > S.shown ? "" : "none";
     $("#moreBtn").textContent = `Show more (${list.length - S.shown} left)`;
