@@ -1963,21 +1963,6 @@
    "art": "art/t/s-big-stepper.jpg"
   },
   {
-   "yt": "-dPQosgkLoA",
-   "date": "2026-11-03",
-   "thumb": "https://i.ytimg.com/vi/-dPQosgkLoA/maxresdefault.jpg",
-   "views": 91,
-   "secs": 504,
-   "id": "s-las-novelas-parte-3-la-caja-azul",
-   "title": "Las Novelas, Parte 3: La Caja Azul",
-   "genre": "Bachata",
-   "family": "Latin",
-   "feat": "",
-   "remix": false,
-   "preview": "previews/s-las-novelas-parte-3-la-caja-azul.mp3",
-   "art": "art/t/s-las-novelas-parte-3-la-caja-azul.jpg"
-  },
-  {
    "yt": "GCQmh-yBg_o",
    "date": "2026-11-02",
    "thumb": "https://i.ytimg.com/vi/GCQmh-yBg_o/maxresdefault.jpg",
@@ -2038,21 +2023,6 @@
    "art": "art/t/s-algo-rhythm.jpg"
   },
   {
-   "yt": "pvNS6wsVnmk",
-   "date": "2026-10-25",
-   "thumb": "https://i.ytimg.com/vi/pvNS6wsVnmk/maxresdefault.jpg",
-   "views": 70,
-   "secs": 384,
-   "id": "s-las-novelas-parte-2-a-quien-enterramos-jose",
-   "title": "Las Novelas, Parte 2: ¿A Quién Enterramos, José?",
-   "genre": "Bachata",
-   "family": "Latin",
-   "feat": "",
-   "remix": false,
-   "preview": "previews/s-las-novelas-parte-2-a-quien-enterramos-jose.mp3",
-   "art": "art/t/s-las-novelas-parte-2-a-quien-enterramos-jose.jpg"
-  },
-  {
    "yt": "FZa7EJ02EOw",
    "date": "2026-10-24",
    "thumb": "https://i.ytimg.com/vi/FZa7EJ02EOw/maxresdefault.jpg",
@@ -2081,21 +2051,6 @@
    "remix": false,
    "preview": "previews/s-my-chicken-nugget-got-a-lawyer.mp3",
    "art": "art/t/s-my-chicken-nugget-got-a-lawyer.jpg"
-  },
-  {
-   "yt": "hOX709BMNsI",
-   "date": "2026-10-18",
-   "thumb": "https://i.ytimg.com/vi/hOX709BMNsI/maxresdefault.jpg",
-   "views": 100,
-   "secs": 294,
-   "id": "s-las-novelas-parte-1-de-quien-son-esas-bragas",
-   "title": "Las Novelas, Parte 1: ¿De Quién Son Esas Bragas?",
-   "genre": "Bachata",
-   "family": "Latin",
-   "feat": "",
-   "remix": false,
-   "preview": "previews/s-las-novelas-parte-1-de-quien-son-esas-bragas.mp3",
-   "art": "art/t/s-las-novelas-parte-1-de-quien-son-esas-bragas.jpg"
   },
   {
    "yt": "tvBcyUprzso",
@@ -3274,19 +3229,6 @@
    "preview": "previews/s-resistance-is-futile.mp3"
   },
   {
-   "yt": "TLdQsl0QBbw",
-   "date": "2026-08-01",
-   "thumb": "https://i.ytimg.com/vi/TLdQsl0QBbw/maxresdefault.jpg",
-   "views": 50,
-   "secs": 126,
-   "id": "s-seven-days-no-sleep-a-tribute",
-   "title": "Seven Days No Sleep (A Tribute)",
-   "genre": "Soul",
-   "family": "Neo Soul & R&B",
-   "feat": "",
-   "remix": false
-  },
-  {
    "yt": "opmJDcwmmyg",
    "date": "2026-08-01",
    "thumb": "https://i.ytimg.com/vi/opmJDcwmmyg/maxresdefault.jpg",
@@ -3809,7 +3751,7 @@
   "stations": "PLbc2XHuJHhkg"
  },
  "counts": {
-  "songs": 131,
+  "songs": 127,
   "beats": 37,
   "albums": 15
  }
