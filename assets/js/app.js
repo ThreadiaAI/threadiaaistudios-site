@@ -98,7 +98,7 @@
   }
   function addToCart(it) {
     const item = { id: it.id, title: it.title, kind: it.kind || (it.id?.startsWith("b-") ? "beat" : "single"), art: art(it) };
-    item.price = it.price && item.kind === "album" ? it.price : priceOf(item);
+    item.price = it.price != null ? it.price : priceOf(item);
     const link = STORE.links[item.id];
     if (link) { window.open(link, "_blank", "noopener"); return; }
     if (cart.some(c => c.id === item.id)) { toast("Already in your cart"); openCart(); return; }
@@ -221,13 +221,30 @@
     $("#beatRows").innerHTML = vis.map(b => `<div class="beat-row" role="row" data-pid="${esc(b.id)}">
       <button class="bp" data-bplay="${esc(b.id)}" aria-label="Play ${esc(b.title)}">${ICON_PLAY}</button>
       <span class="bt"><i class="bth" style="background-image:url('${esc(art(b))}')"></i>${esc(b.title)}</span><span class="bs hide-sm">${esc(b.style)}</span><span class="mono">${b.bpm}</span><span class="mono hide-sm">${esc(b.key)}</span>
-      <span class="bacts"><a class="mini hide-sm" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">Free</a><button class="mini buy" data-blease="${esc(b.id)}">Lease ${money(STORE.prices.beat_lease)}</button></span></div>`).join("");
+      <span class="bacts"><a class="mini hide-sm" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">Free</a><button class="mini buy" data-blease="${esc(b.id)}">License · from ${money(STORE.prices.beat_lease)}</button></span></div>`).join("");
     $("#beatMore").style.display = list.length > 10 ? "" : "none"; $("#beatMore").textContent = beatsAll ? "Show fewer" : `Show all ${list.length} beats`;
     $$("[data-bplay]").forEach(el => el.onclick = () => { const id = el.dataset.bplay; if (cur()?.id === id) { toggle(); return; } const l = list.map(beatQ); playQueue(l, l.findIndex(x => x.id === id)); });
-    $$("[data-blease]").forEach(el => el.onclick = () => addToCart(beatQ(CAT.beats.find(b => b.id === el.dataset.blease))));
+    $$("[data-blease]").forEach(el => el.onclick = () => openBeat(CAT.beats.find(b => b.id === el.dataset.blease)));
     markPlaying();
   }
   $("#beatMore").onclick = () => { beatsAll = !beatsAll; renderBeats(); };
+  function openBeat(b) {
+    const tiers = STORE.beat_tiers || [{ key: "mp3", name: "Lease", price: STORE.prices.beat_lease, terms: "" }];
+    openDrawer(`<p class="kicker">${esc(b.style)} type beat · ${b.bpm} BPM ${esc(b.key)}</p>
+      <h2 class="d-title">${esc(b.title)}</h2><p class="d-sub">Produced by Grey Beard</p>
+      <div class="d-cover" style="aspect-ratio:16/9;background-image:url('${esc(art(b))}')"></div>
+      <button class="btn btn-ghost" id="bPlay" style="margin-bottom:8px">${ICON_PLAY} Play preview</button>
+      <div class="tiers">${tiers.map(t => `<div class="tier">
+        <div><b>${esc(t.name)}</b><p>${esc(t.terms)}</p></div>
+        ${t.price == null ? `<a class="btn btn-ghost" href="mailto:admin@threadiaai.com?subject=${encodeURIComponent("Exclusive rights: " + b.title)}">Ask</a>`
+          : `<button class="btn btn-primary" data-tier="${esc(t.key)}">${money(t.price)}</button>`}</div>`).join("")}</div>
+      <p class="note">The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">listen on YouTube</a>.</p>`);
+    $("#bPlay").onclick = () => playQueue([beatQ(b)], 0);
+    $$("#drawerBody [data-tier]").forEach(el => el.onclick = () => {
+      const t = tiers.find(x => x.key === el.dataset.tier);
+      addToCart({ id: b.id + "-" + t.key, title: `${b.title} (${t.name})`, kind: "beat", art: art(b), price: t.price });
+    });
+  }
 
   /* ---------------- news ---------------- */
   function renderNews() {
