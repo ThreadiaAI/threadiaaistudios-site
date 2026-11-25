@@ -9,9 +9,10 @@
 <link rel="stylesheet" href="assets/css/site.css"></head>
 <body><main class="wrap-narrow" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;text-align:center">
 <img src="assets/img/at.jpg" alt="" width="96" height="96" style="width:96px;height:96px;border-radius:50%;margin:0 auto 26px;box-shadow:0 0 40px rgba(24,200,196,.4)">
-<p class="kicker" style="justify-content:center">Payment received</p>
+<p class="kicker" style="justify-content:center" id="status">Checking your order…</p>
 <h1 class="display" style="font-size:clamp(48px,8vw,80px)">Thank you<em class="grad">.</em></h1>
-<p class="lede" style="margin:22px auto">Your purchase is confirmed. Your files, and your signed license if you bought a beat, arrive by email within 24 hours. Check your spam folder if you don't see them.</p>
+<p class="lede" id="lede" style="margin:22px auto">One moment while we confirm your payment and prepare your files.</p>
+<div id="deliver" style="margin:6px auto 10px;max-width:560px"></div>
 <p id="ref" style="font-family:var(--mono);font-size:13px;color:var(--muted)"></p>
 <p class="small mutedish" style="margin:14px 0 30px">Questions? Email <a class="link" href="mailto:admin@threadiaai.com">admin@threadiaai.com</a> with your order reference.</p>
 <p><a class="btn btn-primary" href="./#catalogue">Keep listening</a></p></main>
