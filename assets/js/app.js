@@ -274,6 +274,18 @@
     animateIn("#newsGrid .news-card");
   }
 
+  /* ---------------- Pulling Threads column ---------------- */
+  function renderColumn(cols) {
+    const items = (cols && cols.items) || [];
+    const d = s => new Date(s + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    $("#colGrid").innerHTML = items.length ? items.map((a, i) => `<a class="col-card ${i === 0 ? "lead" : ""}" href="${esc(a.url)}">
+      <div class="col-top"><b>Issue ${String(a.issue).padStart(2, "0")}</b><span>${d(a.date)} · ${a.mins} min read</span></div>
+      <h3>${esc(a.title)}</h3><p>${esc(a.dek)}</p>
+      <div class="col-by"><img src="assets/img/at.jpg" alt="" width="32" height="32"><span>By A.T.</span><span class="col-go">Read the column →</span></div></a>`).join("")
+      : `<p class="empty">The first column drops soon.</p>`;
+    animateIn("#colGrid .col-card");
+  }
+
   /* ---------------- motion ---------------- */
   let lenis = null;
   function animateIn(sel) {
@@ -344,6 +356,7 @@
       const words = [...new Set([...g, ...fams])].slice(0, 26);
       $("#genreTrack").innerHTML = [...words, ...words].map(w => `<span>${esc(w)}</span>`).join("");
       renderSpotlight(); renderAlbums(); renderFamilies(); renderSongs(); renderBeats(); renderNews(); renderCartCount();
+      fetch("data/articles.json").then(r => r.json()).then(renderColumn).catch(() => renderColumn(null));
       $("#playAll").onclick = () => playQueue(allSongsQueue(), 0);
       motion(); tilt();
     })
