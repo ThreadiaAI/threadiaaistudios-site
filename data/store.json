@@ -1,5 +1,5 @@
 {
- "_note": "Checkout links per product. Leave checkout null until the payment provider is chosen; the cart then collects the order and the checkout button explains that sales open soon. Keys: album ids, song ids, beat ids, or the defaults below.",
+ "_note": "Stripe Payment Links from Dom (2026-11-25), all one-time USD. Buy buttons open the matching link with client_reference_id set to the item id. Exclusive beat rights are quoted and invoiced by hand.",
  "checkout": null,
  "currency": "USD",
  "prices": {
@@ -32,5 +32,13 @@
    "terms": "Full ownership of the beat for your release. The beat comes off the market and off our channels. Price on request."
   }
  ],
- "links": {}
+ "links": {
+  "album": "https://buy.stripe.com/14AaEZ9h70OdbjtchW93y00",
+  "instrumental": "https://buy.stripe.com/00w8wR8d368x2MXbdS93y01",
+  "single": "https://buy.stripe.com/8x228talb0Od1ITbdS93y02",
+  "beat-mp3": "https://buy.stripe.com/7sY4gBdxnbsR73d5Ty93y03",
+  "beat-wav": "https://buy.stripe.com/fZu4gBalbaoNfzJ6XC93y04",
+  "beat-stems": "https://buy.stripe.com/14A14p9h7eF32MX2Hm93y05"
+ },
+ "delivery": "Pay securely with Stripe. Your files arrive by email within 24 hours."
 }

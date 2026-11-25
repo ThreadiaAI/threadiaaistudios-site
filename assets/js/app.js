@@ -99,8 +99,16 @@
   function addToCart(it) {
     const item = { id: it.id, title: it.title, kind: it.kind || (it.id?.startsWith("b-") ? "beat" : "single"), art: art(it) };
     item.price = it.price != null ? it.price : priceOf(item);
-    const link = STORE.links[item.id];
-    if (link) { window.open(link, "_blank", "noopener"); return; }
+    // Stripe Payment Link for this product type; the item id rides along as client_reference_id
+    let key = item.kind === "album" ? ((CAT.albums.find(a => a.id === item.id) || {}).kind === "instrumental" ? "instrumental" : "album")
+      : item.kind === "beat" ? "beat-" + ((item.id.match(/-(mp3|wav|stems)$/) || [])[1] || "mp3") : "single";
+    const link = STORE.links[item.id] || STORE.links[key];
+    if (link) {
+      const u = new URL(link); u.searchParams.set("client_reference_id", String(item.id).replace(/[^A-Za-z0-9_-]/g, "_").slice(0, 200));
+      toast("Opening secure checkout…");
+      window.open(u.toString(), "_blank", "noopener");
+      return;
+    }
     if (cart.some(c => c.id === item.id)) { toast("Already in your cart"); openCart(); return; }
     cart.push(item); store.set("tas_cart", cart); renderCartCount(); toast("Added: " + item.title);
     gsap?.fromTo("#cartBtn", { scale: 1.25 }, { scale: 1, duration: .6, ease: "elastic.out(1,.4)" });
@@ -109,7 +117,7 @@
   function openCart() {
     const total = cart.reduce((s, c) => s + c.price, 0);
     openDrawer(`<p class="kicker">Your cart</p><h2 class="d-title">Cart</h2>
-      ${cart.length ? cart.map((c, i) => `<div class="cart-item"><div class="ci" style="background-image:url('${esc(c.art)}')"></div><div><b>${esc(c.title)}</b><br><small>${c.kind === "album" ? "Album · lossless download" : c.kind === "beat" ? "Beat lease · tagged free, untagged on purchase" : "Single · lossless download"}</small></div><div style="text-align:right">${money(c.price)}<br><button data-rm="${i}">Remove</button></div></div>`).join("")
+      ${cart.length ? cart.map((c, i) => `<div class="cart-item"><div class="ci" style="background-image:url('${esc(c.art)}')"></div><div><b>${esc(c.title)}</b><br><small>${c.kind === "album" ? "Album · delivered by email" : c.kind === "beat" ? "Beat lease · tagged free, untagged on purchase" : "Single · delivered by email"}</small></div><div style="text-align:right">${money(c.price)}<br><button data-rm="${i}">Remove</button></div></div>`).join("")
         : `<p class="d-sub" style="margin:24px 0">Your cart is empty. Find something you love in the catalogue.</p>`}
       ${cart.length ? `<div class="cart-total"><span>Total</span><b>${money(total)}</b></div><button class="btn btn-primary" id="checkout" style="width:100%;justify-content:center">Checkout</button>` : ""}
       <p class="note">Every purchase supports independent music from Threadia Ai Studios. Questions about licensing or exclusive beat rights? <a class="link" href="mailto:admin@threadiaai.com?subject=Threadia%20Ai%20Studios%20licensing">Email the studio</a>.</p>`);
@@ -140,7 +148,7 @@
       <h2 class="d-title">${esc(a.title)}</h2><p class="d-sub">Agent Threads · ${a.track_count} tracks · ${esc(a.status)}</p>
       <div class="d-cover" style="background-image:url('${esc(a.cover)}')"></div>
       <p class="d-sub">${esc(a.about)}</p>
-      <div class="d-buy"><div><small class="mutedish">Lossless download</small><div class="pr">${money(a.price)}</div></div><button class="btn btn-primary" id="dBuy">Add to cart</button></div>
+      <div class="d-buy"><div><small class="mutedish">Delivered by email within 24 hours</small><div class="pr">${money(a.price)}</div></div><button class="btn btn-primary" id="dBuy">Buy album</button></div>
       <button class="btn btn-ghost" id="dPlay" style="margin-bottom:12px">${ICON_PLAY} Play all previews</button>
       <ol class="tracklist">${a.tracks.map((t, i) => `<li data-i="${i}" data-pid="${esc(a.id + "-" + t.n)}"><span class="n">${String(t.n).padStart(2, "0")}</span><span class="t">${esc(t.title)}</span><span class="d">${t.preview ? "1:00" : ""}</span></li>`).join("")}</ol>`);
     const q = albumQueue(a);
@@ -255,7 +263,7 @@
         <div><b>${esc(t.name)} <button class="info" data-info="${esc(t.key)}" aria-label="License terms for ${esc(t.name)}">i</button></b><p>${esc(t.terms)}</p></div>
         ${t.price == null ? `<a class="btn btn-ghost" href="mailto:admin@threadiaai.com?subject=${encodeURIComponent("Exclusive rights: " + b.title)}">Ask</a>`
           : `<button class="btn btn-primary" data-tier="${esc(t.key)}">${money(t.price)}</button>`}</div>`).join("")}</div>
-      <p class="note">The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">listen on YouTube</a>.</p>`);
+      <p class="note">Secure checkout by Stripe. Your files and your signed license arrive by email within 24 hours. The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">listen on YouTube</a>.</p>`);
     $("#bPlay").onclick = () => playQueue([beatQ(b)], 0);
     $$("#drawerBody [data-info]").forEach(el => el.onclick = () => openLicense(el.dataset.info, b));
     $$("#drawerBody [data-tier]").forEach(el => el.onclick = () => {
@@ -363,6 +371,7 @@
       const g = ["Neo Soul", "Hip Hop", "Dancehall", "Bachata", "Kompa", "Amapiano", "Roots Reggae", "Jamaican Mento", "Boom Bap", "Afrobeats", "Bolero", "Gospel Soul", "Jazz Rap", "Salsa", "Drill", "Techno", "Smooth Jazz", "Ambient"];
       const words = [...new Set([...g, ...fams])].slice(0, 26);
       $("#genreTrack").innerHTML = [...words, ...words].map(w => `<span>${esc(w)}</span>`).join("");
+      if (STORE.links && Object.keys(STORE.links).length) $("#cartBtn").style.display = "none";
       renderSpotlight(); renderAlbums(); renderFamilies(); renderSongs(); renderBeats(); renderNews(); renderCartCount();
       fetch("data/articles.json").then(r => r.json()).then(renderColumn).catch(() => renderColumn(null));
       $("#playAll").onclick = () => playQueue(allSongsQueue(), 0);
