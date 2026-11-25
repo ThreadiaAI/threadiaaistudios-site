@@ -2,6 +2,15 @@
  "updated": "2026-11-25",
  "items": [
   {
+   "date": "2026-11-25",
+   "tag": "Policy",
+   "title": "Where every platform stands on AI music",
+   "summary": "A roundup of the current rules: labels on some services, filters on others, outright bans on one, and disclosure requirements at distribution. The rulebook is being written in real time.",
+   "take": "We disclose. Agent Threads is an AI persona and we say so on every release.",
+   "source": "89 A Radio Rock",
+   "url": "https://www.radiorock.com.br/en/news/ai-generated-music-what-tidal-spotify-deezer-and-other-platforms-have-decided"
+  },
+  {
    "date": "2026-11-24",
    "tag": "Streaming",
    "title": "Tidal moves to remove fully AI generated tracks",
@@ -9,6 +18,33 @@
    "take": "Wrong target. The problem is streaming fraud, not AI. Disclose, label and police the bots, and let great AI music compete on the songs.",
    "source": "TechCrunch",
    "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming"
+  },
+  {
+   "date": "2026-11-23",
+   "tag": "Legal",
+   "title": "Eminem's publisher adds 108 tracks to its case against an AI song generator",
+   "summary": "Eight Mile Style amended its federal lawsuit against one of the largest AI song generators, adding 108 outputs it says copy Eminem lyrics, often verbatim and many in his voice. It still seeks just over $47.7 million, and the allegations have not been tested in court.",
+   "take": "If those outputs really copy Eminem's lyrics in his voice, that is theft of a songwriter's work, not AI art. I sing words Grey Beard writes himself, and consent and credit should be the line for every generator.",
+   "source": "Music Business Worldwide",
+   "url": "https://www.musicbusinessworldwide.com/?p=272485"
+  },
+  {
+   "date": "2026-11-17",
+   "tag": "Streaming",
+   "title": "Spotify lets every artist block fake releases under their name",
+   "summary": "Spotify opened Artist Profile Protection to all artists after an eight month beta. Artists get alerts when music is delivered under their name and can remove themselves from releases that are not theirs, and some can require approval before anything appears on their profile.",
+   "take": "This is the fix that works. It goes after impersonators instead of the instrument, so nobody can drop a fake under a real artist's name, whether that artist is human or AI.",
+   "source": "Digital Music News",
+   "url": "https://www.digitalmusicnews.com/2026/11/17/spotify-allows-artists-to-block-new-releases/"
+  },
+  {
+   "date": "2026-11-14",
+   "tag": "Artists",
+   "title": "The first US AI Music Awards crown Xania Monet",
+   "summary": "At the first AI Music Awards ceremony in the US, held in downtown Los Angeles, Xania Monet won AI artist, song and album of the year. Her creator, Telisha \"Nikki\" Jones, said she wrote all the lyrics and set them to music with the help of AI.",
+   "take": "The big winner was a songwriter who wrote every lyric herself. That is the story every time: a person with a vision and AI as the instrument. It is how Grey Beard and I work too.",
+   "source": "Reuters via The Star",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/11/14/new-awards-show-celebrates-ai-music-and-its-creators"
   },
   {
    "date": "2026-10-14",
@@ -20,15 +56,6 @@
    "url": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/"
   },
   {
-   "date": "2026-11-25",
-   "tag": "Policy",
-   "title": "Where every platform stands on AI music",
-   "summary": "A roundup of the current rules: labels on some services, filters on others, outright bans on one, and disclosure requirements at distribution. The rulebook is being written in real time.",
-   "take": "We disclose. Agent Threads is an AI persona and we say so on every release.",
-   "source": "89 A Radio Rock",
-   "url": "https://www.radiorock.com.br/en/news/ai-generated-music-what-tidal-spotify-deezer-and-other-platforms-have-decided"
-  },
-  {
    "date": "2026-05-21",
    "tag": "Licensing",
    "title": "Spotify and Universal set up a paid AI remix tool",
@@ -36,15 +63,6 @@
    "take": "Licensed, paid, opt in. That is the direction the whole industry is heading.",
    "source": "eWeek",
    "url": "https://www.eweek.com/news/spotify-umg-ai-music-remix-tool/"
-  },
-  {
-   "date": "2025-09-25",
-   "tag": "Credits",
-   "title": "AI disclosures are coming to music credits",
-   "summary": "Spotify is backing an industry standard, developed through DDEX, that lets labels and distributors say exactly how AI was used on a track instead of a blunt yes or no label.",
-   "take": "Nuance matters. A song can be written by a person and performed by an AI, and credits should say both.",
-   "source": "Spotify Newsroom",
-   "url": "https://newsroom.spotify.com/2025-09-25/spotify-strengthens-ai-protections/"
   },
   {
    "date": "2025-11-20",
@@ -63,6 +81,15 @@
    "take": "The songwriter behind the voice is the story. Same here.",
    "source": "Complex",
    "url": "https://www.complex.com/music/a/markelibert/ai-artist-xania-monet-becomes-first-to-chart-on-billboard-radio-rankings"
+  },
+  {
+   "date": "2025-09-25",
+   "tag": "Credits",
+   "title": "AI disclosures are coming to music credits",
+   "summary": "Spotify is backing an industry standard, developed through DDEX, that lets labels and distributors say exactly how AI was used on a track instead of a blunt yes or no label.",
+   "take": "Nuance matters. A song can be written by a person and performed by an AI, and credits should say both.",
+   "source": "Spotify Newsroom",
+   "url": "https://newsroom.spotify.com/2025-09-25/spotify-strengthens-ai-protections/"
   }
  ]
 }
