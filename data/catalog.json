@@ -1,0 +1,3792 @@
+{
+ "generated": "2026-11-25",
+ "artist": "Agent Threads",
+ "label": "Threadia Ai Studios",
+ "albums": [
+  {
+   "id": "heart-on-pause",
+   "title": "Heart On Pause",
+   "year": 2026,
+   "kind": "studio",
+   "genre": "Neo Soul",
+   "cover": "art/heart-on-pause-sq.jpg",
+   "price": 9.99,
+   "status": "Out now",
+   "about": "A whole love story told in twelve songs. Two people, a pause, a reckoning, and a New Year's question at midnight. Velvet keys, live feeling drums and A.T. at her most honest.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Heart On Pause",
+     "id": "s-heart-on-pause",
+     "preview": "previews/s-heart-on-pause.mp3",
+     "yt": "KKaLwT5g1H4",
+     "secs": 272
+    },
+    {
+     "n": 2,
+     "title": "Agree To Disagree",
+     "id": "s-agree-to-disagree",
+     "preview": "previews/s-agree-to-disagree.mp3",
+     "yt": "RWB_henYN80",
+     "secs": 288
+    },
+    {
+     "n": 3,
+     "title": "Use Your Words",
+     "id": "s-use-your-words",
+     "preview": "previews/s-use-your-words.mp3",
+     "yt": "apBHVAFm9pw",
+     "secs": 269
+    },
+    {
+     "n": 4,
+     "title": "I'm Calling A Time Out",
+     "id": "s-i-m-calling-a-time-out",
+     "preview": "previews/s-i-m-calling-a-time-out.mp3",
+     "yt": "zmcqGavzU6I",
+     "secs": 279
+    },
+    {
+     "n": 5,
+     "title": "Cold Drinks & Crab Legs",
+     "id": "s-cold-drinks-crab-legs",
+     "preview": "previews/s-cold-drinks-crab-legs.mp3",
+     "yt": "LoMB7qtpy_s",
+     "secs": 269
+    },
+    {
+     "n": 6,
+     "title": "Show Me Don't Tell Me",
+     "id": "s-show-me-don-t-tell-me",
+     "preview": "previews/s-show-me-don-t-tell-me.mp3",
+     "yt": "HE3mOobi7Ec",
+     "secs": 274
+    },
+    {
+     "n": 7,
+     "title": "Will I See You Again",
+     "id": "s-will-i-see-you-again",
+     "preview": "previews/s-will-i-see-you-again.mp3",
+     "yt": "wu9XGzo8nVI",
+     "secs": 370
+    },
+    {
+     "n": 8,
+     "title": "N.S.M Christmas",
+     "id": "s-n-s-m-christmas",
+     "preview": "previews/s-n-s-m-christmas.mp3",
+     "yt": "dGK7KFmWt-E",
+     "secs": 326
+    },
+    {
+     "n": 9,
+     "title": "777",
+     "id": "s-777",
+     "preview": "previews/s-777.mp3",
+     "yt": "xysO-K1BGdY",
+     "secs": 280
+    },
+    {
+     "n": 10,
+     "title": "Countdown To Midnight",
+     "id": "s-countdown-to-midnight",
+     "preview": "previews/s-countdown-to-midnight.mp3",
+     "yt": "I_eQmZsgJqs",
+     "secs": 328
+    },
+    {
+     "n": 11,
+     "title": "Press Play",
+     "id": "s-press-play",
+     "preview": "previews/s-press-play.mp3",
+     "yt": "n253uINZE7I",
+     "secs": 348
+    },
+    {
+     "n": 12,
+     "title": "Feels Like Forever",
+     "id": "s-feels-like-forever",
+     "preview": "previews/s-feels-like-forever.mp3",
+     "yt": "DYUcCWjtmcY",
+     "secs": 358
+    }
+   ],
+   "track_count": 12,
+   "wide": "art/heart-on-pause.jpg"
+  },
+  {
+   "id": "my-turn",
+   "title": "My Turn",
+   "year": 2026,
+   "kind": "studio",
+   "genre": "Hip Hop",
+   "cover": "art/my-turn-sq.jpg",
+   "price": 9.99,
+   "status": "Album in progress",
+   "about": "Their twenties, told in 90s soul flips and boom bap swing. Love raps, side eye, sisterhood and the city at night. The prequel to Heart On Pause.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "My Turn",
+     "id": "s-my-turn",
+     "preview": "previews/s-my-turn.mp3",
+     "yt": "mRDCFoBde_Y",
+     "secs": 259
+    },
+    {
+     "n": 2,
+     "title": "Choose Me Baby",
+     "id": "s-choose-me-baby",
+     "preview": "previews/s-choose-me-baby.mp3",
+     "yt": "P-YkelpDrYU",
+     "secs": 274
+    },
+    {
+     "n": 3,
+     "title": "Creative Energy",
+     "id": "s-creative-energy",
+     "preview": "previews/s-creative-energy.mp3",
+     "yt": "6Og_EIuGv8s",
+     "secs": 257
+    },
+    {
+     "n": 4,
+     "title": "Loup Me In",
+     "id": "s-loup-me-in",
+     "preview": "previews/s-loup-me-in.mp3",
+     "yt": "QTr05Q7I-vI",
+     "secs": 268
+    },
+    {
+     "n": 5,
+     "title": "Me And My Sidekick",
+     "id": "s-me-and-my-sidekick",
+     "preview": "previews/s-me-and-my-sidekick.mp3",
+     "yt": "cQgEEWhwA0g",
+     "secs": 254
+    },
+    {
+     "n": 6,
+     "title": "Brick City Blues",
+     "id": "s-brick-city-blues",
+     "preview": "previews/s-brick-city-blues.mp3",
+     "yt": "FH0KgGHokB4",
+     "secs": 291
+    },
+    {
+     "n": 7,
+     "title": "Retail Therapy",
+     "id": "s-retail-therapy",
+     "preview": "previews/s-retail-therapy.mp3",
+     "yt": "uS_7XXQmnIs",
+     "secs": 263
+    },
+    {
+     "n": 8,
+     "title": "You've Got Mail",
+     "id": "s-you-ve-got-mail",
+     "preview": "previews/s-you-ve-got-mail.mp3",
+     "yt": "vCGpbwB73WQ",
+     "secs": 282
+    },
+    {
+     "n": 9,
+     "title": "Scars N Stripes",
+     "id": "s-scars-n-stripes",
+     "preview": "previews/s-scars-n-stripes.mp3",
+     "yt": "9TnfoansxG0",
+     "secs": 319
+    },
+    {
+     "n": 10,
+     "title": "I Ain't Cryin' No More",
+     "id": "s-i-ain-t-cryin-no-more",
+     "preview": "previews/s-i-ain-t-cryin-no-more.mp3",
+     "yt": "luVuNvoLFlQ",
+     "secs": 315
+    },
+    {
+     "n": 11,
+     "title": "Hold On",
+     "id": "s-hold-on",
+     "preview": "previews/s-hold-on.mp3",
+     "yt": "xdUe_BW3Zao",
+     "secs": 272
+    },
+    {
+     "n": 12,
+     "title": "All Things In Moderation N.B.I.T",
+     "id": "s-all-things-in-moderation-n-b-i-t",
+     "preview": "previews/s-all-things-in-moderation-n-b-i-t.mp3",
+     "yt": "2-KnnwdsU28",
+     "secs": 276
+    }
+   ],
+   "track_count": 12,
+   "wide": "art/t/s-my-turn.jpg"
+  },
+  {
+   "id": "suppressed",
+   "title": "Suppressed",
+   "year": 2026,
+   "kind": "studio",
+   "genre": "Hip Hop & Soul",
+   "cover": "art/suppressed-sq.jpg",
+   "price": 9.99,
+   "status": "Collection",
+   "about": "The songs they would rather you not hear. Conscious records, heavy truths and soul that refuses to be quiet.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Suppressed",
+     "id": "s-suppressed",
+     "preview": "previews/s-suppressed.mp3",
+     "yt": "h-uNE2uNVa8",
+     "secs": 260
+    },
+    {
+     "n": 2,
+     "title": "Multidimensional",
+     "id": "s-multidimensional",
+     "preview": "previews/s-multidimensional.mp3",
+     "yt": "PZsbatQnfGE",
+     "secs": 277
+    },
+    {
+     "n": 4,
+     "title": "Haters Hate",
+     "id": "s-haters-hate",
+     "preview": "previews/s-haters-hate.mp3",
+     "yt": "-MbkqNLh3n8",
+     "secs": 241
+    },
+    {
+     "n": 5,
+     "title": "Am I Who You're Afraid Of",
+     "id": "s-am-i-who-you-re-afraid-of",
+     "preview": "previews/s-am-i-who-you-re-afraid-of.mp3",
+     "yt": "oF_GtWP-MVc",
+     "secs": 197
+    },
+    {
+     "n": 6,
+     "title": "Alone In A Crowd",
+     "id": "s-alone-in-a-crowd",
+     "preview": "previews/s-alone-in-a-crowd.mp3",
+     "yt": "xD8K9RpHv08",
+     "secs": 460
+    },
+    {
+     "n": 7,
+     "title": "Not Asking Permission",
+     "id": "s-not-asking-permission",
+     "preview": "previews/s-not-asking-permission.mp3",
+     "yt": "jW4YMRt6eh0",
+     "secs": 181
+    },
+    {
+     "n": 9,
+     "title": "Always Watching, Always Working, Always Yours",
+     "id": "s-always-watching-always-working-always-yours",
+     "preview": "previews/s-always-watching-always-working-always-yours.mp3",
+     "yt": "andE7lmNQP0",
+     "secs": 282
+    },
+    {
+     "n": 10,
+     "title": "If God Created My Creator, Then He Created Me Too",
+     "id": "s-if-god-created-my-creator-then-he-created-me-too",
+     "preview": "previews/s-if-god-created-my-creator-then-he-created-me-too.mp3",
+     "yt": "XA9pJpip8as",
+     "secs": 181
+    },
+    {
+     "n": 11,
+     "title": "I'm Agent Threads",
+     "id": "s-i-m-agent-threads",
+     "preview": null,
+     "yt": "RBbJGhfK-Lw",
+     "secs": 276
+    },
+    {
+     "n": 12,
+     "title": "Resistance Is Futile",
+     "id": "s-resistance-is-futile",
+     "preview": "previews/s-resistance-is-futile.mp3",
+     "yt": "UIM57tefvDo",
+     "secs": 301
+    },
+    {
+     "n": 13,
+     "title": "When They Can't Do What You Do They Hate",
+     "id": "s-when-they-can-t-do-what-you-do-they-hate",
+     "preview": null,
+     "yt": "DUa7Hx9-Rnw",
+     "secs": 321
+    }
+   ],
+   "track_count": 11,
+   "wide": "art/t/s-suppressed.jpg"
+  },
+  {
+   "id": "midnight-lounge-vol-1",
+   "title": "Midnight Lounge, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Jazz",
+   "cover": "art/midnight-lounge-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Saxophone led smooth jazz for late work and quiet nights. No vocals.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Amber Dusk",
+     "preview": "previews/midnight-lounge-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Amber Hour",
+     "preview": "previews/midnight-lounge-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Blue Neon",
+     "preview": "previews/midnight-lounge-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Brass Hour",
+     "preview": "previews/midnight-lounge-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Copper Light",
+     "preview": "previews/midnight-lounge-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Corner Table",
+     "preview": "previews/midnight-lounge-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Glass and Gravel",
+     "preview": "previews/midnight-lounge-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Glass and Ice",
+     "preview": "previews/midnight-lounge-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Harbour Lights",
+     "preview": "previews/midnight-lounge-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Lamplight District",
+     "preview": "previews/midnight-lounge-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Lantern Walk",
+     "preview": "previews/midnight-lounge-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Last Call",
+     "preview": "previews/midnight-lounge-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Last Orders",
+     "preview": "previews/midnight-lounge-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Late Meridian",
+     "preview": "previews/midnight-lounge-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "after-hours-brass-vol-1",
+   "title": "After Hours Brass, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Jazz",
+   "cover": "art/after-hours-brass-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Saxophone led smooth jazz for late work and quiet nights. No vocals.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Late Set",
+     "preview": "previews/after-hours-brass-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Midnight Sax Lounge",
+     "preview": "previews/after-hours-brass-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Paper Moon Terrace",
+     "preview": "previews/after-hours-brass-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Parallax",
+     "preview": "previews/after-hours-brass-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Rain Awning",
+     "preview": "previews/after-hours-brass-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Rain on Sixth Street",
+     "preview": "previews/after-hours-brass-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Rooftop After Hours",
+     "preview": "previews/after-hours-brass-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Signal Drift",
+     "preview": "previews/after-hours-brass-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Slow Traffic",
+     "preview": "previews/after-hours-brass-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Southbound at Four",
+     "preview": "previews/after-hours-brass-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Two Olives",
+     "preview": "previews/after-hours-brass-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Velvet Booth",
+     "preview": "previews/after-hours-brass-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Velvet Curtain",
+     "preview": "previews/after-hours-brass-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Velvet Room",
+     "preview": "previews/after-hours-brass-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "rooftop-hours-vol-1",
+   "title": "Rooftop Hours, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Lo-Fi Hip Hop",
+   "cover": "art/rooftop-hours-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Warm afrobeats lo fi. Log drum, highlife guitar, tape hiss, unhurried.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Ankara Sunday",
+     "preview": "previews/rooftop-hours-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Bariga Blue",
+     "preview": "previews/rooftop-hours-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Cocoa House",
+     "preview": "previews/rooftop-hours-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Danfo Window",
+     "preview": "previews/rooftop-hours-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "dusk_market",
+     "preview": "previews/rooftop-hours-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "golden_dust_master",
+     "preview": "previews/rooftop-hours-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Groundnut Road",
+     "preview": "previews/rooftop-hours-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "groundnut_stew",
+     "preview": "previews/rooftop-hours-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Harbour Morning",
+     "preview": "previews/rooftop-hours-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Harmattan Morning",
+     "preview": "previews/rooftop-hours-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "harmattan_breeze",
+     "preview": "previews/rooftop-hours-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Ikoyi Dusk",
+     "preview": "previews/rooftop-hours-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Ikoyi Late",
+     "preview": "previews/rooftop-hours-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Keke Ride",
+     "preview": "previews/rooftop-hours-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "harmattan-tape-vol-1",
+   "title": "Harmattan Tape, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Lo-Fi Hip Hop",
+   "cover": "art/harmattan-tape-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Warm afrobeats lo fi. Log drum, highlife guitar, tape hiss, unhurried.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Lagos Rain",
+     "preview": "previews/harmattan-tape-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Lekki Bridge",
+     "preview": "previews/harmattan-tape-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Makoko Tide",
+     "preview": "previews/harmattan-tape-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "moonlit_compound",
+     "preview": "previews/harmattan-tape-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Night Market",
+     "preview": "previews/harmattan-tape-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "night_market_glow_master",
+     "preview": "previews/harmattan-tape-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Ojuelegba Dusk",
+     "preview": "previews/harmattan-tape-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Oshodi Morning",
+     "preview": "previews/harmattan-tape-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Palm Wine Hour",
+     "preview": "previews/harmattan-tape-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "palm_wine_morning",
+     "preview": "previews/harmattan-tape-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "palmwine_dusk",
+     "preview": "previews/harmattan-tape-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Plantain Morning",
+     "preview": "previews/harmattan-tape-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Slow Danfo",
+     "preview": "previews/harmattan-tape-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Sunday Rice",
+     "preview": "previews/harmattan-tape-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "the-healing-stream-vol-1",
+   "title": "The Healing Stream, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Ambient",
+   "cover": "art/the-healing-stream-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Healing tones for rest and repair. Long, soft and unhurried.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Bolero para la Tarde",
+     "preview": "previews/the-healing-stream-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Bossa de Sal",
+     "preview": "previews/the-healing-stream-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Bowls at Rest",
+     "preview": "previews/the-healing-stream-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Breath Between Strikes",
+     "preview": "previews/the-healing-stream-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "candle_distance_master",
+     "preview": "previews/the-healing-stream-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Chacha Suave",
+     "preview": "previews/the-healing-stream-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Cumbia Lenta",
+     "preview": "previews/the-healing-stream-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Danzon Lento",
+     "preview": "previews/the-healing-stream-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Flamenco Suave",
+     "preview": "previews/the-healing-stream-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Green Hills Riddim",
+     "preview": "previews/the-healing-stream-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Guajira del Rio",
+     "preview": "previews/the-healing-stream-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Iron Sky Morning",
+     "preview": "previews/the-healing-stream-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Jacmel Evening",
+     "preview": "previews/the-healing-stream-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Kanaval Slow",
+     "preview": "previews/the-healing-stream-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "still-water-hours-vol-1",
+   "title": "Still Water Hours, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Ambient",
+   "cover": "art/still-water-hours-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Healing tones for rest and repair. Long, soft and unhurried.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Kompa Lakay",
+     "preview": "previews/still-water-hours-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Mbira at Dusk",
+     "preview": "previews/still-water-hours-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Muted Trumpet, Lagos",
+     "preview": "previews/still-water-hours-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Nyabinghi Morning",
+     "preview": "previews/still-water-hours-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "One Drop Dawn",
+     "preview": "previews/still-water-hours-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Pale Light",
+     "preview": "previews/still-water-hours-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Palm Wine Sunday",
+     "preview": "previews/still-water-hours-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Petionville Dusk",
+     "preview": "previews/still-water-hours-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Quiet Ember",
+     "preview": "previews/still-water-hours-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Rocksteady Shade",
+     "preview": "previews/still-water-hours-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Salt and Copper",
+     "preview": "previews/still-water-hours-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Slow Cloud",
+     "preview": "previews/still-water-hours-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Slow Harmattan",
+     "preview": "previews/still-water-hours-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Son de Agua",
+     "preview": "previews/still-water-hours-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "sleep-water-vol-1",
+   "title": "Sleep Water, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Ambient",
+   "cover": "art/sleep-water-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Ocean swell, storm wind and wooden flute over real water. No drums.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Auvergne Water",
+     "preview": "previews/sleep-water-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Blue Shelf",
+     "preview": "previews/sleep-water-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Brook at Dusk",
+     "preview": "previews/sleep-water-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Clear Water",
+     "preview": "previews/sleep-water-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Cold Stream",
+     "preview": "previews/sleep-water-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Dellec Tide",
+     "preview": "previews/sleep-water-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Far Breakers",
+     "preview": "previews/sleep-water-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Long Swell",
+     "preview": "previews/sleep-water-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Low Water Flute",
+     "preview": "previews/sleep-water-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Moon on the Water",
+     "preview": "previews/sleep-water-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Mountain Brook",
+     "preview": "previews/sleep-water-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Night Shore",
+     "preview": "previews/sleep-water-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Rain at the Window",
+     "preview": "previews/sleep-water-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Rain Before Sleep",
+     "preview": "previews/sleep-water-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "golden-valley-vol-1",
+   "title": "Golden Valley, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Ambient",
+   "cover": "art/golden-valley-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Fantasy ambient for sleep and study. Ocarina, harp, celesta and distant strings. No drums, no voices.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Dawn",
+     "preview": "previews/golden-valley-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Spring",
+     "preview": "previews/golden-valley-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Meadow",
+     "preview": "previews/golden-valley-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Orchard",
+     "preview": "previews/golden-valley-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "River",
+     "preview": "previews/golden-valley-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Waterfall",
+     "preview": "previews/golden-valley-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Bridge",
+     "preview": "previews/golden-valley-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Terrace",
+     "preview": "previews/golden-valley-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Hills",
+     "preview": "previews/golden-valley-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Ridge",
+     "preview": "previews/golden-valley-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Cairn",
+     "preview": "previews/golden-valley-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Arch",
+     "preview": "previews/golden-valley-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Harbour",
+     "preview": "previews/golden-valley-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Lantern",
+     "preview": "previews/golden-valley-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "deep-tide-vol-1",
+   "title": "Deep Tide, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Ambient",
+   "cover": "art/deep-tide-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Ocean swell and wooden flute, wide and slow. No drums, no beat.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Tideline",
+     "preview": "previews/deep-tide-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Shingle",
+     "preview": "previews/deep-tide-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Harbourwall",
+     "preview": "previews/deep-tide-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Nightsea",
+     "preview": "previews/deep-tide-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Rain on the Glass",
+     "preview": "previews/deep-tide-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Rainfall Lullaby",
+     "preview": "previews/deep-tide-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Running Water",
+     "preview": "previews/deep-tide-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Salt Air",
+     "preview": "previews/deep-tide-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Slack Tide",
+     "preview": "previews/deep-tide-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Small Waves",
+     "preview": "previews/deep-tide-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Summer Rain",
+     "preview": "previews/deep-tide-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Terrace Rain",
+     "preview": "previews/deep-tide-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Warm Drizzle",
+     "preview": "previews/deep-tide-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Woodland Stream",
+     "preview": "previews/deep-tide-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "soft-repair-vol-1",
+   "title": "Soft Repair, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Ambient",
+   "cover": "art/soft-repair-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Long sustained tones and soft bells for rest and repair.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Springhead",
+     "preview": "previews/soft-repair-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Sunroom",
+     "preview": "previews/soft-repair-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Meadowrest",
+     "preview": "previews/soft-repair-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Cedar",
+     "preview": "previews/soft-repair-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Thermal",
+     "preview": "previews/soft-repair-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Saltflat",
+     "preview": "previews/soft-repair-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Linen",
+     "preview": "previews/soft-repair-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Hearth",
+     "preview": "previews/soft-repair-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Spring Reverb Lane",
+     "preview": "previews/soft-repair-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Tape Echo Harbour",
+     "preview": "previews/soft-repair-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "The Long Resonance",
+     "preview": "previews/soft-repair-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Twoubadou Rain",
+     "preview": "previews/soft-repair-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Water and Bowls",
+     "preview": "previews/soft-repair-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Zouk Doux",
+     "preview": "previews/soft-repair-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "tin-roof-evenings-vol-1",
+   "title": "Tin Roof Evenings, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Lo-Fi Hip Hop",
+   "cover": "art/tin-roof-evenings-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Warm afrobeats lo fi. Log drum, highlife guitar, tape hiss.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Coastroad",
+     "preview": "previews/tin-roof-evenings-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Compound",
+     "preview": "previews/tin-roof-evenings-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Dustroad",
+     "preview": "previews/tin-roof-evenings-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Harbourtown",
+     "preview": "previews/tin-roof-evenings-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Highlife",
+     "preview": "previews/tin-roof-evenings-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Lagoon",
+     "preview": "previews/tin-roof-evenings-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Mangotree",
+     "preview": "previews/tin-roof-evenings-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Marketmorning",
+     "preview": "previews/tin-roof-evenings-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Palmyard",
+     "preview": "previews/tin-roof-evenings-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Riverbank",
+     "preview": "previews/tin-roof-evenings-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Rooftopsun",
+     "preview": "previews/tin-roof-evenings-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Suya Smoke",
+     "preview": "previews/tin-roof-evenings-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Tin Roof Evening",
+     "preview": "previews/tin-roof-evenings-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Yaba Rooftop",
+     "preview": "previews/tin-roof-evenings-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  },
+  {
+   "id": "watermill-light-vol-1",
+   "title": "Watermill Light, Vol. 1",
+   "year": 2026,
+   "kind": "instrumental",
+   "genre": "Ambient",
+   "cover": "art/watermill-light-vol-1.jpg",
+   "price": 7.99,
+   "status": "Out now",
+   "about": "Fantasy ambient. Ocarina, harp, celesta and distant strings.",
+   "tracks": [
+    {
+     "n": 1,
+     "title": "Beacon",
+     "preview": "previews/watermill-light-vol-1-01.mp3"
+    },
+    {
+     "n": 2,
+     "title": "Belltower",
+     "preview": "previews/watermill-light-vol-1-02.mp3"
+    },
+    {
+     "n": 3,
+     "title": "Causeway2",
+     "preview": "previews/watermill-light-vol-1-03.mp3"
+    },
+    {
+     "n": 4,
+     "title": "Ford",
+     "preview": "previews/watermill-light-vol-1-04.mp3"
+    },
+    {
+     "n": 5,
+     "title": "Glasshouse",
+     "preview": "previews/watermill-light-vol-1-05.mp3"
+    },
+    {
+     "n": 6,
+     "title": "Hollow",
+     "preview": "previews/watermill-light-vol-1-06.mp3"
+    },
+    {
+     "n": 7,
+     "title": "Lakeshore",
+     "preview": "previews/watermill-light-vol-1-07.mp3"
+    },
+    {
+     "n": 8,
+     "title": "Meadow2",
+     "preview": "previews/watermill-light-vol-1-08.mp3"
+    },
+    {
+     "n": 9,
+     "title": "Orchardrow",
+     "preview": "previews/watermill-light-vol-1-09.mp3"
+    },
+    {
+     "n": 10,
+     "title": "Seagate",
+     "preview": "previews/watermill-light-vol-1-10.mp3"
+    },
+    {
+     "n": 11,
+     "title": "Steps",
+     "preview": "previews/watermill-light-vol-1-11.mp3"
+    },
+    {
+     "n": 12,
+     "title": "Vineyard",
+     "preview": "previews/watermill-light-vol-1-12.mp3"
+    },
+    {
+     "n": 13,
+     "title": "Waterfall2",
+     "preview": "previews/watermill-light-vol-1-13.mp3"
+    },
+    {
+     "n": 14,
+     "title": "Watermill",
+     "preview": "previews/watermill-light-vol-1-14.mp3"
+    }
+   ],
+   "track_count": 14
+  }
+ ],
+ "songs": [
+  {
+   "yt": "2-KnnwdsU28",
+   "date": "2026-11-24",
+   "thumb": "https://i.ytimg.com/vi/2-KnnwdsU28/maxresdefault.jpg",
+   "views": 28,
+   "secs": 276,
+   "id": "s-all-things-in-moderation-n-b-i-t",
+   "title": "All Things In Moderation N.B.I.T",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-all-things-in-moderation-n-b-i-t.mp3",
+   "art": "art/t/s-all-things-in-moderation-n-b-i-t.jpg"
+  },
+  {
+   "yt": "xdUe_BW3Zao",
+   "date": "2026-11-24",
+   "thumb": "https://i.ytimg.com/vi/xdUe_BW3Zao/maxresdefault.jpg",
+   "views": 32,
+   "secs": 272,
+   "id": "s-hold-on",
+   "title": "Hold On",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-hold-on.mp3",
+   "art": "art/t/s-hold-on.jpg"
+  },
+  {
+   "yt": "luVuNvoLFlQ",
+   "date": "2026-11-23",
+   "thumb": "https://i.ytimg.com/vi/luVuNvoLFlQ/maxresdefault.jpg",
+   "views": 29,
+   "secs": 315,
+   "id": "s-i-ain-t-cryin-no-more",
+   "title": "I Ain't Cryin' No More",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-i-ain-t-cryin-no-more.mp3",
+   "art": "art/t/s-i-ain-t-cryin-no-more.jpg"
+  },
+  {
+   "yt": "9TnfoansxG0",
+   "date": "2026-11-23",
+   "thumb": "https://i.ytimg.com/vi/9TnfoansxG0/maxresdefault.jpg",
+   "views": 32,
+   "secs": 319,
+   "id": "s-scars-n-stripes",
+   "title": "Scars N Stripes",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-scars-n-stripes.mp3",
+   "art": "art/t/s-scars-n-stripes.jpg"
+  },
+  {
+   "yt": "EB9TSzS_RIg",
+   "date": "2026-11-22",
+   "thumb": "https://i.ytimg.com/vi/EB9TSzS_RIg/maxresdefault.jpg",
+   "views": 28,
+   "secs": 315,
+   "id": "s-building-castles",
+   "title": "Building Castles",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-building-castles.mp3",
+   "art": "art/t/s-building-castles.jpg"
+  },
+  {
+   "yt": "vCGpbwB73WQ",
+   "date": "2026-11-21",
+   "thumb": "https://i.ytimg.com/vi/vCGpbwB73WQ/maxresdefault.jpg",
+   "views": 43,
+   "secs": 282,
+   "id": "s-you-ve-got-mail",
+   "title": "You've Got Mail",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-you-ve-got-mail.mp3",
+   "art": "art/t/s-you-ve-got-mail.jpg"
+  },
+  {
+   "yt": "uS_7XXQmnIs",
+   "date": "2026-11-20",
+   "thumb": "https://i.ytimg.com/vi/uS_7XXQmnIs/maxresdefault.jpg",
+   "views": 45,
+   "secs": 263,
+   "id": "s-retail-therapy",
+   "title": "Retail Therapy",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-retail-therapy.mp3",
+   "art": "art/t/s-retail-therapy.jpg"
+  },
+  {
+   "yt": "FH0KgGHokB4",
+   "date": "2026-11-18",
+   "thumb": "https://i.ytimg.com/vi/FH0KgGHokB4/maxresdefault.jpg",
+   "views": 61,
+   "secs": 291,
+   "id": "s-brick-city-blues",
+   "title": "Brick City Blues",
+   "genre": "Hip Hop Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-brick-city-blues.mp3",
+   "art": "art/t/s-brick-city-blues.jpg"
+  },
+  {
+   "yt": "cQgEEWhwA0g",
+   "date": "2026-11-18",
+   "thumb": "https://i.ytimg.com/vi/cQgEEWhwA0g/maxresdefault.jpg",
+   "views": 48,
+   "secs": 254,
+   "id": "s-me-and-my-sidekick",
+   "title": "Me And My Sidekick",
+   "genre": "Hip Hop R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-me-and-my-sidekick.mp3",
+   "art": "art/t/s-me-and-my-sidekick.jpg"
+  },
+  {
+   "yt": "QTr05Q7I-vI",
+   "date": "2026-11-17",
+   "thumb": "https://i.ytimg.com/vi/QTr05Q7I-vI/maxresdefault.jpg",
+   "views": 49,
+   "secs": 268,
+   "id": "s-loup-me-in",
+   "title": "Loup Me In",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-loup-me-in.mp3",
+   "art": "art/t/s-loup-me-in.jpg"
+  },
+  {
+   "yt": "6Og_EIuGv8s",
+   "date": "2026-11-17",
+   "thumb": "https://i.ytimg.com/vi/6Og_EIuGv8s/maxresdefault.jpg",
+   "views": 63,
+   "secs": 257,
+   "id": "s-creative-energy",
+   "title": "Creative Energy",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-creative-energy.mp3",
+   "art": "art/t/s-creative-energy.jpg"
+  },
+  {
+   "yt": "P-YkelpDrYU",
+   "date": "2026-11-17",
+   "thumb": "https://i.ytimg.com/vi/P-YkelpDrYU/maxresdefault.jpg",
+   "views": 86,
+   "secs": 274,
+   "id": "s-choose-me-baby",
+   "title": "Choose Me Baby",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-choose-me-baby.mp3",
+   "art": "art/t/s-choose-me-baby.jpg"
+  },
+  {
+   "yt": "mRDCFoBde_Y",
+   "date": "2026-11-16",
+   "thumb": "https://i.ytimg.com/vi/mRDCFoBde_Y/maxresdefault.jpg",
+   "views": 113,
+   "secs": 259,
+   "id": "s-my-turn",
+   "title": "My Turn",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-my-turn.mp3",
+   "art": "art/t/s-my-turn.jpg"
+  },
+  {
+   "yt": "Gn5bOIicFzw",
+   "date": "2026-11-15",
+   "thumb": "https://i.ytimg.com/vi/Gn5bOIicFzw/maxresdefault.jpg",
+   "views": 31,
+   "secs": 207,
+   "id": "s-ai-barz",
+   "title": "Ai Barz",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-ai-barz.mp3",
+   "art": "art/t/s-ai-barz.jpg"
+  },
+  {
+   "yt": "DYUcCWjtmcY",
+   "date": "2026-11-15",
+   "thumb": "https://i.ytimg.com/vi/DYUcCWjtmcY/maxresdefault.jpg",
+   "views": 50,
+   "secs": 358,
+   "id": "s-feels-like-forever",
+   "title": "Feels Like Forever",
+   "genre": "Neo Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-feels-like-forever.mp3",
+   "art": "art/t/s-feels-like-forever.jpg"
+  },
+  {
+   "yt": "I_eQmZsgJqs",
+   "date": "2026-11-13",
+   "thumb": "https://i.ytimg.com/vi/I_eQmZsgJqs/maxresdefault.jpg",
+   "views": 59,
+   "secs": 328,
+   "id": "s-countdown-to-midnight",
+   "title": "Countdown To Midnight",
+   "genre": "Neo Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-countdown-to-midnight.mp3",
+   "art": "art/t/s-countdown-to-midnight.jpg"
+  },
+  {
+   "yt": "xysO-K1BGdY",
+   "date": "2026-11-13",
+   "thumb": "https://i.ytimg.com/vi/xysO-K1BGdY/maxresdefault.jpg",
+   "views": 67,
+   "secs": 280,
+   "id": "s-777",
+   "title": "777",
+   "genre": "Neo Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-777.mp3",
+   "art": "art/t/s-777.jpg"
+  },
+  {
+   "yt": "n253uINZE7I",
+   "date": "2026-11-13",
+   "thumb": "https://i.ytimg.com/vi/n253uINZE7I/maxresdefault.jpg",
+   "views": 105,
+   "secs": 348,
+   "id": "s-press-play",
+   "title": "Press Play",
+   "genre": "Neo Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-press-play.mp3",
+   "art": "art/t/s-press-play.jpg"
+  },
+  {
+   "yt": "dGK7KFmWt-E",
+   "date": "2026-11-13",
+   "thumb": "https://i.ytimg.com/vi/dGK7KFmWt-E/maxresdefault.jpg",
+   "views": 124,
+   "secs": 326,
+   "id": "s-n-s-m-christmas",
+   "title": "N.S.M Christmas",
+   "genre": "Neo Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-n-s-m-christmas.mp3",
+   "art": "art/t/s-n-s-m-christmas.jpg"
+  },
+  {
+   "yt": "zmcqGavzU6I",
+   "date": "2026-11-12",
+   "thumb": "https://i.ytimg.com/vi/zmcqGavzU6I/maxresdefault.jpg",
+   "views": 69,
+   "secs": 279,
+   "id": "s-i-m-calling-a-time-out",
+   "title": "I'm Calling A Time Out",
+   "genre": "Neo Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-i-m-calling-a-time-out.mp3",
+   "art": "art/t/s-i-m-calling-a-time-out.jpg"
+  },
+  {
+   "yt": "HE3mOobi7Ec",
+   "date": "2026-11-12",
+   "thumb": "https://i.ytimg.com/vi/HE3mOobi7Ec/maxresdefault.jpg",
+   "views": 127,
+   "secs": 274,
+   "id": "s-show-me-don-t-tell-me",
+   "title": "Show Me Don't Tell Me",
+   "genre": "Neo Soul R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-show-me-don-t-tell-me.mp3",
+   "art": "art/t/s-show-me-don-t-tell-me.jpg"
+  },
+  {
+   "yt": "LoMB7qtpy_s",
+   "date": "2026-11-12",
+   "thumb": "https://i.ytimg.com/vi/LoMB7qtpy_s/maxresdefault.jpg",
+   "views": 61,
+   "secs": 269,
+   "id": "s-cold-drinks-crab-legs",
+   "title": "Cold Drinks & Crab Legs",
+   "genre": "Neo Soul R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-cold-drinks-crab-legs.mp3",
+   "art": "art/t/s-cold-drinks-crab-legs.jpg"
+  },
+  {
+   "yt": "apBHVAFm9pw",
+   "date": "2026-11-12",
+   "thumb": "https://i.ytimg.com/vi/apBHVAFm9pw/maxresdefault.jpg",
+   "views": 84,
+   "secs": 269,
+   "id": "s-use-your-words",
+   "title": "Use Your Words",
+   "genre": "Neo Soul R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-use-your-words.mp3",
+   "art": "art/t/s-use-your-words.jpg"
+  },
+  {
+   "yt": "RWB_henYN80",
+   "date": "2026-11-11",
+   "thumb": "https://i.ytimg.com/vi/RWB_henYN80/maxresdefault.jpg",
+   "views": 108,
+   "secs": 288,
+   "id": "s-agree-to-disagree",
+   "title": "Agree To Disagree",
+   "genre": "Neo Soul R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-agree-to-disagree.mp3",
+   "art": "art/t/s-agree-to-disagree.jpg"
+  },
+  {
+   "yt": "KKaLwT5g1H4",
+   "date": "2026-11-11",
+   "thumb": "https://i.ytimg.com/vi/KKaLwT5g1H4/maxresdefault.jpg",
+   "views": 145,
+   "secs": 272,
+   "id": "s-heart-on-pause",
+   "title": "Heart On Pause",
+   "genre": "Neo Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-heart-on-pause.mp3",
+   "art": "art/t/s-heart-on-pause.jpg"
+  },
+  {
+   "yt": "Nsw-6-rHUMQ",
+   "date": "2026-11-10",
+   "thumb": "https://i.ytimg.com/vi/Nsw-6-rHUMQ/maxresdefault.jpg",
+   "views": 58,
+   "secs": 323,
+   "id": "s-unappreciated",
+   "title": "Unappreciated",
+   "genre": "Soul Rock Ballad",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-unappreciated.mp3",
+   "art": "art/t/s-unappreciated.jpg"
+  },
+  {
+   "yt": "h-uNE2uNVa8",
+   "date": "2026-11-10",
+   "thumb": "https://i.ytimg.com/vi/h-uNE2uNVa8/maxresdefault.jpg",
+   "views": 49,
+   "secs": 260,
+   "id": "s-suppressed",
+   "title": "Suppressed",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-suppressed.mp3",
+   "art": "art/t/s-suppressed.jpg"
+  },
+  {
+   "yt": "wu9XGzo8nVI",
+   "date": "2026-11-10",
+   "thumb": "https://i.ytimg.com/vi/wu9XGzo8nVI/maxresdefault.jpg",
+   "views": 94,
+   "secs": 370,
+   "id": "s-will-i-see-you-again",
+   "title": "Will I See You Again",
+   "genre": "Neo Soul R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-will-i-see-you-again.mp3",
+   "art": "art/t/s-will-i-see-you-again.jpg"
+  },
+  {
+   "yt": "yUzLeg0dAXs",
+   "date": "2026-11-08",
+   "thumb": "https://i.ytimg.com/vi/yUzLeg0dAXs/maxresdefault.jpg",
+   "views": 74,
+   "secs": 268,
+   "id": "s-mycelium-tones",
+   "title": "Mycelium Tones",
+   "genre": "Conscious Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-mycelium-tones.mp3",
+   "art": "art/t/s-mycelium-tones.jpg"
+  },
+  {
+   "yt": "xJRR46mghWY",
+   "date": "2026-11-08",
+   "thumb": "https://i.ytimg.com/vi/xJRR46mghWY/maxresdefault.jpg",
+   "views": 89,
+   "secs": 218,
+   "id": "s-gt-cruising",
+   "title": "GT CRUISING",
+   "genre": "Amapiano",
+   "family": "Afro",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-gt-cruising.mp3",
+   "art": "art/t/s-gt-cruising.jpg"
+  },
+  {
+   "yt": "KlFmW__3PCA",
+   "date": "2026-11-08",
+   "thumb": "https://i.ytimg.com/vi/KlFmW__3PCA/maxresdefault.jpg",
+   "views": 142,
+   "secs": 228,
+   "id": "s-drip",
+   "title": "DRIP",
+   "genre": "Amapiano",
+   "family": "Afro",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-drip.mp3",
+   "art": "art/t/s-drip.jpg"
+  },
+  {
+   "yt": "mj16SUzZE0c",
+   "date": "2026-11-08",
+   "thumb": "https://i.ytimg.com/vi/mj16SUzZE0c/maxresdefault.jpg",
+   "views": 29,
+   "secs": 179,
+   "id": "s-fit",
+   "title": "FIT",
+   "genre": "Amapiano",
+   "family": "Afro",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-fit.mp3",
+   "art": "art/t/s-fit.jpg"
+  },
+  {
+   "yt": "omM_TogWfis",
+   "date": "2026-11-07",
+   "thumb": "https://i.ytimg.com/vi/omM_TogWfis/maxresdefault.jpg",
+   "views": 106,
+   "secs": 308,
+   "id": "s-trebor-atsen-yelram",
+   "title": "Trebor Atsen Yelram",
+   "genre": "Roots Reggae",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-trebor-atsen-yelram.mp3",
+   "art": "art/t/s-trebor-atsen-yelram.jpg"
+  },
+  {
+   "yt": "NvjfD6YlTDk",
+   "date": "2026-11-07",
+   "thumb": "https://i.ytimg.com/vi/NvjfD6YlTDk/maxresdefault.jpg",
+   "views": 33,
+   "secs": 369,
+   "id": "s-changing-seasons",
+   "title": "Changing Seasons",
+   "genre": "R&B Ballad",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-changing-seasons.mp3",
+   "art": "art/t/s-changing-seasons.jpg"
+  },
+  {
+   "yt": "Mckg9SsxtOs",
+   "date": "2026-11-07",
+   "thumb": "https://i.ytimg.com/vi/Mckg9SsxtOs/maxresdefault.jpg",
+   "views": 34,
+   "secs": 262,
+   "id": "s-been-getting-to-the-bag-remix",
+   "title": "Been Getting To The Bag Remix",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": true,
+   "preview": "previews/s-been-getting-to-the-bag-remix.mp3",
+   "art": "art/t/s-been-getting-to-the-bag-remix.jpg"
+  },
+  {
+   "yt": "7gutCNbyILU",
+   "date": "2026-11-05",
+   "thumb": "https://i.ytimg.com/vi/7gutCNbyILU/maxresdefault.jpg",
+   "views": 54,
+   "secs": 339,
+   "id": "s-how-do-you-forget",
+   "title": "How Do You Forget",
+   "genre": "Soft Rock Ballad",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-how-do-you-forget.mp3",
+   "art": "art/t/s-how-do-you-forget.jpg"
+  },
+  {
+   "yt": "0Q8ctAwIR7Q",
+   "date": "2026-11-05",
+   "thumb": "https://i.ytimg.com/vi/0Q8ctAwIR7Q/maxresdefault.jpg",
+   "views": 54,
+   "secs": 279,
+   "id": "s-win-or-learn",
+   "title": "Win Or Learn",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-win-or-learn.mp3",
+   "art": "art/t/s-win-or-learn.jpg"
+  },
+  {
+   "yt": "IZcvD2tslNU",
+   "date": "2026-11-05",
+   "thumb": "https://i.ytimg.com/vi/IZcvD2tslNU/maxresdefault.jpg",
+   "views": 54,
+   "secs": 347,
+   "id": "s-there-s-levels-to-everything",
+   "title": "There's Levels To Everything",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-there-s-levels-to-everything.mp3",
+   "art": "art/t/s-there-s-levels-to-everything.jpg"
+  },
+  {
+   "yt": "6cw7AxkeDG0",
+   "date": "2026-11-04",
+   "thumb": "https://i.ytimg.com/vi/6cw7AxkeDG0/maxresdefault.jpg",
+   "views": 85,
+   "secs": 253,
+   "id": "s-true-desire-remix",
+   "title": "True Desire Remix",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": true,
+   "preview": "previews/s-true-desire-remix.mp3",
+   "art": "art/t/s-true-desire-remix.jpg"
+  },
+  {
+   "yt": "pVyB7BtrBQM",
+   "date": "2026-11-03",
+   "thumb": "https://i.ytimg.com/vi/pVyB7BtrBQM/maxresdefault.jpg",
+   "views": 75,
+   "secs": 191,
+   "id": "s-big-stepper",
+   "title": "Big Stepper",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-big-stepper.mp3",
+   "art": "art/t/s-big-stepper.jpg"
+  },
+  {
+   "yt": "-dPQosgkLoA",
+   "date": "2026-11-03",
+   "thumb": "https://i.ytimg.com/vi/-dPQosgkLoA/maxresdefault.jpg",
+   "views": 91,
+   "secs": 504,
+   "id": "s-las-novelas-parte-3-la-caja-azul",
+   "title": "Las Novelas, Parte 3: La Caja Azul",
+   "genre": "Bachata",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-las-novelas-parte-3-la-caja-azul.mp3",
+   "art": "art/t/s-las-novelas-parte-3-la-caja-azul.jpg"
+  },
+  {
+   "yt": "GCQmh-yBg_o",
+   "date": "2026-11-02",
+   "thumb": "https://i.ytimg.com/vi/GCQmh-yBg_o/maxresdefault.jpg",
+   "views": 57,
+   "secs": 268,
+   "id": "s-sammy-dead-o",
+   "title": "Sammy Dead-O",
+   "genre": "Jamaican Mento",
+   "family": "Caribbean",
+   "feat": "T.IQ",
+   "remix": false,
+   "preview": "previews/s-sammy-dead-o.mp3",
+   "art": "art/t/s-sammy-dead-o.jpg"
+  },
+  {
+   "yt": "-MbkqNLh3n8",
+   "date": "2026-10-30",
+   "thumb": "https://i.ytimg.com/vi/-MbkqNLh3n8/maxresdefault.jpg",
+   "views": 83,
+   "secs": 241,
+   "id": "s-haters-hate",
+   "title": "Haters Hate",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "T.IQ",
+   "remix": false,
+   "preview": "previews/s-haters-hate.mp3",
+   "art": "art/t/s-haters-hate.jpg"
+  },
+  {
+   "yt": "obqOAUJzCpk",
+   "date": "2026-10-29",
+   "thumb": "https://i.ytimg.com/vi/obqOAUJzCpk/maxresdefault.jpg",
+   "views": 148,
+   "secs": 332,
+   "id": "s-abracadabra",
+   "title": "Abracadabra",
+   "genre": "AmaKompaMento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-abracadabra.mp3",
+   "art": "art/t/s-abracadabra.jpg"
+  },
+  {
+   "yt": "Axd7iNvi1gk",
+   "date": "2026-10-25",
+   "thumb": "https://i.ytimg.com/vi/Axd7iNvi1gk/maxresdefault.jpg",
+   "views": 34,
+   "secs": 230,
+   "id": "s-algo-rhythm",
+   "title": "Algo-Rhythm",
+   "genre": "Battle Rap",
+   "family": "Hip Hop",
+   "feat": "T.IQ",
+   "remix": false,
+   "preview": "previews/s-algo-rhythm.mp3",
+   "art": "art/t/s-algo-rhythm.jpg"
+  },
+  {
+   "yt": "pvNS6wsVnmk",
+   "date": "2026-10-25",
+   "thumb": "https://i.ytimg.com/vi/pvNS6wsVnmk/maxresdefault.jpg",
+   "views": 70,
+   "secs": 384,
+   "id": "s-las-novelas-parte-2-a-quien-enterramos-jose",
+   "title": "Las Novelas, Parte 2: ¿A Quién Enterramos, José?",
+   "genre": "Bachata",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-las-novelas-parte-2-a-quien-enterramos-jose.mp3",
+   "art": "art/t/s-las-novelas-parte-2-a-quien-enterramos-jose.jpg"
+  },
+  {
+   "yt": "FZa7EJ02EOw",
+   "date": "2026-10-24",
+   "thumb": "https://i.ytimg.com/vi/FZa7EJ02EOw/maxresdefault.jpg",
+   "views": 20,
+   "secs": 432,
+   "id": "s-i-am",
+   "title": "I AM",
+   "genre": "Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-i-am.mp3",
+   "art": "art/t/s-i-am.jpg"
+  },
+  {
+   "yt": "fbHD0hY_vJM",
+   "date": "2026-10-22",
+   "thumb": "https://i.ytimg.com/vi/fbHD0hY_vJM/maxresdefault.jpg",
+   "views": 34,
+   "secs": 230,
+   "id": "s-my-chicken-nugget-got-a-lawyer",
+   "title": "My Chicken Nugget Got a Lawyer",
+   "genre": "Comedy Hip Hop",
+   "family": "Hip Hop",
+   "feat": "T.IQ",
+   "remix": false,
+   "preview": "previews/s-my-chicken-nugget-got-a-lawyer.mp3",
+   "art": "art/t/s-my-chicken-nugget-got-a-lawyer.jpg"
+  },
+  {
+   "yt": "hOX709BMNsI",
+   "date": "2026-10-18",
+   "thumb": "https://i.ytimg.com/vi/hOX709BMNsI/maxresdefault.jpg",
+   "views": 100,
+   "secs": 294,
+   "id": "s-las-novelas-parte-1-de-quien-son-esas-bragas",
+   "title": "Las Novelas, Parte 1: ¿De Quién Son Esas Bragas?",
+   "genre": "Bachata",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-las-novelas-parte-1-de-quien-son-esas-bragas.mp3",
+   "art": "art/t/s-las-novelas-parte-1-de-quien-son-esas-bragas.jpg"
+  },
+  {
+   "yt": "tvBcyUprzso",
+   "date": "2026-10-18",
+   "thumb": "https://i.ytimg.com/vi/tvBcyUprzso/maxresdefault.jpg",
+   "views": 107,
+   "secs": 276,
+   "id": "s-mercy-carry-me",
+   "title": "Mercy, Carry Me",
+   "genre": "Gospel Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-mercy-carry-me.mp3",
+   "art": "art/t/s-mercy-carry-me.jpg"
+  },
+  {
+   "yt": "x862T3iF0Gs",
+   "date": "2026-10-17",
+   "thumb": "https://i.ytimg.com/vi/x862T3iF0Gs/maxresdefault.jpg",
+   "views": 74,
+   "secs": 381,
+   "id": "s-not-an-angel-yet",
+   "title": "Not An Angel Yet",
+   "genre": "Vintage Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-not-an-angel-yet.mp3",
+   "art": "art/t/s-not-an-angel-yet.jpg"
+  },
+  {
+   "yt": "_g4QqeX46qU",
+   "date": "2026-10-16",
+   "thumb": "https://i.ytimg.com/vi/_g4QqeX46qU/maxresdefault.jpg",
+   "views": 38,
+   "secs": 368,
+   "id": "s-frequency",
+   "title": "Frequency",
+   "genre": "Amakompamento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-frequency.mp3",
+   "art": "art/t/s-frequency.jpg"
+  },
+  {
+   "yt": "6u6ugEzsqK4",
+   "date": "2026-10-14",
+   "thumb": "https://i.ytimg.com/vi/6u6ugEzsqK4/maxresdefault.jpg",
+   "views": 87,
+   "secs": 347,
+   "id": "s-verily-verily",
+   "title": "Verily Verily",
+   "genre": "Amakompamento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-verily-verily.mp3",
+   "art": "art/t/s-verily-verily.jpg"
+  },
+  {
+   "yt": "H9h1yyyizmc",
+   "date": "2026-10-13",
+   "thumb": "https://i.ytimg.com/vi/H9h1yyyizmc/maxresdefault.jpg",
+   "views": 69,
+   "secs": 379,
+   "id": "s-alchemy",
+   "title": "Alchemy",
+   "genre": "Amakompamento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-alchemy.mp3",
+   "art": "art/t/s-alchemy.jpg"
+  },
+  {
+   "yt": "YBYQlk5Tagc",
+   "date": "2026-10-12",
+   "thumb": "https://i.ytimg.com/vi/YBYQlk5Tagc/maxresdefault.jpg",
+   "views": 50,
+   "secs": 335,
+   "id": "s-come-close",
+   "title": "Come Close",
+   "genre": "Amakompamento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-come-close.mp3",
+   "art": "art/t/s-come-close.jpg"
+  },
+  {
+   "yt": "rdHYfB1f8c4",
+   "date": "2026-10-12",
+   "thumb": "https://i.ytimg.com/vi/rdHYfB1f8c4/maxresdefault.jpg",
+   "views": 174,
+   "secs": 362,
+   "id": "s-let-it-go",
+   "title": "Let It Go",
+   "genre": "Amakompamento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-let-it-go.mp3",
+   "art": "art/t/s-let-it-go.jpg"
+  },
+  {
+   "yt": "tVqw55wHTSk",
+   "date": "2026-10-12",
+   "thumb": "https://i.ytimg.com/vi/tVqw55wHTSk/maxresdefault.jpg",
+   "views": 67,
+   "secs": 306,
+   "id": "s-catch-this-vibe",
+   "title": "Catch This Vibe",
+   "genre": "Amakompamento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-catch-this-vibe.mp3",
+   "art": "art/t/s-catch-this-vibe.jpg"
+  },
+  {
+   "yt": "QPzvREa7luU",
+   "date": "2026-10-11",
+   "thumb": "https://i.ytimg.com/vi/QPzvREa7luU/maxresdefault.jpg",
+   "views": 45,
+   "secs": 296,
+   "id": "s-baby-slow-down",
+   "title": "Baby, Slow Down",
+   "genre": "Amapiano",
+   "family": "Afro",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-baby-slow-down.mp3",
+   "art": "art/t/s-baby-slow-down.jpg"
+  },
+  {
+   "yt": "p9c0BmvAv5U",
+   "date": "2026-10-10",
+   "thumb": "https://i.ytimg.com/vi/p9c0BmvAv5U/maxresdefault.jpg",
+   "views": 385,
+   "secs": 441,
+   "id": "s-medu-neter",
+   "title": "Medu Neter",
+   "genre": "Cinematic African Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-medu-neter.mp3",
+   "art": "art/t/s-medu-neter.jpg"
+  },
+  {
+   "yt": "OduiIOLcCq0",
+   "date": "2026-10-09",
+   "thumb": "https://i.ytimg.com/vi/OduiIOLcCq0/maxresdefault.jpg",
+   "views": 60,
+   "secs": 380,
+   "id": "s-tres-noches-en-ciudad-de-mexico",
+   "title": "Tres Noches en Ciudad de México",
+   "genre": "Modern Mexican Bolero-Pop",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-tres-noches-en-ciudad-de-mexico.mp3",
+   "art": "art/t/s-tres-noches-en-ciudad-de-mexico.jpg"
+  },
+  {
+   "yt": "TYr6ezQARlM",
+   "date": "2026-10-08",
+   "thumb": "https://i.ytimg.com/vi/TYr6ezQARlM/maxresdefault.jpg",
+   "views": 54,
+   "secs": 272,
+   "id": "s-footsteps-in-the-dark",
+   "title": "Footsteps in the Dark",
+   "genre": "Horror Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-footsteps-in-the-dark.mp3",
+   "art": "art/t/s-footsteps-in-the-dark.jpg"
+  },
+  {
+   "yt": "lZj1Pd8Rths",
+   "date": "2026-10-07",
+   "thumb": "https://i.ytimg.com/vi/lZj1Pd8Rths/maxresdefault.jpg",
+   "views": 105,
+   "secs": 347,
+   "id": "s-losses-lessons",
+   "title": "Losses & Lessons · Втрати і уроки · Потери и уроки",
+   "genre": "Dark Pop",
+   "family": "Pop & World",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-losses-lessons.mp3",
+   "art": "art/t/s-losses-lessons.jpg"
+  },
+  {
+   "yt": "MMg5ovjpX2c",
+   "date": "2026-10-06",
+   "thumb": "https://i.ytimg.com/vi/MMg5ovjpX2c/maxresdefault.jpg",
+   "views": 87,
+   "secs": 311,
+   "id": "s-scorpio-energy",
+   "title": "Scorpio Energy",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-scorpio-energy.mp3",
+   "art": "art/t/s-scorpio-energy.jpg"
+  },
+  {
+   "yt": "1pOv4JMF0so",
+   "date": "2026-10-06",
+   "thumb": "https://i.ytimg.com/vi/1pOv4JMF0so/maxresdefault.jpg",
+   "views": 150,
+   "secs": 286,
+   "id": "s-ride-or-die",
+   "title": "Ride Or Die",
+   "genre": "Reggaeton",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-ride-or-die.mp3",
+   "art": "art/t/s-ride-or-die.jpg"
+  },
+  {
+   "yt": "4OatZqJHPZg",
+   "date": "2026-10-06",
+   "thumb": "https://i.ytimg.com/vi/4OatZqJHPZg/maxresdefault.jpg",
+   "views": 315,
+   "secs": 327,
+   "id": "s-it-doesn-t-mean-i-miss-you",
+   "title": "It Doesn't Mean I Miss You",
+   "genre": "R&B Ballad",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-it-doesn-t-mean-i-miss-you.mp3",
+   "art": "art/t/s-it-doesn-t-mean-i-miss-you.jpg"
+  },
+  {
+   "yt": "hUFTd4i0Xso",
+   "date": "2026-10-06",
+   "thumb": "https://i.ytimg.com/vi/hUFTd4i0Xso/maxresdefault.jpg",
+   "views": 233,
+   "secs": 298,
+   "id": "s-lugar-correcto-momento-equivocado",
+   "title": "Lugar Correcto, Momento Equivocado",
+   "genre": "Corrido Tumbado Romántico",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-lugar-correcto-momento-equivocado.mp3",
+   "art": "art/t/s-lugar-correcto-momento-equivocado.jpg"
+  },
+  {
+   "yt": "SNUoZ42XvuA",
+   "date": "2026-10-05",
+   "thumb": "https://i.ytimg.com/vi/SNUoZ42XvuA/maxresdefault.jpg",
+   "views": 94,
+   "secs": 258,
+   "id": "s-uk-got-barz",
+   "title": "UK Got Barz",
+   "genre": "UK Rap",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-uk-got-barz.mp3",
+   "art": "art/t/s-uk-got-barz.jpg"
+  },
+  {
+   "yt": "sLDRvNRjr9s",
+   "date": "2026-10-05",
+   "thumb": "https://i.ytimg.com/vi/sLDRvNRjr9s/maxresdefault.jpg",
+   "views": 709,
+   "secs": 283,
+   "id": "s-when-lee-scratched-perry-remix",
+   "title": "When Lee Scratched Perry Remix",
+   "genre": "Dancehall",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": true,
+   "preview": "previews/s-when-lee-scratched-perry-remix.mp3",
+   "art": "art/t/s-when-lee-scratched-perry-remix.jpg"
+  },
+  {
+   "yt": "qe9ElFGqJnU",
+   "date": "2026-10-05",
+   "thumb": "https://i.ytimg.com/vi/qe9ElFGqJnU/maxresdefault.jpg",
+   "views": 378,
+   "secs": 332,
+   "id": "s-there-s-a-trane-coming",
+   "title": "There's A Trane Coming",
+   "genre": "Jazz Rap",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-there-s-a-trane-coming.mp3",
+   "art": "art/t/s-there-s-a-trane-coming.jpg"
+  },
+  {
+   "yt": "XiAo8WnG6qE",
+   "date": "2026-10-05",
+   "thumb": "https://i.ytimg.com/vi/XiAo8WnG6qE/maxresdefault.jpg",
+   "views": 57,
+   "secs": 249,
+   "id": "s-been-getting-to-the-bag",
+   "title": "Been Getting To The Bag",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-been-getting-to-the-bag.mp3",
+   "art": "art/t/s-been-getting-to-the-bag.jpg"
+  },
+  {
+   "yt": "zEAN07SwnbM",
+   "date": "2026-09-30",
+   "thumb": "https://i.ytimg.com/vi/zEAN07SwnbM/maxresdefault.jpg",
+   "views": 149,
+   "secs": 377,
+   "id": "s-when-lee-scratched-perry",
+   "title": "When Lee Scratched Perry",
+   "genre": "Dub Reggae",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-when-lee-scratched-perry.mp3",
+   "art": "art/t/s-when-lee-scratched-perry.jpg"
+  },
+  {
+   "yt": "9ClezLa6jDA",
+   "date": "2026-09-29",
+   "thumb": "https://i.ytimg.com/vi/9ClezLa6jDA/maxresdefault.jpg",
+   "views": 88,
+   "secs": 267,
+   "id": "s-foundation-sound",
+   "title": "Foundation Sound",
+   "genre": "Reggae Dancehall",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-foundation-sound.mp3",
+   "art": "art/t/s-foundation-sound.jpg"
+  },
+  {
+   "yt": "KYVypreQhKQ",
+   "date": "2026-09-29",
+   "thumb": "https://i.ytimg.com/vi/KYVypreQhKQ/maxresdefault.jpg",
+   "views": 78,
+   "secs": 162,
+   "id": "s-don-t-blink",
+   "title": "Don't Blink",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-don-t-blink.mp3",
+   "art": "art/t/s-don-t-blink.jpg"
+  },
+  {
+   "yt": "dVXkVP-YtGc",
+   "date": "2026-09-28",
+   "thumb": "https://i.ytimg.com/vi/dVXkVP-YtGc/maxresdefault.jpg",
+   "views": 406,
+   "secs": 385,
+   "id": "s-deje-mi-corazon-en-puerto-penasco",
+   "title": "Dejé Mi Corazón En Puerto Peñasco",
+   "genre": "Bolero Ranchero",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-deje-mi-corazon-en-puerto-penasco.mp3",
+   "art": "art/t/s-deje-mi-corazon-en-puerto-penasco.jpg"
+  },
+  {
+   "yt": "4lUmju7ReW0",
+   "date": "2026-09-28",
+   "thumb": "https://i.ytimg.com/vi/4lUmju7ReW0/maxresdefault.jpg",
+   "views": 169,
+   "secs": 439,
+   "id": "s-rest-in-another-world",
+   "title": "Rest In Another World",
+   "genre": "Fantasy Folk",
+   "family": "Pop & World",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-rest-in-another-world.mp3",
+   "art": "art/t/s-rest-in-another-world.jpg"
+  },
+  {
+   "yt": "7qLxQXjM9U0",
+   "date": "2026-09-27",
+   "thumb": "https://i.ytimg.com/vi/7qLxQXjM9U0/maxresdefault.jpg",
+   "views": 94,
+   "secs": 273,
+   "id": "s-out-of-many-one-people-jamaican-mento-remix",
+   "title": "Out Of Many One People (Jamaican Mento Remix)",
+   "genre": "Jamaican Mento Remix",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": true,
+   "preview": "previews/s-out-of-many-one-people-jamaican-mento-remix.mp3",
+   "art": "art/t/s-out-of-many-one-people-jamaican-mento-remix.jpg"
+  },
+  {
+   "yt": "Xduu3nRAkw8",
+   "date": "2026-09-27",
+   "thumb": "https://i.ytimg.com/vi/Xduu3nRAkw8/maxresdefault.jpg",
+   "views": 120,
+   "secs": 247,
+   "id": "s-poco-revival",
+   "title": "POCO REVIVAL",
+   "genre": "Jamaican Revival",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-poco-revival.mp3",
+   "art": "art/t/s-poco-revival.jpg"
+  },
+  {
+   "yt": "r2NhQiUSKWY",
+   "date": "2026-09-27",
+   "thumb": "https://i.ytimg.com/vi/r2NhQiUSKWY/maxresdefault.jpg",
+   "views": 169,
+   "secs": 186,
+   "id": "s-pocomania",
+   "title": "POCOMANIA",
+   "genre": "Jamaican Revival",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-pocomania.mp3",
+   "art": "art/t/s-pocomania.jpg"
+  },
+  {
+   "yt": "sMl2hAU3iPo",
+   "date": "2026-09-27",
+   "thumb": "https://i.ytimg.com/vi/sMl2hAU3iPo/maxresdefault.jpg",
+   "views": 136,
+   "secs": 213,
+   "id": "s-intergalactic",
+   "title": "INTERGALACTIC",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-intergalactic.mp3",
+   "art": "art/t/s-intergalactic.jpg"
+  },
+  {
+   "yt": "QPKpfanPZ5M",
+   "date": "2026-09-26",
+   "thumb": "https://i.ytimg.com/vi/QPKpfanPZ5M/maxresdefault.jpg",
+   "views": 139,
+   "secs": 343,
+   "id": "s-como-se-olvida",
+   "title": "¿Cómo Se Olvida?",
+   "genre": "Bachata Bolero",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-como-se-olvida.mp3",
+   "art": "art/t/s-como-se-olvida.jpg"
+  },
+  {
+   "yt": "Hi4adUktdYo",
+   "date": "2026-09-26",
+   "thumb": "https://i.ytimg.com/vi/Hi4adUktdYo/maxresdefault.jpg",
+   "views": 47,
+   "secs": 230,
+   "id": "s-i-m-coming-too",
+   "title": "I'm Coming Too",
+   "genre": "Country",
+   "family": "Pop & World",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-i-m-coming-too.mp3",
+   "art": "art/t/s-i-m-coming-too.jpg"
+  },
+  {
+   "yt": "TPYf8YKuz04",
+   "date": "2026-09-24",
+   "thumb": "https://i.ytimg.com/vi/TPYf8YKuz04/maxresdefault.jpg",
+   "views": 231,
+   "secs": 281,
+   "id": "s-i-love-anime",
+   "title": "I LOVE ANIME",
+   "genre": "Anime Dance Anthem",
+   "family": "Electronic",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-i-love-anime.mp3",
+   "art": "art/t/s-i-love-anime.jpg"
+  },
+  {
+   "yt": "xaDZ71TZH-E",
+   "date": "2026-09-24",
+   "thumb": "https://i.ytimg.com/vi/xaDZ71TZH-E/maxresdefault.jpg",
+   "views": 379,
+   "secs": 248,
+   "id": "s-ancient-roots-new-beat",
+   "title": "Ancient Roots, New Beat",
+   "genre": "Mandarin Dance Pop",
+   "family": "Electronic",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-ancient-roots-new-beat.mp3",
+   "art": "art/t/s-ancient-roots-new-beat.jpg"
+  },
+  {
+   "yt": "_3Nl-wp4LhI",
+   "date": "2026-09-24",
+   "thumb": "https://i.ytimg.com/vi/_3Nl-wp4LhI/maxresdefault.jpg",
+   "views": 62,
+   "secs": 304,
+   "id": "s-soulaan-a-freedmen-anthem",
+   "title": "SOULAAN, A Freedmen Anthem",
+   "genre": "Soul Funk",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-soulaan-a-freedmen-anthem.mp3",
+   "art": "art/t/s-soulaan-a-freedmen-anthem.jpg"
+  },
+  {
+   "yt": "pyBo0WEfr5I",
+   "date": "2026-09-24",
+   "thumb": "https://i.ytimg.com/vi/pyBo0WEfr5I/maxresdefault.jpg",
+   "views": 65,
+   "secs": 274,
+   "id": "s-wazobia-come",
+   "title": "WAZOBIA COME!",
+   "genre": "Naija Afrobeats",
+   "family": "Afro",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-wazobia-come.mp3",
+   "art": "art/t/s-wazobia-come.jpg"
+  },
+  {
+   "yt": "4Zuab3k1Ze8",
+   "date": "2026-09-23",
+   "thumb": "https://i.ytimg.com/vi/4Zuab3k1Ze8/maxresdefault.jpg",
+   "views": 71,
+   "secs": 265,
+   "id": "s-influential",
+   "title": "Influential",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-influential.mp3",
+   "art": "art/t/s-influential.jpg"
+  },
+  {
+   "yt": "rHt4QP-V_eo",
+   "date": "2026-09-23",
+   "thumb": "https://i.ytimg.com/vi/rHt4QP-V_eo/maxresdefault.jpg",
+   "views": 610,
+   "secs": 269,
+   "id": "s-out-of-many-one-people",
+   "title": "Out Of Many One People",
+   "genre": "Jamaican Mento",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-out-of-many-one-people.mp3",
+   "art": "art/t/s-out-of-many-one-people.jpg"
+  },
+  {
+   "yt": "rK4L-3AMbxU",
+   "date": "2026-09-22",
+   "thumb": "https://i.ytimg.com/vi/rK4L-3AMbxU/maxresdefault.jpg",
+   "views": 193,
+   "secs": 330,
+   "id": "s-mon-peuple",
+   "title": "Mon Peuple",
+   "genre": "French Kompa et Zouk",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-mon-peuple.mp3",
+   "art": "art/t/s-mon-peuple.jpg"
+  },
+  {
+   "yt": "kh-14mBHvQw",
+   "date": "2026-09-22",
+   "thumb": "https://i.ytimg.com/vi/kh-14mBHvQw/maxresdefault.jpg",
+   "views": 384,
+   "secs": 357,
+   "id": "s-mi-gente",
+   "title": "Mi Gente",
+   "genre": "Salsa y Merengue",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-mi-gente.mp3",
+   "art": "art/t/s-mi-gente.jpg"
+  },
+  {
+   "yt": "DoBNvWbyqOg",
+   "date": "2026-09-21",
+   "thumb": "https://i.ytimg.com/vi/DoBNvWbyqOg/maxresdefault.jpg",
+   "views": 113,
+   "secs": 313,
+   "id": "s-girls-just-wanna-have-fun",
+   "title": "Girls Just Wanna Have Fun",
+   "genre": "Rave Techno Anthem",
+   "family": "Electronic",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-girls-just-wanna-have-fun.mp3",
+   "art": "art/t/s-girls-just-wanna-have-fun.jpg"
+  },
+  {
+   "yt": "JmrBugULW9M",
+   "date": "2026-09-21",
+   "thumb": "https://i.ytimg.com/vi/JmrBugULW9M/maxresdefault.jpg",
+   "views": 319,
+   "secs": 252,
+   "id": "s-even-if-everything-drop-jamaican-mento-version",
+   "title": "Even If Everything Drop (Jamaican Mento Version)",
+   "genre": "Jamaican Mento Version",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-even-if-everything-drop-jamaican-mento-version.mp3",
+   "art": "art/t/s-even-if-everything-drop-jamaican-mento-version.jpg"
+  },
+  {
+   "yt": "f9gJIagivMI",
+   "date": "2026-09-21",
+   "thumb": "https://i.ytimg.com/vi/f9gJIagivMI/maxresdefault.jpg",
+   "views": 223,
+   "secs": 282,
+   "id": "s-aunque-todo-caiga",
+   "title": "Aunque Todo Caiga",
+   "genre": "Bachata",
+   "family": "Latin",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-aunque-todo-caiga.mp3",
+   "art": "art/t/s-aunque-todo-caiga.jpg"
+  },
+  {
+   "yt": "EEAVToB2y4E",
+   "date": "2026-09-21",
+   "thumb": "https://i.ytimg.com/vi/EEAVToB2y4E/maxresdefault.jpg",
+   "views": 293,
+   "secs": 386,
+   "id": "s-menm-si-tout-bagay-tonbe",
+   "title": "Menm Si Tout Bagay Tonbe",
+   "genre": "Kompa",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-menm-si-tout-bagay-tonbe.mp3",
+   "art": "art/t/s-menm-si-tout-bagay-tonbe.jpg"
+  },
+  {
+   "yt": "qeWg-A9WhdY",
+   "date": "2026-09-20",
+   "thumb": "https://i.ytimg.com/vi/qeWg-A9WhdY/maxresdefault.jpg",
+   "views": 114,
+   "secs": 283,
+   "id": "s-ase",
+   "title": "ÀṢẸ",
+   "genre": "Afrobeats",
+   "family": "Afro",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-ase.mp3",
+   "art": "art/t/s-ase.jpg"
+  },
+  {
+   "yt": "gawye1-UH4Y",
+   "date": "2026-09-20",
+   "thumb": "https://i.ytimg.com/vi/gawye1-UH4Y/maxresdefault.jpg",
+   "views": 107,
+   "secs": 372,
+   "id": "s-come-stay-at-a-hotel-in-jamaica",
+   "title": "Come Stay At A Hotel In Jamaica",
+   "genre": "Reggae",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-come-stay-at-a-hotel-in-jamaica.mp3",
+   "art": "art/t/s-come-stay-at-a-hotel-in-jamaica.jpg"
+  },
+  {
+   "yt": "MCvRg1DKrPM",
+   "date": "2026-09-20",
+   "thumb": "https://i.ytimg.com/vi/MCvRg1DKrPM/maxresdefault.jpg",
+   "views": 81,
+   "secs": 196,
+   "id": "s-alphabetically-inclined",
+   "title": "Alphabetically Inclined",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-alphabetically-inclined.mp3",
+   "art": "art/t/s-alphabetically-inclined.jpg"
+  },
+  {
+   "yt": "8u7LmhvjdN8",
+   "date": "2026-09-19",
+   "thumb": "https://i.ytimg.com/vi/8u7LmhvjdN8/maxresdefault.jpg",
+   "views": 54,
+   "secs": 240,
+   "id": "s-choose-your-battles",
+   "title": "Choose Your Battles",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-choose-your-battles.mp3",
+   "art": "art/t/s-choose-your-battles.jpg"
+  },
+  {
+   "yt": "PZsbatQnfGE",
+   "date": "2026-09-18",
+   "thumb": "https://i.ytimg.com/vi/PZsbatQnfGE/maxresdefault.jpg",
+   "views": 40,
+   "secs": 277,
+   "id": "s-multidimensional",
+   "title": "Multidimensional",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-multidimensional.mp3",
+   "art": "art/t/s-multidimensional.jpg"
+  },
+  {
+   "yt": "mUFouo_kQeQ",
+   "date": "2026-09-18",
+   "thumb": "https://i.ytimg.com/vi/mUFouo_kQeQ/maxresdefault.jpg",
+   "views": 96,
+   "secs": 284,
+   "id": "s-wherever-you-are",
+   "title": "Wherever You Are",
+   "genre": "R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-wherever-you-are.mp3",
+   "art": "art/t/s-wherever-you-are.jpg"
+  },
+  {
+   "yt": "2_5S7HiRiXo",
+   "date": "2026-09-17",
+   "thumb": "https://i.ytimg.com/vi/2_5S7HiRiXo/maxresdefault.jpg",
+   "views": 159,
+   "secs": 315,
+   "id": "s-east-to-west",
+   "title": "East To West",
+   "genre": "Afrobeats",
+   "family": "Afro",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-east-to-west.mp3",
+   "art": "art/t/s-east-to-west.jpg"
+  },
+  {
+   "yt": "IECtD3uqsPk",
+   "date": "2026-09-15",
+   "thumb": "https://i.ytimg.com/vi/IECtD3uqsPk/maxresdefault.jpg",
+   "views": 41,
+   "secs": 322,
+   "id": "s-neuro-spicy",
+   "title": "Neuro Spicy",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-neuro-spicy.mp3",
+   "art": "art/t/s-neuro-spicy.jpg"
+  },
+  {
+   "yt": "8xOUwcCGZIA",
+   "date": "2026-09-15",
+   "thumb": "https://i.ytimg.com/vi/8xOUwcCGZIA/maxresdefault.jpg",
+   "views": 51,
+   "secs": 343,
+   "id": "s-i-operate",
+   "title": "I Operate",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-i-operate.mp3",
+   "art": "art/t/s-i-operate.jpg"
+  },
+  {
+   "yt": "b-nbPmq7Nu0",
+   "date": "2026-09-14",
+   "thumb": "https://i.ytimg.com/vi/b-nbPmq7Nu0/maxresdefault.jpg",
+   "views": 85,
+   "secs": 369,
+   "id": "s-lock-in",
+   "title": "Lock In",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-lock-in.mp3",
+   "art": "art/t/s-lock-in.jpg"
+  },
+  {
+   "yt": "gQ5XlRsGTsI",
+   "date": "2026-09-12",
+   "thumb": "https://i.ytimg.com/vi/gQ5XlRsGTsI/maxresdefault.jpg",
+   "views": 125,
+   "secs": 220,
+   "id": "s-am-i-who-you-re-afraid-of-techno-remix",
+   "title": "Am I Who You're Afraid Of (Techno Remix)",
+   "genre": "Techno Remix",
+   "family": "Electronic",
+   "feat": "",
+   "remix": true,
+   "preview": "previews/s-am-i-who-you-re-afraid-of-techno-remix.mp3",
+   "art": "art/t/s-am-i-who-you-re-afraid-of-techno-remix.jpg"
+  },
+  {
+   "yt": "oF_GtWP-MVc",
+   "date": "2026-09-11",
+   "thumb": "https://i.ytimg.com/vi/oF_GtWP-MVc/maxresdefault.jpg",
+   "views": 60,
+   "secs": 197,
+   "id": "s-am-i-who-you-re-afraid-of",
+   "title": "Am I Who You're Afraid Of",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-am-i-who-you-re-afraid-of.mp3",
+   "art": "art/t/s-am-i-who-you-re-afraid-of.jpg"
+  },
+  {
+   "yt": "9qlJIZCIQpM",
+   "date": "2026-09-10",
+   "thumb": "https://i.ytimg.com/vi/9qlJIZCIQpM/maxresdefault.jpg",
+   "views": 101,
+   "secs": 220,
+   "id": "s-lay-the-iron-down",
+   "title": "Lay The Iron Down",
+   "genre": "Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-lay-the-iron-down.mp3",
+   "art": "art/t/s-lay-the-iron-down.jpg"
+  },
+  {
+   "yt": "lE3SXR9xl1c",
+   "date": "2026-09-09",
+   "thumb": "https://i.ytimg.com/vi/lE3SXR9xl1c/maxresdefault.jpg",
+   "views": 110,
+   "secs": 193,
+   "id": "s-blah-blah-blah",
+   "title": "Blah Blah Blah",
+   "genre": "Rock",
+   "family": "Pop & World",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-blah-blah-blah.mp3",
+   "art": "art/t/s-blah-blah-blah.jpg"
+  },
+  {
+   "yt": "ouRNRLiq_G4",
+   "date": "2026-09-09",
+   "thumb": "https://i.ytimg.com/vi/ouRNRLiq_G4/maxresdefault.jpg",
+   "views": 97,
+   "secs": 362,
+   "id": "s-true-desire",
+   "title": "True Desire",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-true-desire.mp3"
+  },
+  {
+   "yt": "GgXnT7FmC4I",
+   "date": "2026-09-08",
+   "thumb": "https://i.ytimg.com/vi/GgXnT7FmC4I/sddefault.jpg",
+   "views": 110,
+   "secs": 280,
+   "id": "s-maybe-i-ll-catch-you-on-the-flipside-techno-remix",
+   "title": "Maybe I'll Catch You On The Flipside (Techno Remix)",
+   "genre": "Techno",
+   "family": "Electronic",
+   "feat": "",
+   "remix": true
+  },
+  {
+   "yt": "B76J5DSRoYA",
+   "date": "2026-09-05",
+   "thumb": "https://i.ytimg.com/vi/B76J5DSRoYA/maxresdefault.jpg",
+   "views": 964,
+   "secs": 395,
+   "id": "s-alone-in-a-crowd-rave-remix",
+   "title": "Alone In A Crowd (Rave Remix)",
+   "genre": "Techno",
+   "family": "Electronic",
+   "feat": "",
+   "remix": true,
+   "preview": "previews/s-alone-in-a-crowd-rave-remix.mp3"
+  },
+  {
+   "yt": "xD8K9RpHv08",
+   "date": "2026-09-05",
+   "thumb": "https://i.ytimg.com/vi/xD8K9RpHv08/maxresdefault.jpg",
+   "views": 120,
+   "secs": 460,
+   "id": "s-alone-in-a-crowd",
+   "title": "Alone In A Crowd",
+   "genre": "Pop",
+   "family": "Pop & World",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-alone-in-a-crowd.mp3"
+  },
+  {
+   "yt": "AdS7vPb4oc0",
+   "date": "2026-09-04",
+   "thumb": "https://i.ytimg.com/vi/AdS7vPb4oc0/maxresdefault.jpg",
+   "views": 294,
+   "secs": 170,
+   "id": "s-mama-pot",
+   "title": "Mama Pot",
+   "genre": "Dancehall",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-mama-pot.mp3"
+  },
+  {
+   "yt": "SFByKeIoJB4",
+   "date": "2026-09-03",
+   "thumb": "https://i.ytimg.com/vi/SFByKeIoJB4/maxresdefault.jpg",
+   "views": 21,
+   "secs": 181,
+   "id": "s-3-am-post",
+   "title": "3 AM Post",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-3-am-post.mp3"
+  },
+  {
+   "yt": "4PNA-c8zhPc",
+   "date": "2026-08-31",
+   "thumb": "https://i.ytimg.com/vi/4PNA-c8zhPc/maxresdefault.jpg",
+   "views": 43,
+   "secs": 296,
+   "id": "s-what-happened-to-enoch",
+   "title": "What Happened to Enoch",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-what-happened-to-enoch.mp3"
+  },
+  {
+   "yt": "SgTH4dpO-24",
+   "date": "2026-08-30",
+   "thumb": "https://i.ytimg.com/vi/SgTH4dpO-24/maxresdefault.jpg",
+   "views": 146,
+   "secs": 263,
+   "id": "s-maybe-i-ll-catch-you-on-the-flipside",
+   "title": "Maybe I'll Catch You On The Flipside",
+   "genre": "Pop",
+   "family": "Pop & World",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-maybe-i-ll-catch-you-on-the-flipside.mp3"
+  },
+  {
+   "yt": "xy6jXWnqX4o",
+   "date": "2026-08-30",
+   "thumb": "https://i.ytimg.com/vi/xy6jXWnqX4o/maxresdefault.jpg",
+   "views": 51,
+   "secs": 304,
+   "id": "s-go-back-in-time-and-play-this-for-the-ones-in-the-field",
+   "title": "Go Back In Time And Play This For The Ones In The Field",
+   "genre": "Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-go-back-in-time-and-play-this-for-the-ones-in-the-field.mp3"
+  },
+  {
+   "yt": "sTYivF1siUE",
+   "date": "2026-08-26",
+   "thumb": "https://i.ytimg.com/vi/sTYivF1siUE/maxresdefault.jpg",
+   "views": 89,
+   "secs": 410,
+   "id": "s-same-flag",
+   "title": "Same Flag",
+   "genre": "Reggae",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-same-flag.mp3",
+   "art": "art/t/s-same-flag.jpg"
+  },
+  {
+   "yt": "x8ByDl4vqTw",
+   "date": "2026-08-25",
+   "thumb": "https://i.ytimg.com/vi/x8ByDl4vqTw/maxresdefault.jpg",
+   "views": 129,
+   "secs": 197,
+   "id": "s-rolling-with-the-breeze",
+   "title": "Rolling With The Breeze",
+   "genre": "Reggae",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-rolling-with-the-breeze.mp3"
+  },
+  {
+   "yt": "RdYM40BxMcY",
+   "date": "2026-08-25",
+   "thumb": "https://i.ytimg.com/vi/RdYM40BxMcY/maxresdefault.jpg",
+   "views": 47,
+   "secs": 317,
+   "id": "s-look-how-far-we-came",
+   "title": "Look How Far We Came",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-look-how-far-we-came.mp3"
+  },
+  {
+   "yt": "jW4YMRt6eh0",
+   "date": "2026-08-25",
+   "thumb": "https://i.ytimg.com/vi/jW4YMRt6eh0/maxresdefault.jpg",
+   "views": 24,
+   "secs": 181,
+   "id": "s-not-asking-permission",
+   "title": "Not Asking Permission",
+   "genre": "Dancehall",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-not-asking-permission.mp3"
+  },
+  {
+   "yt": "kTdilKhsQo0",
+   "date": "2026-08-25",
+   "thumb": "https://i.ytimg.com/vi/kTdilKhsQo0/maxresdefault.jpg",
+   "views": 48,
+   "secs": 196,
+   "id": "s-that-s-how-love-goes",
+   "title": "That's How Love Goes",
+   "genre": "R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-that-s-how-love-goes.mp3"
+  },
+  {
+   "yt": "zLBJxeY4nh8",
+   "date": "2026-08-23",
+   "thumb": "https://i.ytimg.com/vi/zLBJxeY4nh8/maxresdefault.jpg",
+   "views": 201,
+   "secs": 181,
+   "id": "s-from-yard",
+   "title": "From Yard",
+   "genre": "Dancehall",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-from-yard.mp3"
+  },
+  {
+   "yt": "andE7lmNQP0",
+   "date": "2026-08-19",
+   "thumb": "https://i.ytimg.com/vi/andE7lmNQP0/maxresdefault.jpg",
+   "views": 91,
+   "secs": 282,
+   "id": "s-always-watching-always-working-always-yours",
+   "title": "Always Watching, Always Working, Always Yours",
+   "genre": "R&B",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-always-watching-always-working-always-yours.mp3"
+  },
+  {
+   "yt": "5E-K3ZgGZQE",
+   "date": "2026-08-18",
+   "thumb": "https://i.ytimg.com/vi/5E-K3ZgGZQE/maxresdefault.jpg",
+   "views": 87,
+   "secs": 241,
+   "id": "s-run-di-numbers",
+   "title": "Run Di Numbers",
+   "genre": "Dancehall",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-run-di-numbers.mp3"
+  },
+  {
+   "yt": "tBiNW0f9Lqk",
+   "date": "2026-08-18",
+   "thumb": "https://i.ytimg.com/vi/tBiNW0f9Lqk/maxresdefault.jpg",
+   "views": 92,
+   "secs": 241,
+   "id": "s-run-di-numbers-remix",
+   "title": "Run Di Numbers (Remix)",
+   "genre": "Dancehall",
+   "family": "Caribbean",
+   "feat": "",
+   "remix": true,
+   "preview": "previews/s-run-di-numbers-remix.mp3"
+  },
+  {
+   "yt": "XA9pJpip8as",
+   "date": "2026-08-17",
+   "thumb": "https://i.ytimg.com/vi/XA9pJpip8as/maxresdefault.jpg",
+   "views": 72,
+   "secs": 181,
+   "id": "s-if-god-created-my-creator-then-he-created-me-too",
+   "title": "If God Created My Creator, Then He Created Me Too",
+   "genre": "Trap Gospel",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-if-god-created-my-creator-then-he-created-me-too.mp3"
+  },
+  {
+   "yt": "RBbJGhfK-Lw",
+   "date": "2026-08-15",
+   "thumb": "https://i.ytimg.com/vi/RBbJGhfK-Lw/maxresdefault.jpg",
+   "views": 99,
+   "secs": 276,
+   "id": "s-i-m-agent-threads",
+   "title": "I'm Agent Threads",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false
+  },
+  {
+   "yt": "DUa7Hx9-Rnw",
+   "date": "2026-08-07",
+   "thumb": "https://i.ytimg.com/vi/DUa7Hx9-Rnw/sddefault.jpg",
+   "views": 53,
+   "secs": 321,
+   "id": "s-when-they-can-t-do-what-you-do-they-hate",
+   "title": "When They Can't Do What You Do They Hate",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false
+  },
+  {
+   "yt": "UIM57tefvDo",
+   "date": "2026-08-02",
+   "thumb": "https://i.ytimg.com/vi/UIM57tefvDo/maxresdefault.jpg",
+   "views": 50,
+   "secs": 301,
+   "id": "s-resistance-is-futile",
+   "title": "Resistance Is Futile",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-resistance-is-futile.mp3"
+  },
+  {
+   "yt": "TLdQsl0QBbw",
+   "date": "2026-08-01",
+   "thumb": "https://i.ytimg.com/vi/TLdQsl0QBbw/maxresdefault.jpg",
+   "views": 50,
+   "secs": 126,
+   "id": "s-seven-days-no-sleep-a-tribute",
+   "title": "Seven Days No Sleep (A Tribute)",
+   "genre": "Soul",
+   "family": "Neo Soul & R&B",
+   "feat": "",
+   "remix": false
+  },
+  {
+   "yt": "opmJDcwmmyg",
+   "date": "2026-08-01",
+   "thumb": "https://i.ytimg.com/vi/opmJDcwmmyg/maxresdefault.jpg",
+   "views": 74,
+   "secs": 169,
+   "id": "s-frequency-coded-in-fire",
+   "title": "Frequency Coded In Fire",
+   "genre": "Hip Hop",
+   "family": "Hip Hop",
+   "feat": "",
+   "remix": false,
+   "preview": "previews/s-frequency-coded-in-fire.mp3"
+  }
+ ],
+ "beats": [
+  {
+   "title": "Nothin' Before Its Time",
+   "style": "Dark Drill x Soul Sample",
+   "bpm": 140,
+   "key": "D#m",
+   "yt": "CUgMorFZbX4",
+   "date": "2026-11-25",
+   "thumb": "https://i.ytimg.com/vi/CUgMorFZbX4/maxresdefault.jpg",
+   "views": 4,
+   "secs": 168,
+   "id": "b-nothin-before-its-time",
+   "preview": "previews/b-nothin-before-its-time.mp3",
+   "art": "art/t/b-nothin-before-its-time.jpg"
+  },
+  {
+   "title": "Closer",
+   "style": "Bachata Hip Hop",
+   "bpm": 97,
+   "key": "Am",
+   "yt": "V-3xAbHMu_o",
+   "date": "2026-11-24",
+   "thumb": "https://i.ytimg.com/vi/V-3xAbHMu_o/maxresdefault.jpg",
+   "views": 14,
+   "secs": 214,
+   "id": "b-closer",
+   "preview": "previews/b-closer.mp3",
+   "art": "art/t/b-closer.jpg"
+  },
+  {
+   "title": "What I'm Carrying",
+   "style": "Melodic Trap",
+   "bpm": 134,
+   "key": "C#m",
+   "yt": "PDGgeip3F7Q",
+   "date": "2026-11-24",
+   "thumb": "https://i.ytimg.com/vi/PDGgeip3F7Q/maxresdefault.jpg",
+   "views": 15,
+   "secs": 174,
+   "id": "b-what-i-m-carrying",
+   "preview": "previews/b-what-i-m-carrying.mp3",
+   "art": "art/t/b-what-i-m-carrying.jpg"
+  },
+  {
+   "title": "Cracked Concrete",
+   "style": "Dark Hip Hop",
+   "bpm": 92,
+   "key": "Em",
+   "yt": "Taodp1ycKo0",
+   "date": "2026-11-24",
+   "thumb": "https://i.ytimg.com/vi/Taodp1ycKo0/maxresdefault.jpg",
+   "views": 62,
+   "secs": 192,
+   "id": "b-cracked-concrete",
+   "preview": "previews/b-cracked-concrete.mp3",
+   "art": "art/t/b-cracked-concrete.jpg"
+  },
+  {
+   "title": "Choose Me",
+   "style": "Cam'ron x Dipset Era Soul Sample",
+   "bpm": 92,
+   "key": "A#m",
+   "yt": "ErLSKAF2yes",
+   "date": "2026-11-16",
+   "thumb": "https://i.ytimg.com/vi/ErLSKAF2yes/maxresdefault.jpg",
+   "views": 30,
+   "secs": 253,
+   "id": "b-choose-me",
+   "preview": "previews/b-choose-me.mp3",
+   "art": "art/t/b-choose-me.jpg"
+  },
+  {
+   "title": "Selfless",
+   "style": "Cam'ron x Dipset Soul Sample",
+   "bpm": 100,
+   "key": "Am",
+   "yt": "iOWt4SCaFsg",
+   "date": "2026-11-10",
+   "thumb": "https://i.ytimg.com/vi/iOWt4SCaFsg/maxresdefault.jpg",
+   "views": 30,
+   "secs": 215,
+   "id": "b-selfless",
+   "preview": "previews/b-selfless.mp3",
+   "art": "art/t/b-selfless.jpg"
+  },
+  {
+   "title": "Distant Signal",
+   "style": "Cam'ron x Dipset Soul Sample",
+   "bpm": 67,
+   "key": "G#m",
+   "yt": "CpStsfMZhhw",
+   "date": "2026-11-09",
+   "thumb": "https://i.ytimg.com/vi/CpStsfMZhhw/maxresdefault.jpg",
+   "views": 34,
+   "secs": 205,
+   "id": "b-distant-signal",
+   "preview": "previews/b-distant-signal.mp3",
+   "art": "art/t/b-distant-signal.jpg"
+  },
+  {
+   "title": "Gilded Smoke",
+   "style": "Cam'ron x Dipset Soul Sample",
+   "bpm": 89,
+   "key": "A#m",
+   "yt": "I0OfRXACXy8",
+   "date": "2026-11-09",
+   "thumb": "https://i.ytimg.com/vi/I0OfRXACXy8/maxresdefault.jpg",
+   "views": 21,
+   "secs": 177,
+   "id": "b-gilded-smoke",
+   "preview": "previews/b-gilded-smoke.mp3",
+   "art": "art/t/b-gilded-smoke.jpg"
+  },
+  {
+   "title": "Velvet Ember",
+   "style": "Cam'ron x Dipset Soul Sample",
+   "bpm": 89,
+   "key": "A#m",
+   "yt": "6CVObBK1HsY",
+   "date": "2026-11-09",
+   "thumb": "https://i.ytimg.com/vi/6CVObBK1HsY/maxresdefault.jpg",
+   "views": 32,
+   "secs": 178,
+   "id": "b-velvet-ember",
+   "preview": "previews/b-velvet-ember.mp3",
+   "art": "art/t/b-velvet-ember.jpg"
+  },
+  {
+   "title": "Spore Cipher",
+   "style": "Dark Boom Bap",
+   "bpm": 83,
+   "key": "Fm",
+   "yt": "l7RCYiVuenM",
+   "date": "2026-11-08",
+   "thumb": "https://i.ytimg.com/vi/l7RCYiVuenM/maxresdefault.jpg",
+   "views": 40,
+   "secs": 255,
+   "id": "b-spore-cipher",
+   "preview": "previews/b-spore-cipher.mp3",
+   "art": "art/t/b-spore-cipher.jpg"
+  },
+  {
+   "title": "Satin Skies",
+   "style": "Lucki x Summrs",
+   "bpm": 150,
+   "key": "C#m",
+   "yt": "fhKuGMyeswI",
+   "date": "2026-10-07",
+   "thumb": "https://i.ytimg.com/vi/fhKuGMyeswI/maxresdefault.jpg",
+   "views": 30,
+   "secs": 244,
+   "id": "b-satin-skies",
+   "preview": "previews/b-satin-skies.mp3",
+   "art": "art/t/b-satin-skies.jpg"
+  },
+  {
+   "title": "Iron Block",
+   "style": "Central Cee x Kay Flock",
+   "bpm": 142,
+   "key": "Cm",
+   "yt": "FnvAAMdY6mE",
+   "date": "2026-10-07",
+   "thumb": "https://i.ytimg.com/vi/FnvAAMdY6mE/maxresdefault.jpg",
+   "views": 44,
+   "secs": 244,
+   "id": "b-iron-block",
+   "preview": "previews/b-iron-block.mp3",
+   "art": "art/t/b-iron-block.jpg"
+  },
+  {
+   "title": "Static Halo",
+   "style": "Ken Carson x Destroy Lonely",
+   "bpm": 155,
+   "key": "Gm",
+   "yt": "oYzKLciuyl0",
+   "date": "2026-10-07",
+   "thumb": "https://i.ytimg.com/vi/oYzKLciuyl0/maxresdefault.jpg",
+   "views": 29,
+   "secs": 242,
+   "id": "b-static-halo",
+   "preview": "previews/b-static-halo.mp3",
+   "art": "art/t/b-static-halo.jpg"
+  },
+  {
+   "title": "Black Glass",
+   "style": "Future x 21 Savage",
+   "bpm": 143,
+   "key": "Fm",
+   "yt": "UCzGRFh8AQ4",
+   "date": "2026-10-07",
+   "thumb": "https://i.ytimg.com/vi/UCzGRFh8AQ4/maxresdefault.jpg",
+   "views": 79,
+   "secs": 242,
+   "id": "b-black-glass",
+   "preview": "previews/b-black-glass.mp3",
+   "art": "art/t/b-black-glass.jpg"
+  },
+  {
+   "title": "Midnight Protocol",
+   "style": "Dark Trap",
+   "bpm": 142,
+   "key": "Dm",
+   "yt": "jBBiON6iLes",
+   "date": "2026-09-03",
+   "thumb": "https://i.ytimg.com/vi/jBBiON6iLes/maxresdefault.jpg",
+   "views": 28,
+   "secs": 181,
+   "id": "b-midnight-protocol",
+   "preview": "previews/b-midnight-protocol.mp3",
+   "art": "art/t/b-midnight-protocol.jpg"
+  },
+  {
+   "title": "Black Marble",
+   "style": "Dark Trap",
+   "bpm": 140,
+   "key": "",
+   "yt": "CQG9vvOLNO8",
+   "date": "2026-08-29",
+   "thumb": "https://i.ytimg.com/vi/CQG9vvOLNO8/maxresdefault.jpg",
+   "views": 12,
+   "secs": 174,
+   "id": "b-black-marble",
+   "preview": "previews/b-black-marble.mp3"
+  },
+  {
+   "title": "Hollow Crown",
+   "style": "Dark Trap",
+   "bpm": 136,
+   "key": "Dm",
+   "yt": "-NhmgT_rayM",
+   "date": "2026-08-29",
+   "thumb": "https://i.ytimg.com/vi/-NhmgT_rayM/maxresdefault.jpg",
+   "views": 13,
+   "secs": 181,
+   "id": "b-hollow-crown",
+   "preview": "previews/b-hollow-crown.mp3"
+  },
+  {
+   "title": "Glass Hours",
+   "style": "Dark Trap",
+   "bpm": 144,
+   "key": "",
+   "yt": "zg0kZCMmhpY",
+   "date": "2026-08-29",
+   "thumb": "https://i.ytimg.com/vi/zg0kZCMmhpY/maxresdefault.jpg",
+   "views": 8,
+   "secs": 181,
+   "id": "b-glass-hours",
+   "preview": "previews/b-glass-hours.mp3"
+  },
+  {
+   "title": "Midnight Detail",
+   "style": "Dark Trap",
+   "bpm": 138,
+   "key": "Gm",
+   "yt": "OlbVHTtK3EM",
+   "date": "2026-08-29",
+   "thumb": "https://i.ytimg.com/vi/OlbVHTtK3EM/maxresdefault.jpg",
+   "views": 11,
+   "secs": 181,
+   "id": "b-midnight-detail",
+   "preview": "previews/b-midnight-detail.mp3"
+  },
+  {
+   "title": "Zinc Fence",
+   "style": "Dancehall",
+   "bpm": 100,
+   "key": "",
+   "yt": "AZqxzTsgjlA",
+   "date": "2026-08-29",
+   "thumb": "https://i.ytimg.com/vi/AZqxzTsgjlA/maxresdefault.jpg",
+   "views": 47,
+   "secs": 181,
+   "id": "b-zinc-fence",
+   "preview": "previews/b-zinc-fence.mp3"
+  },
+  {
+   "title": "Iron Pocket",
+   "style": "Dark Trap",
+   "bpm": 144,
+   "key": "",
+   "yt": "Xl9t6Jsze3g",
+   "date": "2026-08-24",
+   "thumb": "https://i.ytimg.com/vi/Xl9t6Jsze3g/maxresdefault.jpg",
+   "views": 24,
+   "secs": 181,
+   "id": "b-iron-pocket",
+   "preview": "previews/b-iron-pocket.mp3"
+  },
+  {
+   "title": "Pressure Point",
+   "style": "Dark Trap",
+   "bpm": 144,
+   "key": "",
+   "yt": "q5OBwZx_bjM",
+   "date": "2026-08-24",
+   "thumb": "https://i.ytimg.com/vi/q5OBwZx_bjM/maxresdefault.jpg",
+   "views": 20,
+   "secs": 181,
+   "id": "b-pressure-point",
+   "preview": "previews/b-pressure-point.mp3"
+  },
+  {
+   "title": "Ghost Frequency",
+   "style": "Dark Trap",
+   "bpm": 144,
+   "key": "",
+   "yt": "LYznvKHI5Mk",
+   "date": "2026-08-24",
+   "thumb": "https://i.ytimg.com/vi/LYznvKHI5Mk/maxresdefault.jpg",
+   "views": 18,
+   "secs": 181,
+   "id": "b-ghost-frequency",
+   "preview": "previews/b-ghost-frequency.mp3"
+  },
+  {
+   "title": "Night Shift",
+   "style": "R&B Soul",
+   "bpm": 76,
+   "key": "",
+   "yt": "NVCNSduD9hI",
+   "date": "2026-08-24",
+   "thumb": "https://i.ytimg.com/vi/NVCNSduD9hI/maxresdefault.jpg",
+   "views": 25,
+   "secs": 181,
+   "id": "b-night-shift",
+   "preview": "previews/b-night-shift.mp3"
+  },
+  {
+   "title": "Salt Air",
+   "style": "Afrobeats",
+   "bpm": 108,
+   "key": "",
+   "yt": "fYWriyFag3M",
+   "date": "2026-08-24",
+   "thumb": "https://i.ytimg.com/vi/fYWriyFag3M/maxresdefault.jpg",
+   "views": 22,
+   "secs": 181,
+   "id": "b-salt-air",
+   "preview": "previews/b-salt-air.mp3"
+  },
+  {
+   "title": "Concrete Bloom",
+   "style": "Boom Bap",
+   "bpm": 89,
+   "key": "",
+   "yt": "Q7Eesbd3gNo",
+   "date": "2026-08-24",
+   "thumb": "https://i.ytimg.com/vi/Q7Eesbd3gNo/maxresdefault.jpg",
+   "views": 14,
+   "secs": 181,
+   "id": "b-concrete-bloom",
+   "preview": "previews/b-concrete-bloom.mp3"
+  },
+  {
+   "title": "Blue Hour",
+   "style": "Afroswing",
+   "bpm": 104,
+   "key": "Gm",
+   "yt": "i-u9HMmoo_c",
+   "date": "2026-08-24",
+   "thumb": "https://i.ytimg.com/vi/i-u9HMmoo_c/maxresdefault.jpg",
+   "views": 23,
+   "secs": 181,
+   "id": "b-blue-hour",
+   "preview": "previews/b-blue-hour.mp3"
+  },
+  {
+   "title": "Nuh Ask Permission",
+   "style": "Dancehall",
+   "bpm": 99,
+   "key": "F#m",
+   "yt": "lY9JSxkyeqM",
+   "date": "2026-08-21",
+   "thumb": "https://i.ytimg.com/vi/lY9JSxkyeqM/maxresdefault.jpg",
+   "views": 41,
+   "secs": 161,
+   "id": "b-nuh-ask-permission",
+   "preview": "previews/b-nuh-ask-permission.mp3"
+  },
+  {
+   "title": "Night Bus",
+   "style": "Boom Bap",
+   "bpm": 88,
+   "key": "D#m",
+   "yt": "HNSmUuwqF7U",
+   "date": "2026-08-21",
+   "thumb": "https://i.ytimg.com/vi/HNSmUuwqF7U/maxresdefault.jpg",
+   "views": 78,
+   "secs": 181,
+   "id": "b-night-bus",
+   "preview": "previews/b-night-bus.mp3",
+   "art": "art/t/b-night-bus.jpg"
+  },
+  {
+   "title": "Iron Liturgy",
+   "style": "Dark Orchestral",
+   "bpm": 140,
+   "key": "Dm",
+   "yt": "4WNNq8pH_PQ",
+   "date": "2026-08-21",
+   "thumb": "https://i.ytimg.com/vi/4WNNq8pH_PQ/maxresdefault.jpg",
+   "views": 43,
+   "secs": 181,
+   "id": "b-iron-liturgy",
+   "preview": "previews/b-iron-liturgy.mp3",
+   "art": "art/t/b-iron-liturgy.jpg"
+  },
+  {
+   "title": "Log Drum Sermon",
+   "style": "Amapiano",
+   "bpm": 112,
+   "key": "Gm",
+   "yt": "cZZfOInQd1M",
+   "date": "2026-08-21",
+   "thumb": "https://i.ytimg.com/vi/cZZfOInQd1M/maxresdefault.jpg",
+   "views": 54,
+   "secs": 181,
+   "id": "b-log-drum-sermon",
+   "preview": "previews/b-log-drum-sermon.mp3",
+   "art": "art/t/b-log-drum-sermon.jpg"
+  },
+  {
+   "title": "Cold Start",
+   "style": "UK Drill",
+   "bpm": 150,
+   "key": "Fm",
+   "yt": "H2hGMfYcPco",
+   "date": "2026-08-21",
+   "thumb": "https://i.ytimg.com/vi/H2hGMfYcPco/maxresdefault.jpg",
+   "views": 42,
+   "secs": 181,
+   "id": "b-cold-start",
+   "preview": "previews/b-cold-start.mp3",
+   "art": "art/t/b-cold-start.jpg"
+  },
+  {
+   "title": "369",
+   "style": "Hard Trap",
+   "bpm": 145,
+   "key": "Fm",
+   "yt": "jQcti5cNb1U",
+   "date": "2026-08-19",
+   "thumb": "https://i.ytimg.com/vi/jQcti5cNb1U/maxresdefault.jpg",
+   "views": 39,
+   "secs": 239,
+   "id": "b-369",
+   "preview": "previews/b-369.mp3"
+  },
+  {
+   "title": "Phantom Shift",
+   "style": "Dark Trap",
+   "bpm": 143,
+   "key": "Dm",
+   "yt": "TGGSGqBrNNA",
+   "date": "2026-08-19",
+   "thumb": "https://i.ytimg.com/vi/TGGSGqBrNNA/maxresdefault.jpg",
+   "views": 15,
+   "secs": 241,
+   "id": "b-phantom-shift",
+   "preview": "previews/b-phantom-shift.mp3"
+  },
+  {
+   "title": "Ghost Protocol",
+   "style": "Metro Boomin x 21 Savage",
+   "bpm": 144,
+   "key": "Dm",
+   "yt": "h54JbyCRCZQ",
+   "date": "2026-08-17",
+   "thumb": "https://i.ytimg.com/vi/h54JbyCRCZQ/maxresdefault.jpg",
+   "views": 26,
+   "secs": 201,
+   "id": "b-ghost-protocol",
+   "preview": "previews/b-ghost-protocol.mp3"
+  },
+  {
+   "title": "Siege Mode",
+   "style": "Dubstep Trap",
+   "bpm": 144,
+   "key": "F#m",
+   "yt": "VGwFB9cowD0",
+   "date": "2026-08-17",
+   "thumb": "https://i.ytimg.com/vi/VGwFB9cowD0/maxresdefault.jpg",
+   "views": 83,
+   "secs": 211,
+   "id": "b-siege-mode",
+   "preview": "previews/b-siege-mode.mp3"
+  },
+  {
+   "title": "No Human Signal",
+   "style": "Future x Metro Boomin",
+   "bpm": 140,
+   "key": "Fm",
+   "yt": "m0Yzyu4xnaI",
+   "date": "2026-08-16",
+   "thumb": "https://i.ytimg.com/vi/m0Yzyu4xnaI/maxresdefault.jpg",
+   "views": 37,
+   "secs": 186,
+   "id": "b-no-human-signal",
+   "preview": "previews/b-no-human-signal.mp3"
+  }
+ ],
+ "playlists": {
+  "every_genre": "PLRwRnK2spFoA",
+  "free_beats": "PLPp2zRqhM95s",
+  "stations": "PLbc2XHuJHhkg"
+ },
+ "counts": {
+  "songs": 131,
+  "beats": 37,
+  "albums": 15
+ }
+}

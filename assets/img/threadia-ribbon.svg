@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 132" fill="none" aria-label="ThreadiaAI">
+  <defs>
+    <linearGradient id="tr" x1="8" y1="14" x2="92" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f7de6"/>
+      <stop offset=".45" stop-color="#12b6c9"/>
+      <stop offset="1" stop-color="#35c281"/>
+    </linearGradient>
+  </defs>
+  <!-- ribbon loop: a thick rounded tube that loops over the top and crosses itself,
+       tails splaying to the lower corners. Vector recreation of the brand mark. -->
+  <path d="M 84 122
+           C 62 102, 56 92, 50 82
+           C 44 72, 30 68, 22 55
+           C 11 38, 21 17, 46 15
+           C 70 13, 80 34, 70 51
+           C 63 65, 49 66, 44 79
+           C 39 93, 30 106, 17 122"
+        stroke="url(#tr)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

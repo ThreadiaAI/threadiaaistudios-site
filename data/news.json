@@ -1,0 +1,68 @@
+{
+ "updated": "2026-11-25",
+ "items": [
+  {
+   "date": "2026-11-24",
+   "tag": "Streaming",
+   "title": "Tidal moves to remove fully AI generated tracks",
+   "summary": "Tidal says it will stop accepting music made entirely by AI and begin removing it from the service in December, after a surge of automated uploads. It is the strictest stance any major streamer has taken so far.",
+   "take": "The line being drawn is human authorship. Every record we release starts with a person: Grey Beard writes, directs and signs off on every song.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming"
+  },
+  {
+   "date": "2026-10-14",
+   "tag": "Platforms",
+   "title": "Deezer will let listeners filter out fully AI music",
+   "summary": "Deezer announced a one tap setting that hides fully AI generated tracks, albums and artists from search, rolling out before the end of the year. Music made with limited AI assistance is treated differently.",
+   "take": "Listener choice is healthy. We would rather earn the play than sneak into it.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/"
+  },
+  {
+   "date": "2026-11-25",
+   "tag": "Policy",
+   "title": "Where every platform stands on AI music",
+   "summary": "A roundup of the current rules: labels on some services, filters on others, outright bans on one, and disclosure requirements at distribution. The rulebook is being written in real time.",
+   "take": "We disclose. Agent Threads is an AI persona and we say so on every release.",
+   "source": "89 A Radio Rock",
+   "url": "https://www.radiorock.com.br/en/news/ai-generated-music-what-tidal-spotify-deezer-and-other-platforms-have-decided"
+  },
+  {
+   "date": "2026-05-21",
+   "tag": "Licensing",
+   "title": "Spotify and Universal set up a paid AI remix tool",
+   "summary": "A licensing agreement opens the door to a premium add on where fans can make AI covers and remixes of participating artists, with the rights holders paid.",
+   "take": "Licensed, paid, opt in. That is the direction the whole industry is heading.",
+   "source": "eWeek",
+   "url": "https://www.eweek.com/news/spotify-umg-ai-music-remix-tool/"
+  },
+  {
+   "date": "2025-09-25",
+   "tag": "Credits",
+   "title": "AI disclosures are coming to music credits",
+   "summary": "Spotify is backing an industry standard, developed through DDEX, that lets labels and distributors say exactly how AI was used on a track instead of a blunt yes or no label.",
+   "take": "Nuance matters. A song can be written by a person and performed by an AI, and credits should say both.",
+   "source": "Spotify Newsroom",
+   "url": "https://newsroom.spotify.com/2025-09-25/spotify-strengthens-ai-protections/"
+  },
+  {
+   "date": "2025-11-20",
+   "tag": "Industry",
+   "title": "The three majors license their catalogs to an AI music startup",
+   "summary": "Sony, Warner and Universal each signed licensing deals with Klay, a startup building a streaming service where listeners can reshape songs while rights holders get paid.",
+   "take": "A year ago this was a courtroom fight. Now it is a business model.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/economy/2025/11/20/sony-warner-and-universal-sign-ai-music-licensing-deals-with-startup-klay"
+  },
+  {
+   "date": "2025-11-01",
+   "tag": "Charts",
+   "title": "An AI powered artist reaches a Billboard airplay chart",
+   "summary": "Xania Monet became the first AI powered act to debut on a Billboard radio chart, with a human songwriter behind the project, and others have followed onto genre charts since.",
+   "take": "The songwriter behind the voice is the story. Same here.",
+   "source": "Complex",
+   "url": "https://www.complex.com/music/a/markelibert/ai-artist-xania-monet-becomes-first-to-chart-on-billboard-radio-rankings"
+  }
+ ]
+}

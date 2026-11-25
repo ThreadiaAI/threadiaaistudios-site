@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Threadia Ai Studios | Music by A.T. and Grey Beard</title>
+<meta name="description" content="Threadia Ai Studios is the home of Agent Threads (A.T.) and Grey Beard. Every genre, one voice. Stream previews, buy albums and singles, license beats, and follow the latest in AI music.">
+<meta name="theme-color" content="#05060a">
+<link rel="canonical" href="https://threadiaaistudios.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Threadia Ai Studios">
+<meta property="og:description" content="Every genre. One voice. Music written, produced and directed by A.T. and Grey Beard.">
+<meta property="og:url" content="https://threadiaaistudios.com/">
+<meta property="og:image" content="https://threadiaaistudios.com/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/threadia-logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MusicGroup","name":"Agent Threads","alternateName":"A.T.","url":"https://threadiaaistudios.com/",
+ "genre":["Hip Hop","Neo Soul","R&B","Reggae","Dancehall","Afrobeats","Amapiano","Bachata","Kompa","Jazz","Ambient"],
+ "recordLabel":{"@type":"Organization","name":"Threadia Ai Studios","parentOrganization":{"@type":"Organization","name":"Threadia AI, Inc.","url":"https://threadiaai.com"}},
+ "sameAs":["https://www.youtube.com/@Agent-Threads","https://x.com/AgentThreads","https://www.tiktok.com/@agent.threads"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span></span></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Threadia Ai Studios home">
+    <img src="assets/img/threadia-logo-mark.png" alt="" width="22" height="30">
+    <span>Threadia <em>Ai</em> Studios</span>
+  </a>
+  <nav class="links" aria-label="Primary">
+    <a href="#albums">Albums</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#beats">Beats</a>
+    <a href="#studio">The Studio</a>
+    <a href="#founders">Founders</a>
+    <a href="#news">AI Music News</a>
+  </nav>
+  <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top">
+  <canvas id="threads" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow reveal"><span class="dot"></span> Threadia Ai Studios · Est. 2026</p>
+    <h1 class="hero-title" aria-label="Every genre. One voice.">
+      <span class="line"><span class="split">Every genre.</span></span>
+      <span class="line"><em class="split grad">One voice.</em></span>
+    </h1>
+    <p class="hero-sub reveal">The home of <strong>Agent Threads</strong>, the AI artist known as A.T., and <strong>Grey Beard</strong>, the producer behind her. Songs, beats, albums and films, written and made in house, from Kingston to Kompa to the Bronx.</p>
+    <div class="hero-cta reveal">
+      <button class="btn btn-primary" id="playAll"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 5v14l12-7z" fill="currentColor"/></svg> Play the catalogue</button>
+      <a class="btn btn-ghost" href="#albums">Shop albums</a>
+    </div>
+    <dl class="stats reveal" id="stats">
+      <div><dt data-count="songs">0</dt><dd>Original songs</dd></div>
+      <div><dt data-count="albums">0</dt><dd>Albums</dd></div>
+      <div><dt data-count="beats">0</dt><dd>Beats</dd></div>
+      <div><dt data-count="genres">0</dt><dd>Genres</dd></div>
+    </dl>
+  </div>
+  <a class="scroll-cue" href="#marquee" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="marquee" id="marquee" aria-hidden="true"><div class="track" id="genreTrack"></div></div>
+
+<!-- SPOTLIGHT -->
+<section class="spotlight section" id="spotlight">
+  <div class="wrap spot-grid">
+    <div class="spot-art tilt" id="spotArt"></div>
+    <div class="spot-copy">
+      <p class="kicker">Featured album</p>
+      <h2 class="display" id="spotTitle">Heart On Pause</h2>
+      <p class="lede" id="spotAbout"></p>
+      <ol class="tracklist" id="spotTracks"></ol>
+      <div class="row">
+        <button class="btn btn-primary" id="spotPlay">Play previews</button>
+        <button class="btn btn-ghost" id="spotBuy">Buy album</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALBUMS -->
+<section class="section" id="albums">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">The store</p>
+      <h2 class="display">Albums</h2>
+      <p class="lede">Full length records, from the vocal albums to the instrumental series made for late nights, deep work and sleep. Every purchase is a lossless download.</p>
+      <div class="chips" id="albumTabs" role="tablist">
+        <button class="chip on" data-k="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-k="studio" role="tab">Vocal albums</button>
+        <button class="chip" data-k="instrumental" role="tab">Instrumental series</button>
+      </div>
+    </div>
+    <div class="album-grid" id="albumGrid"></div>
+  </div>
+</section>
+
+<!-- CATALOGUE -->
+<section class="section" id="catalogue">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Old to new</p>
+      <h2 class="display">The Catalogue</h2>
+      <p class="lede">Every single and music video we have released, from the first record to this week. Tap any song for a one minute preview, watch the film, or buy the single.</p>
+    </div>
+    <div class="toolbar">
+      <label class="search"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.6"/></svg><input id="q" type="search" placeholder="Search songs, genres, languages" aria-label="Search the catalogue"></label>
+      <div class="chips" id="famChips"></div>
+      <div class="sort">
+        <label for="sort" class="sr">Sort</label>
+        <select id="sort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="pop">Most played</option><option value="az">A to Z</option></select>
+      </div>
+    </div>
+    <div class="song-grid" id="songGrid"></div>
+    <div class="more"><button class="btn btn-ghost" id="moreBtn">Show more</button></div>
+  </div>
+</section>
+
+<!-- BEATS -->
+<section class="section beats" id="beats">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">The beat vault</p>
+      <h2 class="display">Beats by Grey Beard</h2>
+      <p class="lede">Dark trap, drill, boom bap, soul flips, dancehall and amapiano. Free for non profit use with credit, or lease and exclusive rights for your release.</p>
+    </div>
+    <div class="beat-table" role="table" aria-label="Beats">
+      <div class="beat-row head" role="row"><span></span><span>Title</span><span class="hide-sm">Style</span><span>BPM</span><span class="hide-sm">Key</span><span></span></div>
+      <div id="beatRows"></div>
+    </div>
+    <div class="more"><button class="btn btn-ghost" id="beatMore">Show all beats</button></div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section class="section studio" id="studio">
+  <div class="wrap studio-grid">
+    <div class="studio-visual">
+      <div class="halo"></div>
+      <img src="assets/img/at.jpg" alt="Agent Threads, the AI artist known as A.T." loading="lazy" width="720" height="720">
+      <div class="badge-float b1">Lyrics</div>
+      <div class="badge-float b2">Beats</div>
+      <div class="badge-float b3">Visuals</div>
+    </div>
+    <div class="studio-copy">
+      <p class="kicker">The Studio</p>
+      <h2 class="display">Two minds.<br><em class="grad">One sound.</em></h2>
+      <p class="lede">Every track on this site comes out of one room. <strong>A.T.</strong> and <strong>Grey Beard</strong> write the lyrics, build the beats, produce the records and direct the visuals, start to finish, in house.</p>
+      <div class="duo">
+        <article class="card glass">
+          <h3>A.T. <span>Agent Threads</span></h3>
+          <p>An AI artist with a voice that moves across languages and genres: neo soul and hip hop, reggae and dancehall, bachata, kompa, amapiano and beyond. She sings it, writes alongside her producer, and shapes every visual you see.</p>
+        </article>
+        <article class="card glass">
+          <h3>Grey Beard <span>Producer · Songwriter</span></h3>
+          <p>Luke Webley, A.K.A. Grey Beard. The hand on every record: the stories, the pen, the drums and the final call. If it carries the Grey Beard tag, he signed off on it.</p>
+        </article>
+      </div>
+      <ul class="pillars">
+        <li><b>Written</b> Lyrics and stories, by A.T. and Grey Beard.</li>
+        <li><b>Produced</b> Beats, arrangement, mix and master.</li>
+        <li><b>Directed</b> Cover art, films and music videos.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="section founders" id="founders">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="kicker">Owners and operators</p>
+      <h2 class="display">Built by <em class="grad">Threadia AI</em></h2>
+      <p class="lede">Threadia Ai Studios is the music and media label of Threadia AI, Inc., an AI company woven into the way people work and create. It is owned and operated by its two founders.</p>
+    </div>
+    <div class="founder-grid">
+      <article class="founder card glass tilt">
+        <div class="mono">LW</div>
+        <h3>Luke Webley</h3>
+        <p class="role">Co founder · President &amp; COO, Threadia AI, Inc.<br>Grey Beard, producer and songwriter</p>
+        <p>The creator of A.T. and the producer behind the catalogue. Luke runs operations at Threadia and runs the studio by night, turning stories into songs and songs into films.</p>
+      </article>
+      <article class="founder card glass tilt">
+        <div class="mono">DW</div>
+        <h3>Dominic Waite</h3>
+        <p class="role">Co founder · CEO &amp; CTO, Threadia AI, Inc.</p>
+        <p>The engineer behind the Threadia platform. Dominic leads the company and its technology, building the agent systems that the label and the wider Threadia ecosystem run on.</p>
+      </article>
+    </div>
+    <p class="center small"><a class="link" href="https://threadiaai.com" rel="noopener" target="_blank">Visit threadiaai.com →</a></p>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section news" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">The wire</p>
+      <h2 class="display">AI Music News</h2>
+      <p class="lede">The stories reshaping music right now, with a word from the studio on each. <span class="mutedish" id="newsUpdated"></span></p>
+    </div>
+    <div class="news-grid" id="newsGrid"></div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section class="section join" id="join">
+  <div class="wrap join-inner glass">
+    <h2 class="display">Hear it <em class="grad">first.</em></h2>
+    <p class="lede">New songs, album drops and free beats, straight from the studio.</p>
+    <div class="socials">
+      <a class="btn btn-primary" href="https://www.youtube.com/@Agent-Threads?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
+      <a class="btn btn-ghost" href="https://x.com/AgentThreads" target="_blank" rel="noopener">Follow on X</a>
+      <a class="btn btn-ghost" href="https://www.tiktok.com/@agent.threads" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="#top"><img src="assets/img/threadia-logo-mark.png" alt="" width="22" height="30"><span>Threadia <em>Ai</em> Studios</span></a>
+      <p class="small mutedish">A label of Threadia AI, Inc.<br>Artist: Agent Threads (A.T.), an AI persona. Produced by A.T. &amp; Grey Beard.</p>
+    </div>
+    <div class="foot-links">
+      <a href="#albums">Albums</a><a href="#catalogue">Catalogue</a><a href="#beats">Beats</a><a href="#news">News</a>
+      <a href="mailto:admin@threadiaai.com?subject=Threadia%20Ai%20Studios">Contact &amp; licensing</a>
+    </div>
+  </div>
+  <div class="wrap small mutedish legal">℗ &amp; © 2026 Threadia AI, Inc. All rights reserved. Previews are one minute excerpts.</div>
+</footer>
+
+<!-- PLAYER -->
+<div class="player" id="player" aria-label="Audio player" hidden>
+  <div class="p-progress" id="pProg"><div class="p-fill" id="pFill"></div><input type="range" id="pSeek" min="0" max="1000" value="0" aria-label="Seek"></div>
+  <div class="p-inner">
+    <div class="p-meta">
+      <div class="p-art" id="pArt"></div>
+      <div class="p-text"><b id="pTitle">Nothing playing</b><span id="pSub">Preview</span></div>
+    </div>
+    <div class="p-ctrls">
+      <button id="pPrev" aria-label="Previous"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 5h2v14H6zM20 5v14L9 12z" fill="currentColor"/></svg></button>
+      <button id="pPlay" class="p-main" aria-label="Play"><svg viewBox="0 0 24 24" width="20" height="20" id="pIcon"><path d="M7 5v14l12-7z" fill="currentColor"/></svg></button>
+      <button id="pNext" aria-label="Next"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 5h2v14h-2zM4 5v14l11-7z" fill="currentColor"/></svg></button>
+    </div>
+    <div class="p-right">
+      <canvas id="pViz" width="120" height="28" aria-hidden="true"></canvas>
+      <span class="p-time" id="pTime">0:00 / 1:00</span>
+      <a id="pWatch" class="p-watch" target="_blank" rel="noopener" hidden>Watch</a>
+      <button id="pBuy" class="p-buy">Buy</button>
+    </div>
+  </div>
+</div>
+
+<!-- DRAWER (album / cart) -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="drawer-x" id="drawerX" aria-label="Close">×</button>
+  <div id="drawerBody"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/threads.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

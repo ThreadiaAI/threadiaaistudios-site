@@ -1,0 +1,7 @@
+{
+ "_note": "Checkout links per product. Leave checkout null until the payment provider is chosen; the cart then collects the order and the checkout button explains that sales open soon. Keys: album ids, song ids, beat ids, or the defaults below.",
+ "checkout": null,
+ "currency": "USD",
+ "prices": { "single": 1.29, "beat_lease": 29.99 },
+ "links": {}
+}
