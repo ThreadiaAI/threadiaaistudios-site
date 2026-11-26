@@ -279,7 +279,7 @@
         <ul>${(LIC.tiers[t.key] || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}
       <h3 class="lic-h">Terms that apply to every license</h3>
       <ol class="lic-terms">${LIC.general.map(([h, x]) => `<li><b>${esc(h)}.</b> ${esc(x)}</li>`).join("")}</ol>
-      <p class="note">${esc(LIC.footer)}</p>`);
+      <p class="note">${esc(LIC.footer)} <a class="link" href="terms/#beats">Read the full Terms of Sale and Licensing</a>.</p>`);
     const bk = $("#licBack"); if (bk) bk.onclick = () => openBeat(fromBeat);
   }
   $("#licenseInfo").onclick = () => openLicense(null);
