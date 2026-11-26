@@ -501,3 +501,10 @@ a{color:inherit;text-decoration:none}
 .vm-frame{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.6)}
 .vm-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 html.vm-open{overflow:hidden}
+
+/* site sounds toggle */
+.snd-toggle{position:fixed;left:16px;bottom:16px;z-index:75;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;background:rgba(10,12,19,.72);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);cursor:pointer;opacity:.75;transition:opacity .2s,transform .2s,bottom .35s}
+.snd-toggle:hover{opacity:1;transform:scale(1.06)}
+.snd-toggle[aria-pressed="false"]{opacity:.5}
+.snd-toggle.lift{bottom:118px}
+@media (max-width:640px){.snd-toggle.lift{bottom:150px}}
