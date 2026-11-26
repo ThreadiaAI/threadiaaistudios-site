@@ -41,7 +41,7 @@
     $("#pTitle").textContent = it.title;
     $("#pSub").textContent = (it.sub || "Agent Threads") + " · 1 min preview";
     $("#pArt").style.backgroundImage = `url("${art(it)}")`;
-    const w = $("#pWatch"); if (it.yt) { w.hidden = false; w.href = "https://www.youtube.com/watch?v=" + it.yt; } else w.hidden = true;
+    const w = $("#pWatch"); if (it.yt) { w.hidden = false; w.href = "https://www.youtube.com/watch?v=" + it.yt; w.dataset.watch = it.yt; w.dataset.title = it.title; } else w.hidden = true;
     $("#pBuy").onclick = () => addToCart(it.buy || it);
     markPlaying();
     if ("mediaSession" in navigator) {
@@ -72,6 +72,36 @@
   });
   $("#pSeek").addEventListener("input", e => { if (audio.duration) audio.currentTime = e.target.value / 1000 * audio.duration; });
   $("#pPlay").onclick = toggle; $("#pNext").onclick = next; $("#pPrev").onclick = prev;
+  // On-site video: every [data-watch] link plays in a lightbox (youtube-nocookie) instead of leaving for YouTube.
+  const VM = document.createElement("div");
+  VM.className = "vmodal"; VM.hidden = true; VM.setAttribute("role", "dialog"); VM.setAttribute("aria-modal", "true"); VM.setAttribute("aria-label", "Video");
+  VM.innerHTML = '<div class="vm-box"><div class="vm-head"><span class="vm-title"></span><button class="vm-x" aria-label="Close video">×</button></div><div class="vm-frame"></div></div>';
+  document.body.appendChild(VM);
+  let vmBack = null;
+  function openVideo(id, title) {
+    if (!/^[A-Za-z0-9_-]{6,20}$/.test(id)) return false;
+    if (!audio.paused) audio.pause();
+    vmBack = document.activeElement;
+    VM.querySelector(".vm-title").textContent = title || "";
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+    f.title = title || "Video"; f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true; f.referrerPolicy = "strict-origin-when-cross-origin";
+    VM.querySelector(".vm-frame").replaceChildren(f);
+    VM.hidden = false; document.documentElement.classList.add("vm-open");
+    VM.querySelector(".vm-x").focus();
+    return true;
+  }
+  function closeVideo() {
+    if (VM.hidden) return;
+    VM.querySelector(".vm-frame").replaceChildren(); VM.hidden = true; document.documentElement.classList.remove("vm-open");
+    if (vmBack && vmBack.focus) vmBack.focus();
+  }
+  document.addEventListener("click", e => {
+    const a = e.target.closest("[data-watch]");
+    if (a && !e.ctrlKey && !e.metaKey && !e.shiftKey && openVideo(a.dataset.watch, a.dataset.title)) e.preventDefault();
+  });
+  VM.addEventListener("click", e => { if (e.target === VM || e.target.closest(".vm-x")) closeVideo(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeVideo(); });
   document.addEventListener("keydown", e => { if (e.code === "Space" && !/INPUT|TEXTAREA|SELECT|BUTTON/.test(document.activeElement.tagName) && cur()) { e.preventDefault(); toggle(); } if (e.key === "Escape") closeDrawer(); });
   // visualiser + hero swell
   const vz = $("#pViz"), vctx = vz.getContext("2d");
@@ -200,7 +230,7 @@
       <div class="th" style="background-image:url('${esc(art(s))}')" data-play="${esc(s.id)}" role="button" tabindex="0" aria-label="Play preview of ${esc(s.title)}">
         <span class="pbtn">${ICON_PLAY}</span><span class="yr">${new Date(s.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" })}</span></div>
       <div class="body"><h3>${s.page ? `<a class="song-link" href="${esc(s.page)}">${esc(s.title)}</a>` : esc(s.title)}</h3><p class="g">${esc(s.genre)}${s.feat ? " · feat. T.IQ" : ""}</p>
-      <div class="acts"><a class="mini" href="https://www.youtube.com/watch?v=${esc(s.yt)}" target="_blank" rel="noopener">Watch</a><button class="mini buy" data-buy="${esc(s.id)}" title="${s.format === "WAV" ? "Lossless WAV" : "High quality MP3"}">${money(STORE.prices.single)} · ${s.format || "MP3"}</button></div></div></article>`).join("")
+      <div class="acts"><a class="mini" href="https://www.youtube.com/watch?v=${esc(s.yt)}" data-watch="${esc(s.yt)}" data-title="${esc(s.title)}" target="_blank" rel="noopener">Watch</a><button class="mini buy" data-buy="${esc(s.id)}" title="${s.format === "WAV" ? "Lossless WAV" : "High quality MP3"}">${money(STORE.prices.single)} · ${s.format || "MP3"}</button></div></div></article>`).join("")
       : `<p class="empty">No songs match that search yet.</p>`;
     $("#moreBtn").style.display = list.length > S.shown ? "" : "none";
     $("#moreBtn").textContent = `Show more (${list.length - S.shown} left)`;
@@ -229,7 +259,7 @@
     $("#beatRows").innerHTML = vis.map(b => `<div class="beat-row" role="row" data-pid="${esc(b.id)}">
       <button class="bp" data-bplay="${esc(b.id)}" aria-label="Play ${esc(b.title)}">${ICON_PLAY}</button>
       <span class="bt"><i class="bth" style="background-image:url('${esc(art(b))}')"></i>${esc(b.title)}</span><span class="bs hide-sm">${esc(b.style)}</span><span class="mono">${b.bpm}</span><span class="mono hide-sm">${esc(b.key)}</span>
-      <span class="bacts"><a class="mini hide-sm" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">Free</a><button class="mini buy" data-blease="${esc(b.id)}">License · from ${money(STORE.prices.beat_lease)}</button></span></div>`).join("");
+      <span class="bacts"><a class="mini hide-sm" href="https://www.youtube.com/watch?v=${esc(b.yt)}" data-watch="${esc(b.yt)}" data-title="${esc(b.title)}" target="_blank" rel="noopener">Free</a><button class="mini buy" data-blease="${esc(b.id)}">License · from ${money(STORE.prices.beat_lease)}</button></span></div>`).join("");
     $("#beatMore").style.display = list.length > 10 ? "" : "none"; $("#beatMore").textContent = beatsAll ? "Show fewer" : `Show all ${list.length} beats`;
     $$("[data-bplay]").forEach(el => el.onclick = () => { const id = el.dataset.bplay; if (cur()?.id === id) { toggle(); return; } const l = list.map(beatQ); playQueue(l, l.findIndex(x => x.id === id)); });
     $$("[data-blease]").forEach(el => el.onclick = () => openBeat(CAT.beats.find(b => b.id === el.dataset.blease)));
@@ -263,7 +293,7 @@
         <div><b>${esc(t.name)} <button class="info" data-info="${esc(t.key)}" aria-label="License terms for ${esc(t.name)}">i</button></b><p>${esc(t.terms)}</p></div>
         ${t.price == null ? `<a class="btn btn-ghost" href="mailto:admin@threadiaai.com?subject=${encodeURIComponent("Exclusive rights: " + b.title)}">Ask</a>`
           : `<button class="btn btn-primary" data-tier="${esc(t.key)}">${money(t.price)}</button>`}</div>`).join("")}</div>
-      <p class="note">Secure checkout by Stripe. Your files and license terms arrive within 24 hours, shared privately to your Google account. The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" target="_blank" rel="noopener">listen on YouTube</a>.</p>`);
+      <p class="note">Secure checkout by Stripe. Download your files and your license instantly, no account needed. The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" data-watch="${esc(b.yt)}" data-title="${esc(b.title)}" target="_blank" rel="noopener">watch it here</a>.</p>`);
     $("#bPlay").onclick = () => playQueue([beatQ(b)], 0);
     $$("#drawerBody [data-info]").forEach(el => el.onclick = () => openLicense(el.dataset.info, b));
     $$("#drawerBody [data-tier]").forEach(el => el.onclick = () => {
