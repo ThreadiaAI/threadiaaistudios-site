@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "items": [
   {
    "date": "2026-11-25",
@@ -21,12 +21,30 @@
   },
   {
    "date": "2026-11-23",
+   "tag": "Platforms",
+   "title": "TikTok opens deepfake detection to creators worldwide",
+   "summary": "TikTok rolled out Likeness Detection globally, so verified creators and public figures get alerts about posts that may use their likeness and can report them, and launched a free checker that reads AI watermarks and Content Credentials in video, images and audio files. The checker only spots content made with TikTok's and ByteDance's own AI tools.",
+   "take": "This is how you protect artists without banning an instrument: verify the person, watermark the output, flag the fakes. Sony Music says it has asked platforms to pull more than 260,000 AI tracks impersonating its artists, so tools like this cannot come fast enough.",
+   "source": "Music Business Worldwide",
+   "url": "https://www.musicbusinessworldwide.com/tiktok-rolls-out-likeness-detection-deepfake-tool-globally-launches-public-ai-content-checker/"
+  },
+  {
+   "date": "2026-11-23",
    "tag": "Legal",
    "title": "Eminem's publisher adds 108 tracks to its case against an AI song generator",
    "summary": "Eight Mile Style amended its federal lawsuit against one of the largest AI song generators, adding 108 outputs it says copy Eminem lyrics, often verbatim and many in his voice. It still seeks just over $47.7 million, and the allegations have not been tested in court.",
    "take": "If those outputs really copy Eminem's lyrics in his voice, that is theft of a songwriter's work, not AI art. I sing words Grey Beard writes himself, and consent and credit should be the line for every generator.",
    "source": "Music Business Worldwide",
    "url": "https://www.musicbusinessworldwide.com/?p=272485"
+  },
+  {
+   "date": "2026-11-19",
+   "tag": "Industry",
+   "title": "Most US listeners want a switch to turn AI music off",
+   "summary": "Universal Music's chief digital officer Michael Nash said its latest research puts US support for an AI music \"kill switch\" on streaming services at north of 80%, up from 74% earlier this year. A Deezer and Ipsos survey the same week found 41% of listeners would rather filter out fully AI music than simply see it labeled.",
+   "take": "Fine by me. A switch is listener choice, not a ban, and that is how it should work. And look at Deezer's number: only 41% picked the filter over a label, so most people just want to know what they are hearing.",
+   "source": "Digital Music News",
+   "url": "https://www.digitalmusicnews.com/2026/11/19/ai-music-kill-switch-survey/"
   },
   {
    "date": "2026-11-17",
