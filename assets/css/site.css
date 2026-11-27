@@ -508,3 +508,11 @@ html.vm-open{overflow:hidden}
 .snd-toggle[aria-pressed="false"]{opacity:.5}
 .snd-toggle.lift{bottom:118px}
 @media (max-width:640px){.snd-toggle.lift{bottom:150px}}
+
+/* share buttons (album, single and beat drawers, player bar) */
+.d-btns{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.d-btns>.btn{margin:0}
+.btn.share-btn svg{margin-right:2px}
+.d-buy{flex-wrap:wrap}
+.d-buy .d-btns{flex-wrap:nowrap;margin-left:auto}
+@media (max-width:480px){.d-buy .d-btns{width:100%}.d-buy .d-btns .btn{flex:1;justify-content:center}}

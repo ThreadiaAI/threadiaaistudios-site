@@ -18,6 +18,27 @@
   let toastT;
   function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove("on"), 2400); }
 
+  /* ---------------- share ----------------
+     Every album, song and beat has its own link: song pages where they exist, otherwise #album= / #song= / #beat= on the
+     home page, which opens that item's drawer on arrival (see openDeepLink). Phones get the native share sheet; everything
+     else copies the link. */
+  const ICON_SHARE = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3l4 4-1.4 1.4L13 6.8V15h-2V6.8L9.4 8.4 8 7zM5 13h2v6h10v-6h2v8H5z" fill="currentColor"/></svg>';
+  const HOME = location.origin + location.pathname.replace(/index\.html$/, "");
+  function shareUrl(kind, it) {
+    if (kind === "song" && it.page) return new URL(it.page, HOME).href;
+    return HOME + "#" + kind + "=" + encodeURIComponent(it.id);
+  }
+  async function share(kind, it) {
+    const url = shareUrl(kind, it), title = it.title + " · Threadia Ai Studios";
+    const text = kind === "album" ? `Listen to ${it.title} by Agent Threads` : kind === "beat" ? `${it.title}, a beat by Grey Beard` : `Listen to ${it.title} by Agent Threads`;
+    if (navigator.share && matchMedia("(hover:none)").matches) { try { await navigator.share({ title, text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
+    try { await navigator.clipboard.writeText(url); toast("Link copied. Paste it anywhere to share"); return; } catch {}
+    const ta = document.createElement("textarea"); ta.value = url; ta.setAttribute("readonly", ""); ta.style.cssText = "position:fixed;opacity:0";
+    document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch {} ta.remove();
+    toast(ok ? "Link copied. Paste it anywhere to share" : url);
+  }
+  const shareBtn = (id, label) => `<button class="btn btn-ghost share-btn" id="${id}" aria-label="${esc(label)}">${ICON_SHARE} Share</button>`;
+
   /* ---------------- player ---------------- */
   const audio = new Audio(); audio.preload = "none"; audio.crossOrigin = "anonymous";
   const P = { queue: [], i: -1, ctx: null, an: null, data: null };
@@ -43,6 +64,7 @@
     $("#pArt").style.backgroundImage = `url("${art(it)}")`;
     const w = $("#pWatch"); if (it.yt) { w.hidden = false; w.href = "https://www.youtube.com/watch?v=" + it.yt; w.dataset.watch = it.yt; w.dataset.title = it.title; } else w.hidden = true;
     $("#pBuy").onclick = () => addToCart(it.buy || it);
+    $("#pShare").onclick = () => it.buy && it.buy.kind === "album" ? share("album", it.buy) : share(it.kind === "beat" ? "beat" : "song", CAT.songs.find(x => x.id === it.id) || CAT.beats.find(x => x.id === it.id) || it);
     markPlaying();
     if ("mediaSession" in navigator) {
       navigator.mediaSession.metadata = new MediaMetadata({ title: it.title, artist: "Agent Threads", album: "Threadia Ai Studios", artwork: art(it) ? [{ src: art(it), sizes: "512x512" }] : [] });
@@ -147,7 +169,7 @@
   function openCart() {
     const total = cart.reduce((s, c) => s + c.price, 0);
     openDrawer(`<p class="kicker">Your cart</p><h2 class="d-title">Cart</h2>
-      ${cart.length ? cart.map((c, i) => `<div class="cart-item"><div class="ci" style="background-image:url('${esc(c.art)}')"></div><div><b>${esc(c.title)}</b><br><small>${c.kind === "album" ? "Album · delivered by email" : c.kind === "beat" ? "Beat lease · tagged free, untagged on purchase" : "Single · delivered by email"}</small></div><div style="text-align:right">${money(c.price)}<br><button data-rm="${i}">Remove</button></div></div>`).join("")
+      ${cart.length ? cart.map((c, i) => `<div class="cart-item"><div class="ci" style="background-image:url('${esc(c.art)}')"></div><div><b>${esc(c.title)}</b><br><small>${c.kind === "album" ? "Album · instant download" : c.kind === "beat" ? "Beat lease · tagged free, untagged on purchase" : "Single · instant download"}</small></div><div style="text-align:right">${money(c.price)}<br><button data-rm="${i}">Remove</button></div></div>`).join("")
         : `<p class="d-sub" style="margin:24px 0">Your cart is empty. Find something you love in the catalogue.</p>`}
       ${cart.length ? `<div class="cart-total"><span>Total</span><b>${money(total)}</b></div><button class="btn btn-primary" id="checkout" style="width:100%;justify-content:center">Checkout</button>` : ""}
       <p class="note">Every purchase supports independent music from Threadia Ai Studios. Questions about licensing or exclusive beat rights? <a class="link" href="mailto:admin@threadiaai.com?subject=Threadia%20Ai%20Studios%20licensing">Email the studio</a>.</p>`);
@@ -178,13 +200,15 @@
       <h2 class="d-title">${esc(a.title)}</h2><p class="d-sub">Agent Threads · ${a.track_count} tracks · ${esc(a.status)}</p>
       <div class="d-cover" style="background-image:url('${esc(a.cover)}')"></div>
       <p class="d-sub">${esc(a.about)}</p>
-      <div class="d-buy"><div><small class="mutedish">Delivered privately within 24 hours</small><div class="pr">${money(a.price)}</div></div><button class="btn btn-primary" id="dBuy">Buy album</button></div>
+      <div class="d-buy"><div><small class="mutedish">Instant download after purchase</small><div class="pr">${money(a.price)}</div></div><div class="d-btns">${shareBtn("dShare", "Share " + a.title)}<button class="btn btn-primary" id="dBuy">Buy album</button></div></div>
       <button class="btn btn-ghost" id="dPlay" style="margin-bottom:12px">${ICON_PLAY} Play all previews</button>
-      <ol class="tracklist">${a.tracks.map((t, i) => `<li data-i="${i}" data-pid="${esc(a.id + "-" + t.n)}"><span class="n">${String(t.n).padStart(2, "0")}</span><span class="t">${esc(t.title)}</span><span class="d">${(CAT.songs.find(x => x.id === t.id) || {}).page ? `<a class="link" href="${esc(CAT.songs.find(x => x.id === t.id).page)}" onclick="event.stopPropagation()">Lyrics</a>` : (t.preview ? "1:00" : "")}</span></li>`).join("")}</ol>`);
+      <ol class="tracklist">${a.tracks.map((t, i) => `<li data-i="${i}" data-pid="${esc(a.id + "-" + t.n)}"><span class="n">${String(t.n).padStart(2, "0")}</span><span class="t">${esc(t.title)}</span><span class="d">${(CAT.songs.find(x => x.id === t.id) || {}).page ? `<a class="link lyr" href="${esc(CAT.songs.find(x => x.id === t.id).page)}">Lyrics</a>` : (t.preview ? "1:00" : "")}</span></li>`).join("")}</ol>`);
     const q = albumQueue(a);
     $("#dBuy").onclick = () => addToCart({ ...a, kind: "album", art: a.cover });
+    $("#dShare").onclick = () => share("album", a);
     $("#dPlay").onclick = () => playQueue(q, 0);
     $$("#drawerBody .tracklist li").forEach(li => li.onclick = () => playQueue(q, +li.dataset.i));
+    $$("#drawerBody .tracklist a.lyr").forEach(l => l.onclick = e => e.stopPropagation());   // inline onclick is blocked by our CSP
     markPlaying();
   }
   function renderAlbums(kind = "all") {
@@ -288,13 +312,14 @@
     openDrawer(`<p class="kicker">${esc(b.style)} type beat · ${b.bpm} BPM ${esc(b.key)}</p>
       <h2 class="d-title">${esc(b.title)}</h2><p class="d-sub">Produced by Grey Beard</p>
       <div class="d-cover" style="aspect-ratio:16/9;background-image:url('${esc(art(b))}')"></div>
-      <button class="btn btn-ghost" id="bPlay" style="margin-bottom:8px">${ICON_PLAY} Play preview</button>
+      <div class="d-btns" style="margin-bottom:8px"><button class="btn btn-ghost" id="bPlay">${ICON_PLAY} Play preview</button>${shareBtn("bShare", "Share " + b.title)}</div>
       <div class="tiers">${tiers.map(t => `<div class="tier">
         <div><b>${esc(t.name)} <button class="info" data-info="${esc(t.key)}" aria-label="License terms for ${esc(t.name)}">i</button></b><p>${esc(t.terms)}</p></div>
         ${t.price == null ? `<a class="btn btn-ghost" href="mailto:admin@threadiaai.com?subject=${encodeURIComponent("Exclusive rights: " + b.title)}">Ask</a>`
           : `<button class="btn btn-primary" data-tier="${esc(t.key)}">${money(t.price)}</button>`}</div>`).join("")}</div>
       <p class="note">Secure checkout by Stripe. Download your files and your license instantly, no account needed. The tagged version is free for non profit use with credit: <a class="link" href="https://www.youtube.com/watch?v=${esc(b.yt)}" data-watch="${esc(b.yt)}" data-title="${esc(b.title)}" target="_blank" rel="noopener">watch it here</a>.</p>`);
     $("#bPlay").onclick = () => playQueue([beatQ(b)], 0);
+    $("#bShare").onclick = () => share("beat", b);
     $$("#drawerBody [data-info]").forEach(el => el.onclick = () => openLicense(el.dataset.info, b));
     $$("#drawerBody [data-tier]").forEach(el => el.onclick = () => {
       const t = tiers.find(x => x.key === el.dataset.tier);
@@ -393,6 +418,28 @@
   // mobile menu
   $("#menuBtn").onclick = () => { const o = $(".links").classList.toggle("open"); $("#menuBtn").setAttribute("aria-expanded", o); };
 
+  /* ---------------- song drawer and deep links ---------------- */
+  function openSong(sg) {
+    const q = songQ(sg);
+    openDrawer(`<p class="kicker">Single · ${esc(sg.genre)}</p><h2 class="d-title">${esc(sg.title)}</h2>
+      <p class="d-sub">Agent Threads${sg.feat ? " feat. T.IQ" : ""}</p>
+      <div class="d-cover" style="aspect-ratio:16/9;background-image:url('${esc(art(sg))}')"></div>
+      <div class="d-btns" style="margin-bottom:12px"><button class="btn btn-ghost" id="sPlay">${ICON_PLAY} Play preview</button>
+        <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=${esc(sg.yt)}" data-watch="${esc(sg.yt)}" data-title="${esc(sg.title)}" target="_blank" rel="noopener">Watch</a></div>
+      <div class="d-buy"><div><small class="mutedish">Instant download after purchase · ${esc(sg.format || "MP3")}</small><div class="pr">${money(STORE.prices.single)}</div></div><div class="d-btns">${shareBtn("sShare", "Share " + sg.title)}<button class="btn btn-primary" id="sBuy">Buy single</button></div></div>
+      ${sg.page ? `<a class="link" href="${esc(sg.page)}">The story and the lyrics →</a>` : ""}`);
+    $("#sPlay").onclick = () => playQueue([q], 0);
+    $("#sBuy").onclick = () => addToCart(q);
+    $("#sShare").onclick = () => share("song", sg);
+  }
+  function openDeepLink() {
+    const m = location.hash.match(/^#(album|song|beat)=([A-Za-z0-9_-]{1,120})$/); if (!m || !CAT) return;
+    const id = decodeURIComponent(m[2]);
+    if (m[1] === "album") { const a = CAT.albums.find(x => x.id === id); if (a) openAlbum(a); }
+    else if (m[1] === "song") { const sg = CAT.songs.find(x => x.id === id); if (sg) openSong(sg); }
+    else { const b = CAT.beats.find(x => x.id === id); if (b) openBeat(b); }
+  }
+
   /* ---------------- boot ---------------- */
   Promise.all([fetch("data/catalog.json").then(r => r.json()), fetch("data/news.json").then(r => r.json()), fetch("data/store.json").then(r => r.json())])
     .then(([c, n, s]) => {
@@ -406,6 +453,7 @@
       fetch("data/articles.json").then(r => r.json()).then(renderColumn).catch(() => renderColumn(null));
       $("#playAll").onclick = () => playQueue(allSongsQueue(), 0);
       motion(); tilt();
+      openDeepLink(); addEventListener("hashchange", openDeepLink);
     })
     .catch(err => { console.error(err); $$(".reveal").forEach(e => { e.style.opacity = 1; e.style.transform = "none"; }); });
 })();
