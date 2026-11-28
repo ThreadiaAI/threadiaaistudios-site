@@ -33,11 +33,13 @@
 <div class="cursor" aria-hidden="true"><span></span></div>
 
 <header class="nav" id="nav">
+  <div class="garland" aria-hidden="true"></div>
   <a class="brand" href="#top" aria-label="Threadia Ai Studios home">
     <img src="assets/img/threadia-logo-mark.png" alt="" width="22" height="30">
     <span>Threadia <em>Ai</em> Studios</span>
   </a>
   <nav class="links" aria-label="Primary">
+    <a href="#today">Today</a>
     <a href="#albums">Albums</a>
     <a href="#catalogue">Catalogue</a>
     <a href="#beats">Beats</a>
@@ -57,6 +59,7 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <canvas id="threads" aria-hidden="true"></canvas>
+  <canvas id="heroSnow" class="hero-snow" aria-hidden="true"></canvas>
   <div class="hero-inner">
     <p class="eyebrow reveal"><span class="dot"></span> Threadia Ai Studios · Est. 2026</p>
     <h1 class="hero-title" aria-label="Every genre. One voice.">
@@ -79,6 +82,48 @@
 </section>
 
 <div class="marquee" id="marquee" aria-hidden="true"><div class="track" id="genreTrack"></div></div>
+
+<!-- TODAY: song of the day + beat of the day, inside the Christmas scene (Threadia Scapes) -->
+<section class="xmas" id="today" aria-labelledby="sotdTitle">
+  <canvas class="scape" data-scape="christmas" aria-hidden="true"></canvas>
+  <div class="xmas-fade" aria-hidden="true"></div>
+  <div class="wrap xmas-head">
+    <p class="kicker xk">Happy holidays from the studio</p>
+    <h2 class="display">Today at <em>Threadia</em></h2>
+    <p class="lede">A new song in the spotlight every day, newest releases first, then back through the catalogue. Plus a fresh beat from Grey Beard every morning.</p>
+  </div>
+  <div class="wrap xmas-stage">
+    <figure class="xmas-at" aria-hidden="true">
+      <img src="assets/img/xmas/at-santa.webp" data-relief="at" data-relief-depth="assets/img/xmas/at-santa-depth.png" alt="" width="1024" height="1536" loading="lazy" decoding="async">
+    </figure>
+    <article class="sotd" id="sotd">
+      <div class="sotd-top"><p class="xtag"><span class="pulse"></span> Song of the day</p><time class="sotd-date" id="sotdDate"></time></div>
+      <div class="sotd-media" id="sotdMedia"></div>
+      <div class="sotd-body">
+        <div class="sotd-meta">
+          <h3 class="sotd-title" id="sotdTitle">Loading today's song</h3>
+          <p class="sotd-by" id="sotdBy"></p>
+        </div>
+        <div class="sotd-acts" id="sotdActs"></div>
+      </div>
+      <p class="sotd-next" id="sotdNext"></p>
+    </article>
+  </div>
+  <div class="wrap botd-stage">
+    <article class="botd" id="botd">
+      <div class="botd-art" id="botdArt"><button class="botd-play bp" id="botdPlay" aria-label="Play beat of the day"></button></div>
+      <div class="botd-copy">
+        <p class="xtag gold"><span class="pulse"></span> Beat of the day</p>
+        <h3 class="botd-title" id="botdTitle"></h3>
+        <p class="botd-meta" id="botdMeta"></p>
+        <div class="botd-acts" id="botdActs"></div>
+      </div>
+    </article>
+    <figure class="xmas-tiq" aria-hidden="true">
+      <img src="assets/img/xmas/tiq-santa.webp" data-relief="tiq" data-relief-depth="assets/img/xmas/tiq-santa-depth.png" alt="" width="800" height="800" loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>
 
 <!-- SPOTLIGHT -->
 <section class="spotlight section" id="spotlight">
@@ -317,5 +362,10 @@
 <script src="assets/js/threads.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/sense.js"></script>
+<script src="assets/js/scenes/christmas.js"></script>
+<script src="assets/js/scenes/engine.js"></script>
+<script src="assets/js/xmas.js"></script>
+<script src="assets/js/relief.js"></script>
+<script src="assets/js/music.js"></script>
 </body>
 </html>

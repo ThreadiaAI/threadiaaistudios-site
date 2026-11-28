@@ -16,7 +16,7 @@
   function busy() {
     if (document.documentElement.classList.contains("vm-open")) return true;
     var a = document.querySelectorAll("audio, video");
-    for (var i = 0; i < a.length; i++) if (!a[i].paused && !a[i].muted) return true;
+    for (var i = 0; i < a.length; i++) if (!a[i].paused && !a[i].muted && !a[i].hasAttribute("data-bgm")) return true;
     return false;
   }
   function init() {
@@ -70,17 +70,45 @@
     close: function () { tone(SCALE[5], { type: "sine", dur: 0.22, vol: 0.18, glide: SCALE[2] }); },
     open: function () { tone(SCALE[2], { type: "sine", dur: 0.3, vol: 0.18, glide: SCALE[5] }); }
   };
+  /* Christmas bells (seasonal, while xmas.js marks the page): every hover and press rings a bell instead, each
+     kind of action its own bell, pitched up and down a C major pentatonic so moving across the page rings out a
+     carol. Bell partials sit at the classic inharmonic ratios, which is what makes a sine sound like metal. */
+  var BELL_SCALE = [523.25, 587.33, 659.25, 783.99, 880, 1046.5, 1174.66, 1318.51, 1567.98, 1760];
+  function bell(f, opts) {
+    opts = opts || {};
+    var parts = opts.parts || [[1, 1, 1], [2.76, .45, .55], [5.4, .25, .32], [8.93, .12, .2], [.5, .3, 1.6]];
+    for (var k = 0; k < parts.length; k++) {
+      tone(f * parts[k][0], { type: "sine", dur: (opts.dur || 1.1) * parts[k][2], vol: (opts.vol || .2) * parts[k][1], cut: 12000, atk: .002, delay: opts.delay || 0, wet: opts.wet });
+    }
+  }
+  function jingle(n, vol) {   // sleigh bells: a shake of tiny bright bells with a little noise
+    for (var j = 0; j < (n || 6); j++) {
+      var d = j * (0.035 + Math.random() * 0.02);
+      tone(3200 + Math.random() * 2400, { type: "sine", dur: .16, vol: (vol || .05) * (1 - j / 10), cut: 14000, atk: .001, delay: d, wet: false });
+      tone(4600 + Math.random() * 3000, { type: "triangle", dur: .09, vol: (vol || .05) * .6, cut: 14000, atk: .001, delay: d + .01, wet: false });
+    }
+  }
+  var XMAS = {
+    tick: function (i) { bell(BELL_SCALE[5 + (i % 5)], { dur: .55, vol: .07, parts: [[1, 1, 1], [2.76, .35, .5], [5.4, .18, .3]], wet: false }); },
+    pluck: function (i) { bell(BELL_SCALE[i % BELL_SCALE.length] / 2, { dur: 1.2, vol: .12 }); },
+    select: function (i) { var n = i % 6; bell(BELL_SCALE[n], { dur: .9, vol: .14 }); bell(BELL_SCALE[n + 2], { dur: 1.1, vol: .12, delay: .09 }); },
+    play: function () { bell(261.63, { dur: 2.4, vol: .22 }); bell(392, { dur: 2, vol: .1, delay: .03 }); jingle(4, .03); },
+    watch: function () { jingle(9, .06); bell(BELL_SCALE[0], { dur: 1.6, vol: .14, delay: .1 }); },
+    buy: function () { bell(BELL_SCALE[0], { dur: 1.4, vol: .14 }); bell(BELL_SCALE[2], { dur: 1.4, vol: .13, delay: .08 }); bell(BELL_SCALE[4], { dur: 1.8, vol: .14, delay: .16 }); bell(BELL_SCALE[5], { dur: 2.2, vol: .12, delay: .26 }); jingle(6, .04); },
+    close: function () { bell(BELL_SCALE[4], { dur: .6, vol: .1 }); bell(BELL_SCALE[1], { dur: .9, vol: .1, delay: .08 }); },
+    open: function () { bell(BELL_SCALE[1], { dur: .6, vol: .1 }); bell(BELL_SCALE[4], { dur: .9, vol: .1, delay: .08 }); }
+  };
   var last = 0;
   function sfx(name, i, force) {
     if (!ready() || (!force && busy())) return;
     var now = performance.now(); if (now - last < 45) return; last = now;
-    try { SFX[name](i || 0); } catch (e) {}
+    try { (document.documentElement.classList.contains("xmas-on") ? XMAS : SFX)[name](i || 0); } catch (e) {}
   }
   function buzz(p) { if (on && !reduce && navigator.vibrate) try { navigator.vibrate(p); } catch (e) {} }
 
   // what each element sounds like
   var HOVER = [
-    [".chip, .links a, .mini, .btn, .lic-link, .info, .discuss, .cart-btn, .song-link, .news-src", "tick"],
+    [".chip, .links a, .mini, .btn, .lic-link, .info, .discuss, .cart-btn, .song-link, .news-src, .sotd-poster, .botd-play, .bgm", "tick"],
     [".song, .album, .col-card, .news-card, .bp, .tier", "pluck"]
   ];
   var CLICK = [

@@ -418,6 +418,63 @@
   // mobile menu
   $("#menuBtn").onclick = () => { const o = $(".links").classList.toggle("open"); $("#menuBtn").setAttribute("aria-expanded", o); };
 
+  /* ---------------- today: song of the day + beat of the day ----------------
+     One song a day, songs only (beats get their own daily pick). Day one (Nov 27 2026) is the newest release, then each
+     day steps one further back through the catalogue and loops. A song released after day one jumps the queue on its
+     release day and the next. Preview any day with ?day=YYYY-MM-DD. */
+  const DAY = 864e5, EPOCH = Date.UTC(2026, 10, 27) / DAY;
+  const dayOf = iso => Math.floor(Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / DAY);
+  function todayNum() {
+    const m = location.search.match(/[?&]day=(\d{4}-\d{2}-\d{2})/); if (m) return dayOf(m[1]);
+    const d = new Date(); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / DAY);
+  }
+  function pickOfDay(list, n) {
+    const sorted = [...list].sort((a, b) => b.date.localeCompare(a.date));
+    const fresh = sorted.filter(x => dayOf(x.date) > EPOCH && dayOf(x.date) <= n && dayOf(x.date) >= n - 1);
+    if (fresh.length) return fresh[0];
+    const base = sorted.filter(x => dayOf(x.date) <= EPOCH); if (!base.length) return sorted[0];
+    return base[(((n - EPOCH) % base.length) + base.length) % base.length];
+  }
+  const byline = s => s.artist || ("Agent Threads" + (s.feat ? ' feat. T.IQ (pronounced "Teek")' : ""));
+  const longDate = n => new Date(n * DAY).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
+  function renderToday() {
+    if (!$("#sotd")) return;
+    const n = todayNum(), s = pickOfDay(CAT.songs, n), nx = pickOfDay(CAT.songs, n + 1);
+    $("#sotdDate").textContent = longDate(n); $("#sotdDate").dateTime = new Date(n * DAY).toISOString().slice(0, 10);
+    $("#sotdTitle").textContent = s.title;
+    $("#sotdBy").innerHTML = `${esc(byline(s))} <span class="dotsep">·</span> ${esc(s.genre)} <span class="dotsep">·</span> ${new Date(s.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`;
+    const poster = s.yt ? (s.thumb || art(s)) : art(s);
+    $("#sotdMedia").innerHTML = `<button class="sotd-poster" style="background-image:url('${esc(poster)}')" aria-label="${s.yt ? "Watch the music video for " : "Play "}${esc(s.title)}">
+      <span class="sotd-glow"></span><span class="sotd-pbtn">${ICON_PLAY}</span><span class="sotd-label">${s.yt ? "Watch the music video" : "Play the song"}</span></button>`;
+    $("#sotdMedia .sotd-poster").onclick = () => {
+      if (!s.yt) { playQueue([songQ(s)], 0); return; }
+      if (!audio.paused) audio.pause();
+      const f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + s.yt + "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+      f.title = s.title; f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true; f.referrerPolicy = "strict-origin-when-cross-origin";
+      $("#sotdMedia").replaceChildren(f);
+    };
+    $("#sotdActs").innerHTML = `${s.preview ? `<button class="btn btn-ghost" id="sotdPrev">${ICON_PLAY} 1 min preview</button>` : ""}
+      ${s.nosale ? "" : `<button class="btn btn-primary" id="sotdBuy">Buy · ${money(STORE.prices.single)}</button>`}
+      ${shareBtn("sotdShare", "Share " + s.title)}
+      ${s.page ? `<a class="btn btn-ghost" href="${esc(s.page)}">Story and lyrics</a>` : ""}`;
+    if ($("#sotdPrev")) $("#sotdPrev").onclick = () => playQueue([songQ(s)], 0);
+    if ($("#sotdBuy")) $("#sotdBuy").onclick = () => addToCart(songQ(s));
+    $("#sotdShare").onclick = () => share("song", s);
+    $("#sotdNext").innerHTML = nx && nx.id !== s.id ? `Tomorrow: <strong>${esc(nx.title)}</strong>` : "";
+
+    const b = pickOfDay(CAT.beats, n); if (!b) { $("#botd").hidden = true; return; }
+    $("#botdArt").style.backgroundImage = `url('${esc(art(b))}')`; $("#botdArt").dataset.pid = b.id;
+    $("#botdTitle").textContent = b.title;
+    $("#botdMeta").innerHTML = `${esc(b.style)} <span class="dotsep">·</span> <span class="mono">${b.bpm} BPM</span> <span class="dotsep">·</span> <span class="mono">${esc(b.key)}</span> <span class="dotsep">·</span> prod. Grey Beard`;
+    $("#botdPlay").innerHTML = ICON_PLAY;
+    $("#botdPlay").onclick = () => { if (cur()?.id === b.id) { toggle(); return; } playQueue([beatQ(b)], 0); };
+    $("#botdActs").innerHTML = `<button class="btn btn-primary" id="botdLic">License · from ${money(STORE.prices.beat_lease)}</button>
+      <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=${esc(b.yt)}" data-watch="${esc(b.yt)}" data-title="${esc(b.title)}" target="_blank" rel="noopener">Watch</a>${shareBtn("botdShare", "Share " + b.title)}`;
+    $("#botdLic").onclick = () => openBeat(b);
+    $("#botdShare").onclick = () => share("beat", b);
+  }
+
   /* ---------------- song drawer and deep links ---------------- */
   function openSong(sg) {
     const q = songQ(sg);
@@ -449,7 +506,7 @@
       const words = [...new Set([...g, ...fams])].slice(0, 26);
       $("#genreTrack").innerHTML = [...words, ...words].map(w => `<span>${esc(w)}</span>`).join("");
       if (STORE.links && Object.keys(STORE.links).length) $("#cartBtn").style.display = "none";
-      renderSpotlight(); renderAlbums(); renderFamilies(); renderSongs(); renderBeats(); renderNews(); renderCartCount();
+      renderToday(); renderSpotlight(); renderAlbums(); renderFamilies(); renderSongs(); renderBeats(); renderNews(); renderCartCount();
       fetch("data/articles.json").then(r => r.json()).then(renderColumn).catch(() => renderColumn(null));
       $("#playAll").onclick = () => playQueue(allSongsQueue(), 0);
       motion(); tilt();
