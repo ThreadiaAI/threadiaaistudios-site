@@ -5,7 +5,7 @@
    track carries across pages, and it steps aside for a song preview or a video, then waits to be asked back. */
 (function () {
   "use strict";
-  var SRC = (document.querySelector('meta[name="bgm"]') || {}).content || "/assets/audio/nsm-christmas-instrumental.mp3";
+  var SRC = (document.querySelector('meta[name="bgm"]') || {}).content || "/assets/audio/nsm-christmas-instrumental-suno.mp3";
   var TITLE = "N.S.M Christmas (Instrumental)";
   var VOL = 0.32, K_OFF = "tas_bgm_off", K_T = "tas_bgm_t", K_P = "tas_bgm_paused";
   var store = { get: function (s, k) { try { return s.getItem(k); } catch (e) { return null; } }, set: function (s, k, v) { try { s.setItem(k, v); } catch (e) {} } };
