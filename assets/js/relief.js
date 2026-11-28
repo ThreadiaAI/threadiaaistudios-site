@@ -5,7 +5,7 @@
 
    The rules that made it read as alive, kept from the original:
      breathing is LOCAL (weighted onto the chest, never a uniform scale), sway is low pass noise that pivots
-     about the feet (never a sine), a small fast tremor sits on top, a gate lets the figure settle and pause,
+     about the feet (never a sine), (the portal's fast tremor is OFF here: on the site it read as shaking), a gate lets the figure settle and pause,
      and the depth drives a faint shading term plus a rim light so it is lit by the scene it stands in.
    Amplitudes are in DISPLAY pixels, converted at runtime, because the same native pixel is invisible on one
    screen and obvious on another.
@@ -20,11 +20,11 @@
 
   var PRESETS = {
     // A.T.: a person standing still, the portal numbers scaled up a touch for a figure drawn ~2x larger.
-    at:  { nx: 96, ny: 144, chest: 0.27, chestW: 0.10, parallax: 4.5, swayX: 3.4, swayY: 1.3, swayRotDeg: 0.6,
-           tremor: 0.6, breathPx: 3.0, bob: 0, relief: 0.96, rim: [1.0, 0.42, 0.48], rimK: 0.12, mouse: 7 },
+    at:  { nx: 96, ny: 144, chest: 0.27, chestW: 0.10, parallax: 9, swayX: 9, swayY: 2.2, swayRotDeg: 1.3,
+           tremor: 0, breathPx: 4.5, bob: 0, relief: 1.0, rim: [1.0, 0.42, 0.48], rimK: 0.12, mouse: 8, slow: 1.6 },
     // T.IQ: a small robot mid dance, so a bouncier bob on a beat and a wider rock, still pivoting on his foot.
     tiq: { nx: 110, ny: 110, chest: 0.48, chestW: 0.16, parallax: 5.0, swayX: 4.0, swayY: 1.5, swayRotDeg: 2.6,
-           tremor: 0.4, breathPx: 1.6, bob: 5.0, bobHz: 1.55, relief: 1.1, rim: [1.0, 0.78, 0.42], rimK: 0.14, mouse: 9 }
+           tremor: 0, breathPx: 1.6, bob: 6.0, bobHz: 1.1, relief: 1.1, rim: [1.0, 0.78, 0.42], rimK: 0.14, mouse: 9, slow: 1 }
   };
   var SHADE = 0.16;
 
@@ -162,10 +162,12 @@
   };
   Relief.prototype.draw = function (t) {
     var gl = this.gl, u = this.u, P = this.P;
-    var gate = 0.55 + 0.45 * Math.max(0, this.dg.at(t));
-    var sx = this.dx.at(t) * P.swayX * this.px * gate + this.tx.at(t) * P.tremor * this.px;
-    var sy = this.dy.at(t) * P.swayY * this.py * gate + this.ty.at(t) * P.tremor * this.py;
-    var rot = this.dr.at(t) * (P.swayRotDeg * Math.PI / 180) * gate;
+    var gate = 0.7 + 0.3 * Math.max(0, this.dg.at(t / (P.slow || 1)));
+    // NO TREMOR. Luke saw the portal's 9 Hz postural tremor on the site as "the shaking thing" (2026-11-27): at this
+    // size it reads as trembling, not life. Motion is slow, wide and smooth instead, and every drift is stretched.
+    var ts = t / (P.slow || 1);
+    var sx = this.dx.at(ts) * P.swayX * this.px * gate, sy = this.dy.at(ts) * P.swayY * this.py * gate;
+    var rot = this.dr.at(ts) * (P.swayRotDeg * Math.PI / 180) * gate;
     if (P.bob) {   // T.IQ's dance: a bounce on the beat (sharp up, soft landing) and a rock in time with it
       var bp = (t * P.bobHz) % 1, bounce = Math.pow(Math.sin(bp * Math.PI), 1.6);
       sy += bounce * P.bob * this.py; rot += Math.sin(t * P.bobHz * Math.PI) * (P.swayRotDeg * 0.6 * Math.PI / 180);
@@ -173,8 +175,8 @@
     var rate = 0.24 * (1 + 0.18 * this.dbr.at(t)), ph = (t * rate) % 1;
     var br = ph < 0.42 ? Math.sin(ph / 0.42 * Math.PI * 0.5) : Math.cos((ph - 0.42) / 0.58 * Math.PI * 0.5);
     var breath = br * P.breathPx * this.px;
-    this.mx += (this.tmx - this.mx) * 0.05; this.my += (this.tmy - this.my) * 0.05;
-    var cx = (this.dpx.at(t) * P.parallax + this.mx * P.mouse) * this.px, cy = (this.dpy.at(t) * P.parallax * 0.45 - this.my * P.mouse * 0.5) * this.py;
+    this.mx += (this.tmx - this.mx) * 0.025; this.my += (this.tmy - this.my) * 0.025;
+    var cx = (this.dpx.at(ts) * P.parallax + this.mx * P.mouse) * this.px, cy = (this.dpy.at(ts) * P.parallax * 0.45 - this.my * P.mouse * 0.5) * this.py;
     if (reduced) { sx = sy = rot = breath = cx = cy = 0; }
     gl.useProgram(this.prog);
     gl.uniform2f(u.uCam, cx, cy); gl.uniform2f(u.uShift, sx, sy); gl.uniform1f(u.uRot, rot); gl.uniform1f(u.uBreath, breath);
