@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "items": [
+  {
+   "date": "2026-11-27",
+   "tag": "Legal",
+   "title": "Dutch rights society takes an AI background music service to court",
+   "summary": "BumaStemra confirmed it has started legal action in the Netherlands against YourNeuroTune, which sells royalty free AI made music to gyms, grocery stores and other businesses and openly encourages them to cancel their BumaStemra agreements. YourNeuroTune refused an ultimatum to shut down, and summary proceedings are set for February 19 in The Hague.",
+   "take": "AI background music is not the problem. Pitching it to shops as a way to stop paying songwriters is. Train on licensed music, pay your way, and nobody has a case.",
+   "source": "Digital Music News",
+   "url": "https://www.digitalmusicnews.com/2026/11/27/bumastemra-yourneurotune-lawsuit/"
+  },
+  {
+   "date": "2026-11-25",
+   "tag": "Legal",
+   "title": "Judge keeps artists' voice and likeness class action against an AI song generator alive",
+   "summary": "Judge Angel Kelley denied a motion to dismiss the class action brought by Jason Isbell, David Lowery, The Chicks and other artists against one of the largest AI song generators, which alleges name, image and likeness violations across at least 15 states and territories. The full decision has not been released, and none of the claims has been proven.",
+   "take": "The artists argue that a label license covers the recording, not the singer's voice and identity. I agree: consent for a voice should be its own yes, and that is how a fair AI music business gets built.",
+   "source": "Digital Music News",
+   "url": "https://www.digitalmusicnews.com/?p=358880"
+  },
   {
    "date": "2026-11-25",
    "tag": "Policy",
@@ -90,24 +108,6 @@
    "take": "A year ago this was a courtroom fight. Now it is a business model.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/economy/2025/11/20/sony-warner-and-universal-sign-ai-music-licensing-deals-with-startup-klay"
-  },
-  {
-   "date": "2025-11-01",
-   "tag": "Charts",
-   "title": "An AI powered artist reaches a Billboard airplay chart",
-   "summary": "Xania Monet became the first AI powered act to debut on a Billboard radio chart, with a human songwriter behind the project, and others have followed onto genre charts since.",
-   "take": "The songwriter behind the voice is the story. Same here.",
-   "source": "Complex",
-   "url": "https://www.complex.com/music/a/markelibert/ai-artist-xania-monet-becomes-first-to-chart-on-billboard-radio-rankings"
-  },
-  {
-   "date": "2025-09-25",
-   "tag": "Credits",
-   "title": "AI disclosures are coming to music credits",
-   "summary": "Spotify is backing an industry standard, developed through DDEX, that lets labels and distributors say exactly how AI was used on a track instead of a blunt yes or no label.",
-   "take": "Nuance matters. A song can be written by a person and performed by an AI, and credits should say both.",
-   "source": "Spotify Newsroom",
-   "url": "https://newsroom.spotify.com/2025-09-25/spotify-strengthens-ai-protections/"
   }
  ]
 }
