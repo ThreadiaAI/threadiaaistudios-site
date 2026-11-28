@@ -1352,8 +1352,9 @@
    "remix": true,
    "preview": "previews/s-nothing-with-you-r-b-remix.mp3",
    "artist": "Apostrophe ft. A.T.",
-   "nosale": true,
-   "art": "art/t/s-nothing-with-you-r-b-remix.jpg"
+   "art": "art/t/s-nothing-with-you-r-b-remix.jpg",
+   "format": "WAV",
+   "page": "music/nothing-with-you-r-b-remix/"
   },
   {
    "yt": "2-KnnwdsU28",
