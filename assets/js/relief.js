@@ -188,6 +188,8 @@
     if (reduced) return;
     document.querySelectorAll("img[data-relief-depth]").forEach(function (img) {
       var r = new Relief(img), go = function () { r.start(); };
+      // a figure with real footage (livevid.js) only falls back to the relief if that video cannot play
+      if (img.dataset.live) { img.addEventListener("livefail", function () { if (img.complete && img.naturalWidth) go(); else img.addEventListener("load", go, { once: true }); }, { once: true }); return; }
       if (img.complete && img.naturalWidth) go(); else img.addEventListener("load", go, { once: true });
     });
   }
